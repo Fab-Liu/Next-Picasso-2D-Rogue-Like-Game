@@ -1,0 +1,18 @@
+Pixel Art Platformer - Village House
+
+2.1.0
+	- Add 2D lighting support through additional shaders.
+
+2.0.0
+	- Add 3 new house presets.
+	- Add 8 new building components.
+	- Shadow sprites are moved to a separated texture.
+
+1.2.0
+	- Update included "Pixel Art Platformer - Village Props" pack to 2.1.
+
+1.1.0
+	- Update included "Pixel Art Platformer - Village Props" pack to 2.0.
+
+1.0.0
+	- First Release.
