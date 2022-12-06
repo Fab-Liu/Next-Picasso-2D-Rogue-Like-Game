@@ -187,9 +187,9 @@ GameObject:
   - component: {fileID: 118822188}
   - component: {fileID: 118822187}
   - component: {fileID: 118822194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f30a090af31754482afa7cfaaf3269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shadowPrefab: {fileID: 7465701584051259857, guid: e33cd7a108d003747ba5c2c76793d249, type: 3}
+  shadowPrefab: {fileID: 4799962300360102645, guid: 1871b17cf5471dc4ca95f74a201a3618, type: 3}
   shadowCount: 20
 --- !u!4 &756622119
 Transform:
