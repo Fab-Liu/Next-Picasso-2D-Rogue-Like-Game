@@ -69,6 +69,11 @@ public class CharacterController : MonoBehaviour
     public bool jumpPressed;
 
 
+    // Skill
+    [Header("Skills")]
+    public Image dashImage;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -89,6 +94,8 @@ public class CharacterController : MonoBehaviour
         CharacterDuckPressed();
 
         // CharacterShoot();
+
+        CharacterDashCoolDown();
     }
 
     void FixedUpdate()
@@ -114,6 +121,7 @@ public class CharacterController : MonoBehaviour
 
         faceLastPosition = -1;
     }
+
 
     private void CharacterCheckGround()
     {
@@ -277,6 +285,7 @@ public class CharacterController : MonoBehaviour
                 isDashing = true;
                 dashTimeLeft = dashTime;
                 dashLast = Time.time;
+                dashImage.fillAmount = 1;
             }
         }
     }
@@ -357,5 +366,10 @@ public class CharacterController : MonoBehaviour
                 myAnimator.SetBool("Hurt", false);
             }
         }
+    }
+
+    private void CharacterDashCoolDown()
+    {
+        dashImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
     }
 }
