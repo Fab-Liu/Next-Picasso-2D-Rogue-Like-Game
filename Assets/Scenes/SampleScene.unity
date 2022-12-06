@@ -206,14 +206,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce30637d7ccb5245b5ad787ded8e274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySoundSource: {fileID: 0}
-  myAnimator: {fileID: 0}
-  myCollider: {fileID: 0}
-  myRigidbody2D: {fileID: 0}
   Ground:
     serializedVersion: 2
     m_Bits: 8
   GroundCheck: {fileID: 778557513}
+  myAnimator: {fileID: 0}
+  myCollider: {fileID: 0}
+  myRigidbody2D: {fileID: 0}
+  mySoundSource: {fileID: 0}
   speed: 300
   runSpeed: 500
   jumpForce: 539.7
@@ -261,7 +261,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 37e9d219e3d181842b67babeec066f96, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -590,7 +590,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21553,7 +21553,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -21639,7 +21639,7 @@ MonoBehaviour:
   m_Follow: {fileID: 118822196}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
