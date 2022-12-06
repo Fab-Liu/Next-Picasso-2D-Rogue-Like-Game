@@ -214,14 +214,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   GroundCheck: {fileID: 778557513}
-  speed: 240
+  speed: 300
   runSpeed: 500
-  dashSpeed: 0
-  jumpForce: 439.7
-  faceDirection: 0
-  faceLastPosition: 1
+  jumpForce: 539.7
+  dashSpeed: 30
   moveVertical: 0
   moveHorizontal: 0
+  faceDirection: 0
+  faceLastPosition: 1
   dashLast: 0
   dashTime: 0
   dashTimeLeft: 0
@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 1143783537}
   - component: {fileID: 1143783536}
   - component: {fileID: 1143783538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

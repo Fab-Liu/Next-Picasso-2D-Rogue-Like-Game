@@ -12,7 +12,10 @@ public class CharacterController : MonoBehaviour
     [Header("Components")]
 
     [SerializeField]
-    public AudioSource mySoundSource;
+    protected LayerMask Ground;
+
+    [SerializeField]
+    protected Transform GroundCheck;
 
     [SerializeField]
     protected Animator myAnimator;
@@ -24,30 +27,27 @@ public class CharacterController : MonoBehaviour
     protected Rigidbody2D myRigidbody2D;
 
     [SerializeField]
-    protected LayerMask Ground;
+    public AudioSource mySoundSource;
 
-    [SerializeField]
-    protected Transform GroundCheck;
 
 
     // Paramaters
     [Header("Paramaters")]
     public float speed = 240.0f;
     public float runSpeed = 500.0f;
-    public float dashSpeed;
     public float jumpForce = 439.7f;
-
-
-    public float faceDirection;
-    public float faceLastPosition = 1;
+    public float dashSpeed = 1000.0f;
 
 
     public float moveVertical;
     public float moveHorizontal;
+    public float faceDirection;
+    public float faceLastPosition = 1;
 
 
     public float dashLast;
     public float dashTime;
+
     public float dashTimeLeft;
     public float dashCoolDown;
 
@@ -66,6 +66,8 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ParameterInit();
+
         myAnimator = GetComponent<Animator>();
         mySoundSource = GetComponent<AudioSource>();
 
@@ -85,11 +87,19 @@ public class CharacterController : MonoBehaviour
     void FixedUpdate()
     {
         CharacterCheckGround();
+        CharacterHurtCheck();
+        CharacterAnimation();
+    }
 
-        CharacterMove();
-        CharacterRun();
-        CharacterFlip();
-        CharacterJump();
+    private void ParameterInit()
+    {
+        // make dash last to negative value
+
+        dashTime = (float)0.5;
+        dashLast = -100;
+        dashSpeed = 800;
+        dashCoolDown = 2;
+        faceLastPosition = -1;
     }
 
     private void CharacterCheckGround()
@@ -97,9 +107,25 @@ public class CharacterController : MonoBehaviour
         isGround = Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground);
     }
 
+    private void CharacterHurtCheck()
+    {
+        if (!isHurt)
+        {
+            CharacterDash();
+            if (isDashing) return;
+
+            CharacterMove();
+            CharacterRun();
+            CharacterFlip();
+            CharacterJump();
+        }
+    }
+
     private void CharacterMove()
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
+        moveVertical = Input.GetAxisRaw("Vertical");
+
         myRigidbody2D.velocity =
             new Vector2(moveHorizontal * speed * Time.fixedDeltaTime,
                 myRigidbody2D.velocity.y);
@@ -139,21 +165,50 @@ public class CharacterController : MonoBehaviour
 
     private void CharacterJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isJump == false)
+        if (isGround && Mathf.Abs(myRigidbody2D.velocity.y) < 0.01f)
         {
-            jumpPressed = true;
+            jumpCount = 2;
+            isJump = false;
         }
+
         if (jumpPressed)
         {
-            jumpPressed = false;
-            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpForce * Time.fixedDeltaTime);
-            jumpCount++;
+            if (isGround)
+            {
+                isJump = true;
+                myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x,
+                        jumpForce * Time.deltaTime);
+
+                jumpCount -= 1;
+                jumpPressed = false;
+            }
+            else if (jumpCount > 0 && isJump)
+            {
+                myRigidbody2D.velocity =
+                    new Vector2(myRigidbody2D.velocity.x,
+                        jumpForce * (float)1.2 * Time.deltaTime);
+
+                jumpCount -= 1;
+                jumpPressed = false;
+            }
+            else if (jumpCount == 0)
+            {
+                jumpPressed = false;
+            }
+            else
+            {
+                jumpPressed = false;
+            }
+
+            // jumpPressed = false;
+            // myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpForce * Time.fixedDeltaTime);
+            // jumpCount++;
         }
     }
 
     private void CharacterJumpPressed()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isJump == false)
+        if ((Input.GetButtonDown("Jump")) && jumpCount > 0)
         {
             jumpPressed = true;
         }
@@ -165,7 +220,7 @@ public class CharacterController : MonoBehaviour
         {
             if (dashTimeLeft > 0)
             {
-                myRigidbody2D.velocity = new Vector2(moveHorizontal * Time.fixedDeltaTime, 0);
+                myRigidbody2D.velocity = new Vector2(moveHorizontal * dashSpeed * Time.fixedDeltaTime, 0);
                 dashTimeLeft -= Time.deltaTime;
             }
             else
@@ -190,5 +245,10 @@ public class CharacterController : MonoBehaviour
 
     private void CharacterShoot()
     {
+    }
+
+    private void CharacterAnimation()
+    {
+
     }
 }
