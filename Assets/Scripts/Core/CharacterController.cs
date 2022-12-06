@@ -51,9 +51,14 @@ public class CharacterController : MonoBehaviour
     public float dashTimeLeft;
     public float dashCoolDown;
 
+    public float hurt = 0.5f;
+    public float hurtTimeLeft;
+
+
     // States
     [Header("States")]
     public bool isHurt;
+    public bool isDuck;
     public bool isJump;
     public bool isGround;
     public bool isDashing;
@@ -80,8 +85,9 @@ public class CharacterController : MonoBehaviour
     {
         CharacterJumpPressed();
         CharacterDashPressed();
+        CharacterDuckPressed();
 
-        CharacterShoot();
+        // CharacterShoot();
     }
 
     void FixedUpdate()
@@ -89,6 +95,7 @@ public class CharacterController : MonoBehaviour
         CharacterCheckGround();
         CharacterHurtCheck();
         CharacterAnimation();
+
     }
 
     private void ParameterInit()
@@ -111,8 +118,12 @@ public class CharacterController : MonoBehaviour
     {
         if (!isHurt)
         {
+
+
             CharacterDash();
             if (isDashing) return;
+
+            CharacterDuck();
 
             CharacterMove();
             CharacterRun();
@@ -134,6 +145,8 @@ public class CharacterController : MonoBehaviour
         {
             faceLastPosition = moveHorizontal;
         }
+
+        myAnimator.SetBool("Moving", Mathf.Abs(moveHorizontal) != 0);
     }
 
     private void CharacterRun()
@@ -244,12 +257,71 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterShoot()
+    private void CharacterDuck()
     {
+        // ctrl for duck 
+        // if (isDuck)
+        // {
+        //     // speed = 200.0f;
+        //     myAnimator.SetBool("Duck", true);
+        // }
+        // else
+        // {
+        //     myAnimator.SetBool("Duck", false);
+        // }
     }
+
+
+    private void CharacterDuckPressed()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isDuck = true;
+            myAnimator.SetBool("Duck", true);
+            // myAnimator.SetBool("Duck", true);
+            // myCollider.offset = new Vector2(0, -0.5f);
+            // myCollider.size = new Vector2(1, 1.5f);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            isDuck = false;
+            myAnimator.SetBool("Duck", false);
+            // myAnimator.SetBool("Duck", false);
+            // myCollider.offset = new Vector2(0, 0);
+            // myCollider.size = new Vector2(1, 2);
+        }
+    }
+
+
+
 
     private void CharacterAnimation()
     {
+        myAnimator.SetBool("Idle", true);
 
+        if (isGround)
+        {
+            myAnimator.SetBool("JumpUp", false);
+            myAnimator.SetBool("JumpDown", false);
+        }
+        else if (!isGround && myRigidbody2D.velocity.y > 0)
+        {
+            myAnimator.SetBool("JumpUp", true);
+        }
+        else if (!isGround && myRigidbody2D.velocity.y < 0)
+        {
+            myAnimator.SetBool("JumpDown", true);
+            myAnimator.SetBool("Idle", true);
+        }
+
+        if (isHurt)
+        {
+            if (Time.time - hurtTimeLeft >= hurt)
+            {
+                hurtTimeLeft = 0;
+                isHurt = false;
+                myAnimator.SetBool("Hurt", false);
+            }
+        }
     }
 }

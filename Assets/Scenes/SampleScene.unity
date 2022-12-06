@@ -226,7 +226,10 @@ MonoBehaviour:
   dashTime: 0
   dashTimeLeft: 0
   dashCoolDown: 0
+  hurt: 0.5
+  hurtTimeLeft: 0
   isHurt: 0
+  isDuck: 0
   isJump: 0
   isGround: 0
   isDashing: 0
@@ -306,7 +309,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.30582213
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -491,7 +494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.64, y: 1.1127}
+  m_AnchoredPosition: {x: -6.15, y: 0.77}
   m_SizeDelta: {x: 0.7947, y: 1.5351}
   m_Pivot: {x: 0.5, y: 0.09999997}
 --- !u!58 &118822197
@@ -614,7 +617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 1.1127, z: -10.055331}
+  m_LocalPosition: {x: -6.15, y: 0.77, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21709,7 +21712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710602758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 1.1127, z: -10.055331}
+  m_LocalPosition: {x: -6.15, y: 0.77, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
