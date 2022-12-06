@@ -33,8 +33,9 @@ public class CharacterController : MonoBehaviour
 
     // Paramaters
     [Header("Paramaters")]
-    public float speed = 240.0f;
-    public float runSpeed = 500.0f;
+    public float speed = 350.0f;
+    public float walkSpeed = 350.0f;
+    public float runSpeed = 600.0f;
     public float jumpForce = 439.7f;
     public float dashSpeed = 1000.0f;
 
@@ -102,9 +103,9 @@ public class CharacterController : MonoBehaviour
     {
         // make dash last to negative value
 
-        dashTime = (float)0.5;
+        dashTime = (float)0.7;
         dashLast = -100;
-        dashSpeed = 800;
+        dashSpeed = 850;
         dashCoolDown = 2;
         faceLastPosition = -1;
     }
@@ -118,8 +119,6 @@ public class CharacterController : MonoBehaviour
     {
         if (!isHurt)
         {
-
-
             CharacterDash();
             if (isDashing) return;
 
@@ -158,7 +157,7 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
-            speed = 240.0f;
+            speed = walkSpeed;
         }
     }
 
