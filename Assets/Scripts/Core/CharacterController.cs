@@ -33,11 +33,11 @@ public class CharacterController : MonoBehaviour
 
     // Paramaters
     [Header("Paramaters")]
-    public float speed = 350.0f;
-    public float walkSpeed = 350.0f;
-    public float runSpeed = 600.0f;
-    public float jumpForce = 439.7f;
-    public float dashSpeed = 1000.0f;
+    public float speed = 450.0f;
+    public float walkSpeed = 450.0f;
+    public float runSpeed = 800.0f;
+    public float jumpForce = 639.7f;
+    public float dashSpeed = 1500.0f;
 
 
     public float moveVertical;
@@ -103,7 +103,7 @@ public class CharacterController : MonoBehaviour
     {
         // make dash last to negative value
 
-        dashTime = (float)0.7;
+        dashTime = (float)0.5;
         dashLast = -100;
         dashSpeed = 850;
         dashCoolDown = 2;
