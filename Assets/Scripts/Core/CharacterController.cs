@@ -95,18 +95,23 @@ public class CharacterController : MonoBehaviour
     {
         CharacterCheckGround();
         CharacterHurtCheck();
+        CharacterIdleCheck();
         CharacterAnimation();
-
     }
 
     private void ParameterInit()
     {
-        // make dash last to negative value
+        speed = 450.0f;
+        walkSpeed = 450.0f;
+        runSpeed = 800.0f;
+        jumpForce = 639.7f;
 
-        dashTime = (float)0.5;
+
+        dashTime = (float)0.35;
         dashLast = -100;
-        dashSpeed = 850;
+        dashSpeed = 1400;
         dashCoolDown = 2;
+
         faceLastPosition = -1;
     }
 
@@ -126,8 +131,23 @@ public class CharacterController : MonoBehaviour
 
             CharacterMove();
             CharacterRun();
+
             CharacterFlip();
             CharacterJump();
+        }
+    }
+
+    private void CharacterIdleCheck()
+    {
+        if (moveHorizontal == 0 && isGround)
+        {
+            myAnimator.SetBool("Idle", true);
+            myAnimator.SetBool("Run", false);
+            myAnimator.SetBool("Walk", false);
+        }
+        else
+        {
+            myAnimator.SetBool("Idle", false);
         }
     }
 
@@ -145,7 +165,7 @@ public class CharacterController : MonoBehaviour
             faceLastPosition = moveHorizontal;
         }
 
-        myAnimator.SetBool("Moving", Mathf.Abs(moveHorizontal) != 0);
+        myAnimator.SetBool("Walk", Mathf.Abs(moveHorizontal) != 0);
     }
 
     private void CharacterRun()
@@ -154,10 +174,15 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && isJump == false)
         {
             speed = runSpeed;
+            myAnimator.SetBool("Run", true);
+            myAnimator.SetBool("Idle", false);
         }
         else
         {
             speed = walkSpeed;
+            myAnimator.SetBool("Run", false);
+            myAnimator.SetBool("Walk", true);
+            myAnimator.SetBool("Idle", false);
         }
     }
 
