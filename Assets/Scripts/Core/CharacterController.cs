@@ -222,6 +222,7 @@ public class CharacterController : MonoBehaviour
             {
                 myRigidbody2D.velocity = new Vector2(moveHorizontal * dashSpeed * Time.fixedDeltaTime, 0);
                 dashTimeLeft -= Time.deltaTime;
+                ShadowPool.instance.GetFromPool();
             }
             else
             {
