@@ -28,11 +28,18 @@ public class CharacterController : MonoBehaviour
     [Header("Paramaters")]
     public float speed = 240.0f;
     public float runSpeed = 500.0f;
+    public float dashSpeed;
     public float jumpForce = 439.7f;
+
     public float faceDirection;
     public float faceLastPosition = 1;
+
     public float moveVertical;
     public float moveHorizontal;
+
+    public float dashLast;
+    public float dashTime;
+    public float dashTimeLeft;
 
     // States
     [Header("States")]
@@ -132,6 +139,30 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isJump == false)
         {
             jumpPressed = true;
+        }
+    }
+
+    private void CharacterDash()
+    {
+        if (isDashing)
+        {
+            if (dashTimeLeft > 0)
+            {
+                myRigidbody2D.velocity = new Vector2(moveHorizontal * *Time.fixedDeltaTime, 0);
+            }
+        }
+    }
+
+    private void CharacterDashPressed()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (Time.time >= (LastDash + DashCoolDown))
+            {
+                isDashing = true;
+                dashTimeLeft = dashTime;
+                dashLast = Time.time;
+            }
         }
     }
 }
