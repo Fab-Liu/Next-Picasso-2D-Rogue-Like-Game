@@ -23,6 +23,12 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     protected Rigidbody2D myRigidbody2D;
 
+    [SerializeField]
+    protected LayerMask Ground;
+
+    [SerializeField]
+    protected Transform GroundCheck;
+
 
     // Paramaters
     [Header("Paramaters")]
@@ -31,28 +37,29 @@ public class CharacterController : MonoBehaviour
     public float dashSpeed;
     public float jumpForce = 439.7f;
 
+
     public float faceDirection;
     public float faceLastPosition = 1;
+
 
     public float moveVertical;
     public float moveHorizontal;
 
+
     public float dashLast;
     public float dashTime;
     public float dashTimeLeft;
+    public float dashCoolDown;
 
     // States
     [Header("States")]
     public bool isHurt;
-
     public bool isJump;
-
     public bool isGround;
-
     public bool isDashing;
 
-    public int jumpCount;
 
+    public int jumpCount;
     public bool jumpPressed;
 
 
@@ -70,14 +77,24 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         CharacterJumpPressed();
+        CharacterDashPressed();
+
+        CharacterShoot();
     }
 
     void FixedUpdate()
     {
+        CharacterCheckGround();
+
         CharacterMove();
         CharacterRun();
         CharacterFlip();
         CharacterJump();
+    }
+
+    private void CharacterCheckGround()
+    {
+        isGround = Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground);
     }
 
     private void CharacterMove()
@@ -148,7 +165,12 @@ public class CharacterController : MonoBehaviour
         {
             if (dashTimeLeft > 0)
             {
-                myRigidbody2D.velocity = new Vector2(moveHorizontal * *Time.fixedDeltaTime, 0);
+                myRigidbody2D.velocity = new Vector2(moveHorizontal * Time.fixedDeltaTime, 0);
+                dashTimeLeft -= Time.deltaTime;
+            }
+            else
+            {
+                isDashing = false;
             }
         }
     }
@@ -157,12 +179,16 @@ public class CharacterController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            if (Time.time >= (LastDash + DashCoolDown))
+            if (Time.time >= (dashLast + dashCoolDown))
             {
                 isDashing = true;
                 dashTimeLeft = dashTime;
                 dashLast = Time.time;
             }
         }
+    }
+
+    private void CharacterShoot()
+    {
     }
 }
