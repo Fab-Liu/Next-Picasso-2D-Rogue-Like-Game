@@ -31,7 +31,7 @@ public class ShadowPool : MonoBehaviour
             var newShadow = Instantiate(shadowPrefab);
             newShadow.transform.SetParent(transform);
 
-            //取消启用，返回对象池
+
             ReturnPool(newShadow);
         }
     }

@@ -318,9 +318,6 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-
-
-
     private void CharacterAnimation()
     {
         myAnimator.SetBool("Idle", true);
@@ -333,10 +330,12 @@ public class CharacterController : MonoBehaviour
         else if (!isGround && myRigidbody2D.velocity.y > 0)
         {
             myAnimator.SetBool("JumpUp", true);
+            myAnimator.SetBool("JumpDown", false);
         }
         else if (!isGround && myRigidbody2D.velocity.y < 0)
         {
             myAnimator.SetBool("JumpDown", true);
+            myAnimator.SetBool("JumpUp", false);
             myAnimator.SetBool("Idle", true);
         }
 
