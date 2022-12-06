@@ -276,7 +276,8 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             isDuck = true;
-            myAnimator.SetBool("Duck", true);
+            // myAnimator.SetBool("Duck", true);
+
             // myAnimator.SetBool("Duck", true);
             // myCollider.offset = new Vector2(0, -0.5f);
             // myCollider.size = new Vector2(1, 1.5f);
@@ -284,7 +285,8 @@ public class CharacterController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             isDuck = false;
-            myAnimator.SetBool("Duck", false);
+            // myAnimator.SetBool("Duck", false);
+
             // myAnimator.SetBool("Duck", false);
             // myCollider.offset = new Vector2(0, 0);
             // myCollider.size = new Vector2(1, 2);
@@ -311,6 +313,15 @@ public class CharacterController : MonoBehaviour
         {
             myAnimator.SetBool("JumpDown", true);
             myAnimator.SetBool("Idle", true);
+        }
+
+        if (isDuck)
+        {
+            myAnimator.SetBool("Duck", true);
+        }
+        else
+        {
+            myAnimator.SetBool("Duck", false);
         }
 
         if (isHurt)
