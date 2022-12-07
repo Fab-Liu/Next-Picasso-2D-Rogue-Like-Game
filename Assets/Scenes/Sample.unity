@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 68265463}
   - component: {fileID: 68265466}
   - component: {fileID: 68265465}
+  - component: {fileID: 68265467}
   m_Layer: 6
   m_Name: shell_monster
   m_TagString: shell_monster
@@ -322,6 +323,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &68265467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68265461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a184c499535411a98fc59814531b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCollider: {fileID: 68265465}
+  Shell_time: 5
+  animator: {fileID: 68265463}
 --- !u!4 &68796388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
