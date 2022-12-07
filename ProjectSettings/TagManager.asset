@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Decoration
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
+  - Item
+  - Trigger
   - 
   - 
   - 
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 19857321
+    locked: 0
+  - name: Item
+    uniqueID: 3623207807
     locked: 0
