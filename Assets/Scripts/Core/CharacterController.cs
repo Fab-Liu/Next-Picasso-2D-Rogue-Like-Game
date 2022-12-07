@@ -111,7 +111,7 @@ public class CharacterController : MonoBehaviour
         speed = 450.0f;
         walkSpeed = 450.0f;
         runSpeed = 800.0f;
-        jumpForce = 639.7f;
+        jumpForce = 850f;
 
 
         dashTime = (float)0.35;
