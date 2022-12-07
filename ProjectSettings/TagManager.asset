@@ -10,6 +10,7 @@ TagManager:
   - square
   - mosquito
   - slime
+  - beetle
   layers:
   - Default
   - TransparentFX
