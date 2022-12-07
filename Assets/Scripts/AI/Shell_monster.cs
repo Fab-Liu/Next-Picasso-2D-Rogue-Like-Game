@@ -12,11 +12,11 @@ public class Shell_monster : MonoBehaviour
     private bool isDie = false;
     private bool isLook = false;
 
-    public Collider2D myCollider;
     public float Shell_time = 5;
 
     [Header("Components")]
     [SerializeField] protected Animator animator;
+    public Collider2D myCollider;
 
 
     // Start is called before the first frame update

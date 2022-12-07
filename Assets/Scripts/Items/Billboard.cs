@@ -9,7 +9,6 @@ public class Billboard : MonoBehaviour
     public GameObject dialogbox;
     public Text dialogboxText;
     public string boardContent;
-    private bool isInBoard;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +21,7 @@ public class Billboard : MonoBehaviour
     {        
         if (myCollider2d.gameObject.CompareTag("Player"))
         {
-            isInBoard = true;
             dialogbox.SetActive(true);
-            Debug.Log("Collision");
         }
     }
 
@@ -32,9 +29,7 @@ public class Billboard : MonoBehaviour
     {
         if (myCollider2d.gameObject.CompareTag("Player"))
         {
-            isInBoard = false;
             dialogbox.SetActive(false);
-            Debug.Log("!Collision");
         }   
     }
 }

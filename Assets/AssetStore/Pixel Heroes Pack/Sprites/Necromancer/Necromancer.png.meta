@@ -321,10 +321,10 @@ TextureImporter:
       name: Necromancer_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 704
-        width: 100
-        height: 64
+        width: 58
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Necromancer_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 111
         y: 704
-        width: 100
-        height: 64
+        width: 59
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,10 +363,10 @@ TextureImporter:
       name: Necromancer_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 704
-        width: 100
-        height: 64
+        x: 210
+        y: 703
+        width: 58
+        height: 52
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,10 +384,10 @@ TextureImporter:
       name: Necromancer_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 310
         y: 704
-        width: 100
-        height: 64
+        width: 57
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,10 +405,10 @@ TextureImporter:
       name: Necromancer_4
       rect:
         serializedVersion: 2
-        x: 400
+        x: 408
         y: 704
-        width: 100
-        height: 64
+        width: 63
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: Necromancer_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 640
-        width: 100
-        height: 64
+        width: 62
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,10 +447,10 @@ TextureImporter:
       name: Necromancer_6
       rect:
         serializedVersion: 2
-        x: 100
+        x: 109
         y: 640
-        width: 100
-        height: 64
+        width: 58
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,10 +468,10 @@ TextureImporter:
       name: Necromancer_7
       rect:
         serializedVersion: 2
-        x: 200
-        y: 640
-        width: 100
-        height: 64
+        x: 206
+        y: 641
+        width: 61
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,10 +489,10 @@ TextureImporter:
       name: Necromancer_8
       rect:
         serializedVersion: 2
-        x: 300
-        y: 640
-        width: 100
-        height: 64
+        x: 308
+        y: 641
+        width: 61
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,10 +510,10 @@ TextureImporter:
       name: Necromancer_9
       rect:
         serializedVersion: 2
-        x: 400
+        x: 409
         y: 640
-        width: 100
-        height: 64
+        width: 61
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,10 +531,10 @@ TextureImporter:
       name: Necromancer_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 576
-        width: 100
-        height: 64
+        width: 61
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,10 +552,10 @@ TextureImporter:
       name: Necromancer_11
       rect:
         serializedVersion: 2
-        x: 100
-        y: 576
-        width: 100
-        height: 64
+        x: 105
+        y: 578
+        width: 66
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,10 +573,10 @@ TextureImporter:
       name: Necromancer_12
       rect:
         serializedVersion: 2
-        x: 200
-        y: 576
-        width: 100
-        height: 64
+        x: 202
+        y: 577
+        width: 68
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,9 +595,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 576
-        width: 100
-        height: 64
+        y: 577
+        width: 68
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,9 +616,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 576
-        width: 100
-        height: 64
+        y: 577
+        width: 68
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,10 +636,10 @@ TextureImporter:
       name: Necromancer_15
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 512
-        width: 100
-        height: 64
+        width: 66
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,8 +659,8 @@ TextureImporter:
         serializedVersion: 2
         x: 100
         y: 512
-        width: 100
-        height: 64
+        width: 68
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,8 +680,8 @@ TextureImporter:
         serializedVersion: 2
         x: 200
         y: 512
-        width: 100
-        height: 64
+        width: 70
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,8 +701,8 @@ TextureImporter:
         serializedVersion: 2
         x: 300
         y: 512
-        width: 100
-        height: 64
+        width: 70
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,10 +720,10 @@ TextureImporter:
       name: Necromancer_19
       rect:
         serializedVersion: 2
-        x: 400
+        x: 410
         y: 512
-        width: 100
-        height: 64
+        width: 60
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,10 +741,10 @@ TextureImporter:
       name: Necromancer_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 448
-        width: 100
-        height: 64
+        width: 61
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,10 +762,10 @@ TextureImporter:
       name: Necromancer_21
       rect:
         serializedVersion: 2
-        x: 100
+        x: 108
         y: 448
-        width: 100
-        height: 64
+        width: 61
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,9 +783,9 @@ TextureImporter:
       name: Necromancer_22
       rect:
         serializedVersion: 2
-        x: 200
+        x: 207
         y: 448
-        width: 100
+        width: 62
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Necromancer_23
       rect:
         serializedVersion: 2
-        x: 300
+        x: 306
         y: 448
-        width: 100
-        height: 64
+        width: 65
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -825,10 +825,10 @@ TextureImporter:
       name: Necromancer_24
       rect:
         serializedVersion: 2
-        x: 400
-        y: 448
-        width: 100
-        height: 64
+        x: 404
+        y: 447
+        width: 67
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,10 +846,10 @@ TextureImporter:
       name: Necromancer_25
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 384
-        width: 100
-        height: 64
+        width: 70
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,10 +867,10 @@ TextureImporter:
       name: Necromancer_26
       rect:
         serializedVersion: 2
-        x: 100
+        x: 104
         y: 384
-        width: 100
-        height: 64
+        width: 69
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,10 +888,10 @@ TextureImporter:
       name: Necromancer_27
       rect:
         serializedVersion: 2
-        x: 200
+        x: 209
         y: 384
-        width: 100
-        height: 64
+        width: 66
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -909,10 +909,10 @@ TextureImporter:
       name: Necromancer_28
       rect:
         serializedVersion: 2
-        x: 300
+        x: 307
         y: 384
-        width: 100
-        height: 64
+        width: 69
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -930,10 +930,10 @@ TextureImporter:
       name: Necromancer_29
       rect:
         serializedVersion: 2
-        x: 400
+        x: 407
         y: 384
-        width: 100
-        height: 64
+        width: 69
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,10 +951,10 @@ TextureImporter:
       name: Necromancer_30
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 320
-        width: 100
-        height: 64
+        width: 69
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,10 +972,10 @@ TextureImporter:
       name: Necromancer_31
       rect:
         serializedVersion: 2
-        x: 100
+        x: 107
         y: 320
-        width: 100
-        height: 64
+        width: 69
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -993,10 +993,10 @@ TextureImporter:
       name: Necromancer_32
       rect:
         serializedVersion: 2
-        x: 200
+        x: 207
         y: 320
-        width: 100
-        height: 64
+        width: 70
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,10 +1014,10 @@ TextureImporter:
       name: Necromancer_33
       rect:
         serializedVersion: 2
-        x: 300
+        x: 311
         y: 320
-        width: 100
-        height: 64
+        width: 59
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1035,10 +1035,10 @@ TextureImporter:
       name: Necromancer_34
       rect:
         serializedVersion: 2
-        x: 400
+        x: 410
         y: 320
-        width: 100
-        height: 64
+        width: 61
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,10 +1056,10 @@ TextureImporter:
       name: Necromancer_35
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 100
-        height: 64
+        x: 4
+        y: 257
+        width: 66
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,10 +1077,10 @@ TextureImporter:
       name: Necromancer_36
       rect:
         serializedVersion: 2
-        x: 100
+        x: 106
         y: 256
-        width: 100
-        height: 64
+        width: 67
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,10 +1098,10 @@ TextureImporter:
       name: Necromancer_37
       rect:
         serializedVersion: 2
-        x: 200
-        y: 256
-        width: 100
-        height: 64
+        x: 213
+        y: 257
+        width: 58
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1119,9 +1119,9 @@ TextureImporter:
       name: Necromancer_38
       rect:
         serializedVersion: 2
-        x: 300
+        x: 310
         y: 256
-        width: 100
+        width: 60
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1140,9 +1140,9 @@ TextureImporter:
       name: Necromancer_39
       rect:
         serializedVersion: 2
-        x: 400
+        x: 406
         y: 256
-        width: 100
+        width: 63
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1161,10 +1161,10 @@ TextureImporter:
       name: Necromancer_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 100
-        height: 64
+        x: 13
+        y: 194
+        width: 59
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1182,10 +1182,10 @@ TextureImporter:
       name: Necromancer_41
       rect:
         serializedVersion: 2
-        x: 100
-        y: 192
-        width: 100
-        height: 64
+        x: 112
+        y: 193
+        width: 59
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,10 +1203,10 @@ TextureImporter:
       name: Necromancer_42
       rect:
         serializedVersion: 2
-        x: 200
-        y: 192
-        width: 100
-        height: 64
+        x: 214
+        y: 193
+        width: 57
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1224,10 +1224,10 @@ TextureImporter:
       name: Necromancer_43
       rect:
         serializedVersion: 2
-        x: 300
-        y: 192
-        width: 100
-        height: 64
+        x: 313
+        y: 194
+        width: 58
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,10 +1245,10 @@ TextureImporter:
       name: Necromancer_44
       rect:
         serializedVersion: 2
-        x: 400
+        x: 414
         y: 192
-        width: 100
-        height: 64
+        width: 55
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,10 +1266,10 @@ TextureImporter:
       name: Necromancer_45
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 100
-        height: 64
+        x: 15
+        y: 130
+        width: 58
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1287,10 +1287,10 @@ TextureImporter:
       name: Necromancer_46
       rect:
         serializedVersion: 2
-        x: 100
-        y: 128
-        width: 100
-        height: 64
+        x: 112
+        y: 130
+        width: 60
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1308,10 +1308,10 @@ TextureImporter:
       name: Necromancer_47
       rect:
         serializedVersion: 2
-        x: 200
-        y: 128
-        width: 100
-        height: 64
+        x: 210
+        y: 130
+        width: 61
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1329,10 +1329,10 @@ TextureImporter:
       name: Necromancer_48
       rect:
         serializedVersion: 2
-        x: 300
-        y: 128
-        width: 100
-        height: 64
+        x: 309
+        y: 130
+        width: 62
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1350,10 +1350,10 @@ TextureImporter:
       name: Necromancer_49
       rect:
         serializedVersion: 2
-        x: 400
-        y: 128
-        width: 100
-        height: 64
+        x: 406
+        y: 129
+        width: 64
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1371,10 +1371,10 @@ TextureImporter:
       name: Necromancer_50
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 64
-        width: 100
-        height: 64
+        width: 63
+        height: 54
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1392,10 +1392,10 @@ TextureImporter:
       name: Necromancer_51
       rect:
         serializedVersion: 2
-        x: 100
+        x: 103
         y: 64
-        width: 100
-        height: 64
+        width: 64
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1413,10 +1413,10 @@ TextureImporter:
       name: Necromancer_52
       rect:
         serializedVersion: 2
-        x: 200
+        x: 202
         y: 64
-        width: 100
-        height: 64
+        width: 66
+        height: 53
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1435,9 +1435,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 64
-        width: 100
-        height: 64
+        y: 65
+        width: 68
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1455,10 +1455,10 @@ TextureImporter:
       name: Necromancer_54
       rect:
         serializedVersion: 2
-        x: 400
-        y: 64
-        width: 100
-        height: 64
+        x: 398
+        y: 65
+        width: 72
+        height: 54
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1476,10 +1476,10 @@ TextureImporter:
       name: Necromancer_55
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 64
+        x: 4
+        y: 2
+        width: 65
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1497,10 +1497,10 @@ TextureImporter:
       name: Necromancer_56
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 64
+        x: 112
+        y: 2
+        width: 57
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1518,10 +1518,10 @@ TextureImporter:
       name: Necromancer_57
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 64
+        x: 205
+        y: 3
+        width: 61
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1539,10 +1539,10 @@ TextureImporter:
       name: Necromancer_58
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 64
+        x: 304
+        y: 2
+        width: 64
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
