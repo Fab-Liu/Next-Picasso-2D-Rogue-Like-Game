@@ -1282,6 +1282,7 @@ GameObject:
   - component: {fileID: 368679167}
   - component: {fileID: 368679166}
   - component: {fileID: 368679169}
+  - component: {fileID: 368679170}
   m_Layer: 0
   m_Name: wizard
   m_TagString: Untagged
@@ -1297,10 +1298,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368679164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.11, y: -0.35, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 22.83, y: -6.21, z: 0}
+  m_LocalScale: {x: -2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 920928618}
   m_Father: {fileID: 963699810}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1376,7 +1378,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &368679168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1423,6 +1425,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &368679170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368679164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6e985377cd44b968f3dce6f37b755b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPerfabs: {fileID: 5180413038454750539, guid: c4cdcc848adf54ae49d47268c76b643d, type: 3}
+  BulletPoint: {fileID: 920928618}
+  isSkill: 0
+  animator: {fileID: 368679169}
+  myCollider: {fileID: 368679168}
 --- !u!1 &371721452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,6 +1990,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8689178465016047481, guid: 62667978e9c47714784bedce229bb4a5, type: 3}
   m_PrefabInstance: {fileID: 1781899438267089399}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &920928617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920928618}
+  m_Layer: 0
+  m_Name: bulletPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920928618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920928617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.11, y: 0.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 368679165}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &930419430
 PrefabInstance:
   m_ObjectHideFlags: 0
