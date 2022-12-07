@@ -8,6 +8,8 @@ TagManager:
   - Item
   - shell_monster
   - square
+  - mosquito
+  - slime
   layers:
   - Default
   - TransparentFX
