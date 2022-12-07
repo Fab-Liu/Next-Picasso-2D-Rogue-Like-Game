@@ -36,7 +36,7 @@ public class CharacterController : MonoBehaviour
     public float speed = 450.0f;
     public float walkSpeed = 450.0f;
     public float runSpeed = 800.0f;
-    public float jumpForce = 639.7f;
+    public float jumpForce = 850f;
     public float dashSpeed = 1500.0f;
 
 
