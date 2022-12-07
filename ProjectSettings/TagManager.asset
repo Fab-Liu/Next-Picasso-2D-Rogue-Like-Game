@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Decoration
   - Item
+  - shell_monster
   layers:
   - Default
   - TransparentFX
