@@ -24,7 +24,6 @@ public class Billboard : MonoBehaviour
         {
             isInBoard = true;
             dialogbox.SetActive(true);
-            Debug.Log("Collision");
         }
     }
 
@@ -34,7 +33,6 @@ public class Billboard : MonoBehaviour
         {
             isInBoard = false;
             dialogbox.SetActive(false);
-            Debug.Log("!Collision");
         }   
     }
 }
