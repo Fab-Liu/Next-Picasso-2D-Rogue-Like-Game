@@ -16,6 +16,9 @@ public class wizard : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
     private bool isShoot = false;
+    public bool isAngry = false;
+    private bool isHurt = false;
+    private bool isAttack = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,18 +28,51 @@ public class wizard : MonoBehaviour
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         animator.SetBool("IsDie", false);
+        animator.SetBool("IsHurt", false);
+        animator.SetBool("IsAttack", false);
+        animator.SetBool("IsSkill", false);
+        animator.SetBool("IsIdle", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isSkill && !isShoot){
-            shoot();
-            isShoot = true;
-        }
+        if(isAngry){
 
-        if(!isSkill)
-            isShoot = false;
+            if(isSkill && Time.time - timer > 0.9){
+                animator.SetBool("IsSkill", false);
+                isSkill = false;
+                isShoot = false;
+                timer = Time.time;
+            }
+
+            if(isSkill && !isShoot && Time.time - timer > 0.4){
+                shoot();
+                isShoot = true;
+            }
+
+            if(!isSkill && Time.time - timer > 2){
+                timer = Time.time;
+                animator.SetBool("IsSkill", true);
+                isSkill = true;
+                isShoot = false;
+            }
+                
+
+
+        }else{
+            if(Time.time - timer > 3 && !isAttack){
+                animator.SetBool("IsAttack", true);
+                isAttack = true;
+                timer = Time.time;
+            }
+
+            if(Time.time - timer > 0.9 && isAttack){
+                animator.SetBool("IsAttack", false);
+                isAttack = false;
+                timer = Time.time;
+            }
+        }
 
     }
 
