@@ -1440,7 +1440,7 @@ GameObject:
   - component: {fileID: 368679166}
   - component: {fileID: 368679169}
   - component: {fileID: 368679170}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,7 +1903,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.68123114}
+  m_Offset: {x: 0.36582804, y: 0.77666473}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.295}
@@ -1914,7 +1914,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4461539, y: 3.323077}
+  m_Size: {x: 2.714498, y: 2.241498}
   m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
@@ -2400,7 +2400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920928618}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: bulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
