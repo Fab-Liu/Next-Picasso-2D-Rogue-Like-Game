@@ -225,10 +225,10 @@ TextureImporter:
       name: Warlock_Attack_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 23
         y: 400
-        width: 100
-        height: 80
+        width: 52
+        height: 53
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: Warlock_Attack_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 126
         y: 400
-        width: 100
-        height: 80
+        width: 43
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: Warlock_Attack_2
       rect:
         serializedVersion: 2
-        x: 200
+        x: 232
         y: 400
-        width: 100
-        height: 80
+        width: 32
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: Warlock_Attack_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 329
         y: 400
-        width: 100
-        height: 80
+        width: 37
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Warlock_Attack_4
       rect:
         serializedVersion: 2
-        x: 400
+        x: 429
         y: 400
-        width: 100
-        height: 80
+        width: 38
+        height: 69
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: Warlock_Attack_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 29
         y: 320
-        width: 100
-        height: 80
+        width: 51
+        height: 67
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: Warlock_Attack_6
       rect:
         serializedVersion: 2
-        x: 100
+        x: 122
         y: 320
-        width: 100
-        height: 80
+        width: 68
+        height: 54
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: Warlock_Attack_7
       rect:
         serializedVersion: 2
-        x: 200
+        x: 224
         y: 320
-        width: 100
-        height: 80
+        width: 76
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +393,10 @@ TextureImporter:
       name: Warlock_Attack_8
       rect:
         serializedVersion: 2
-        x: 300
+        x: 324
         y: 320
-        width: 100
-        height: 80
+        width: 76
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: Warlock_Attack_9
       rect:
         serializedVersion: 2
-        x: 400
+        x: 422
         y: 320
-        width: 100
-        height: 80
+        width: 78
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: Warlock_Attack_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 23
         y: 240
-        width: 100
-        height: 80
+        width: 77
+        height: 54
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Warlock_Attack_11
       rect:
         serializedVersion: 2
-        x: 100
+        x: 122
         y: 240
-        width: 100
-        height: 80
+        width: 78
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: Warlock_Attack_12
       rect:
         serializedVersion: 2
-        x: 200
+        x: 223
         y: 240
-        width: 100
-        height: 80
+        width: 52
+        height: 55
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,10 +498,10 @@ TextureImporter:
       name: Warlock_Attack_13
       rect:
         serializedVersion: 2
-        x: 0
+        x: 24
         y: 160
-        width: 100
-        height: 80
+        width: 51
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -519,10 +519,10 @@ TextureImporter:
       name: Warlock_Attack_14
       rect:
         serializedVersion: 2
-        x: 100
+        x: 129
         y: 160
-        width: 100
-        height: 80
+        width: 38
+        height: 65
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Warlock_Attack_15
       rect:
         serializedVersion: 2
-        x: 200
+        x: 233
         y: 160
-        width: 100
-        height: 80
+        width: 33
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,10 +561,10 @@ TextureImporter:
       name: Warlock_Attack_16
       rect:
         serializedVersion: 2
-        x: 300
+        x: 333
         y: 160
-        width: 100
-        height: 80
+        width: 36
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: Warlock_Attack_17
       rect:
         serializedVersion: 2
-        x: 400
+        x: 429
         y: 160
-        width: 100
-        height: 80
+        width: 36
+        height: 74
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +603,10 @@ TextureImporter:
       name: Warlock_Attack_18
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 80
-        width: 100
-        height: 80
+        width: 33
+        height: 75
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,10 +624,10 @@ TextureImporter:
       name: Warlock_Attack_19
       rect:
         serializedVersion: 2
-        x: 100
+        x: 131
         y: 80
-        width: 100
-        height: 80
+        width: 34
+        height: 73
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -645,10 +645,10 @@ TextureImporter:
       name: Warlock_Attack_20
       rect:
         serializedVersion: 2
-        x: 200
+        x: 236
         y: 80
-        width: 100
-        height: 80
+        width: 31
+        height: 73
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,10 +666,10 @@ TextureImporter:
       name: Warlock_Attack_21
       rect:
         serializedVersion: 2
-        x: 300
+        x: 323
         y: 80
-        width: 100
-        height: 80
+        width: 64
+        height: 68
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -687,10 +687,10 @@ TextureImporter:
       name: Warlock_Attack_22
       rect:
         serializedVersion: 2
-        x: 400
+        x: 412
         y: 80
-        width: 100
-        height: 80
+        width: 79
+        height: 72
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -708,10 +708,10 @@ TextureImporter:
       name: Warlock_Attack_23
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 0
-        width: 100
-        height: 80
+        width: 78
+        height: 72
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -729,10 +729,10 @@ TextureImporter:
       name: Warlock_Attack_24
       rect:
         serializedVersion: 2
-        x: 100
+        x: 110
         y: 0
-        width: 100
-        height: 80
+        width: 81
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,10 +750,10 @@ TextureImporter:
       name: Warlock_Attack_25
       rect:
         serializedVersion: 2
-        x: 200
+        x: 214
         y: 0
-        width: 100
-        height: 80
+        width: 80
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -771,10 +771,10 @@ TextureImporter:
       name: Warlock_Attack_26
       rect:
         serializedVersion: 2
-        x: 300
+        x: 320
         y: 0
-        width: 100
-        height: 80
+        width: 57
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
