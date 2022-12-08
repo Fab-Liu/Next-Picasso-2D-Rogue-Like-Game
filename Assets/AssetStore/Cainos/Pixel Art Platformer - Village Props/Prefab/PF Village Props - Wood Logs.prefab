@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 982056747370159615}
   - component: {fileID: 982056747370159614}
   - component: {fileID: 1792783879}
-  - component: {fileID: 1792783880}
+  - component: {fileID: 4162875592824266935}
   m_Layer: 3
   m_Name: PF Village Props - Wood Logs
   m_TagString: Untagged
@@ -107,8 +107,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
---- !u!61 &1792783880
-BoxCollider2D:
+--- !u!60 &4162875592824266935
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.081531525, y: 0.70123065}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -130,6 +130,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.174797, y: 1.3418424}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5395231, y: 1.4803085}
+      - {x: -1.01338, y: 1.4717407}
+      - {x: -1.40625, y: 0.7663727}
+      - {x: -1.40625, y: 0}
+      - {x: 1.40625, y: 0.014877319}
+      - {x: 1.389636, y: 0.39110565}
+      - {x: 1.1979723, y: 0.78424835}
+      - {x: 0.8125, y: 1.4803085}
