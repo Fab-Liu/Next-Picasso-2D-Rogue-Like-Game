@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5180413038454750549}
   - component: {fileID: 5180413038454750548}
   - component: {fileID: 5916905759479684081}
-  - component: {fileID: 6723744720706591130}
+  - component: {fileID: -7588524051296816269}
   m_Layer: 0
   m_Name: wizard_bullet
   m_TagString: Untagged
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6723744720706591130
+--- !u!114 &-7588524051296816269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,5 +121,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 5180413038454750548}
   BulletCoolDown: 0.5
-  BulletSpeed: 5
-  BulletPoint: {fileID: 2778634631099456623, guid: 732d4d26b9d81490ea3dedf46fc606d6, type: 3}
+  BulletSpeed: 2

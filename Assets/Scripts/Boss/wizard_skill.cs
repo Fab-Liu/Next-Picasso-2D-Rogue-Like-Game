@@ -5,25 +5,32 @@ using UnityEngine;
 public class wizard_skill : MonoBehaviour
 {
     public Rigidbody2D rbody;
-
-    [Header("Bullet Speed")]
-    public float BulletCoolDown = 0.5f;
-    public float BulletSpeed = 20;
     public Transform BulletPoint;
 
+    private float timer = 0;
+
+
     void Start(){
-        rbody.velocity = -1 * transform.right * BulletSpeed * 10;
+        Debug.Log("this is created");
+        timer = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(BulletPoint.position.x - rbody.position.x > 4)
+        if(Time.time - timer > 0.4)
             Destroy(this.gameObject);
+
+        if(this.gameObject.transform.localScale.x > 0)
+            transform.Translate(Vector2.right*60f*Time.deltaTime);
+        else
+            transform.Translate(Vector2.left*60f*Time.deltaTime);
     }
+
 
     // 碰撞检测
     void OnCollisionEnter2D(Collision2D other){
         Destroy(this.gameObject);
     }
+
 }
