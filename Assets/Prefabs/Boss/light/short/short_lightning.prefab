@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6702694488380909648}
   - component: {fileID: 6702694488380909649}
   - component: {fileID: 5790406414710288339}
+  - component: {fileID: 5531528212937152446}
   m_Layer: 0
   m_Name: short_lightning
   m_TagString: Untagged
@@ -127,3 +128,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5531528212937152446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702694488380909654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a0f94ee7816466eae8097a276d696e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbody: {fileID: 5790406414710288339}
+  Point: {fileID: 6999151231048643740, guid: 1265b23a8ac90411ea19d3a6d4c2ff78, type: 3}
