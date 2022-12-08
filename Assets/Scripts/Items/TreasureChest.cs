@@ -9,12 +9,14 @@ public class TreasureChest : MonoBehaviour
     private bool status;  //Open (true) or close (false)
     public GameObject treasure;
     public float genTime;  //Delay time
+    public bool isGen;  //Whether treasure has been generated
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         status = false;
+        isGen = false;
     }
 
     // Update is called once per frame
@@ -26,7 +28,10 @@ public class TreasureChest : MonoBehaviour
             {
                 anim.SetTrigger("Open");
                 status = true;
-                Invoke("GenTreasure", genTime);
+                if(!isGen)
+                {
+                    Invoke("GenTreasure", genTime);
+                }
             }
         }
     }
@@ -52,5 +57,6 @@ public class TreasureChest : MonoBehaviour
     void GenTreasure()
     {
         Instantiate(treasure, transform.position, Quaternion.identity);
+        isGen = true;
     }
 }
