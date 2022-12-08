@@ -77,13 +77,14 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ParameterInit();
-
         myAnimator = GetComponent<Animator>();
         mySoundSource = GetComponent<AudioSource>();
 
         myCollider = GetComponent<Collider2D>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        CharacterInit();
+        ParameterInit();
     }
 
     // Update is called once per frame
@@ -104,6 +105,20 @@ public class CharacterController : MonoBehaviour
         CharacterHurtCheck();
         CharacterIdleCheck();
         CharacterAnimation();
+    }
+
+    public void CharacterInit()
+    {
+        if (Globe.characterIndex == 0)
+        {
+            myAnimator.runtimeAnimatorController = Resources.Load("Animation/CharacterAstro") as RuntimeAnimatorController;
+        }
+
+        if (Globe.characterIndex == 1)
+        {
+            // 切换animator
+            myAnimator.runtimeAnimatorController = Resources.Load("Animation/CharacterNinja") as RuntimeAnimatorController;
+        }
     }
 
     private void ParameterInit()

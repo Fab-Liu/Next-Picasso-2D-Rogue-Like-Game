@@ -11,6 +11,7 @@ namespace Michsky.UI.Freebie
     public class CharacterSelectButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         [Header("CONTENT")]
+        public int buttonIndex;
         public Sprite previewIcon;
         public Sprite characterIcon;
         public string characterName = "Character";
@@ -61,7 +62,15 @@ namespace Michsky.UI.Freebie
             onCharacterSelection.Invoke();
 
             if (enableButtonSounds == true && useSelectSound == true)
+            {
                 soundSource.PlayOneShot(selectSound);
+
+                // 切换到下一个场景
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Sample");
+                Globe.characterIndex = buttonIndex;
+                Debug.Log("Globe.characterIndex = " + Globe.characterIndex);
+            }
+
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -103,8 +112,8 @@ namespace Michsky.UI.Freebie
                 characterManager.UpdateInfo();
             }
 
-            // 切换到下一个场景
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Sample");
+
+
         }
     }
 }
