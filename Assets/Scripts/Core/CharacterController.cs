@@ -123,9 +123,9 @@ public class CharacterController : MonoBehaviour
 
     private void ParameterInit()
     {
-        speed = 450.0f;
-        walkSpeed = 450.0f;
-        runSpeed = 800.0f;
+        speed = 400.0f;
+        walkSpeed = 400.0f;
+        runSpeed = 650.0f;
         jumpForce = 980.0f;
 
 
