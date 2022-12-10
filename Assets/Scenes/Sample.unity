@@ -26336,6 +26336,63 @@ PrefabInstance:
       objectReference: {fileID: 1386662145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
+--- !u!1001 &7737042925206104826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.108796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.051215
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046870, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737042924602046877, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
+      propertyPath: m_Name
+      value: SkullDoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e34d2575be79c54bbca13d500c1d952, type: 3}
 --- !u!1001 &8077132783667530209
 PrefabInstance:
   m_ObjectHideFlags: 0
