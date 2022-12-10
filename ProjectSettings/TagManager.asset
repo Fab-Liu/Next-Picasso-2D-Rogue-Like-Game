@@ -12,6 +12,7 @@ TagManager:
   - slime
   - beetle
   - wizard
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Trigger
   - weapon
   - enemy
-  - 
+  - Trap
   - 
   - 
   - 
