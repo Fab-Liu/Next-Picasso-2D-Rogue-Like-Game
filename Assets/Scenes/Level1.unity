@@ -34479,7 +34479,7 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
-  dashImage: {fileID: 1989292100}
+  skillImage: {fileID: 1989292100}
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 2425143934359690255, guid: 3fdbfaf7fb73205439b49b19a7b68190, type: 3}
 --- !u!114 &1043870406
