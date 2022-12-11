@@ -4926,6 +4926,7 @@ MonoBehaviour:
   isSkill: 0
   healthBar: {fileID: 642590534}
   bar: {fileID: 1936989741}
+  blood: {fileID: 7955170164794841538, guid: dd6bc1193bde2498b9e2e877841211c3, type: 3}
 --- !u!95 &642590530
 Animator:
   serializedVersion: 4
