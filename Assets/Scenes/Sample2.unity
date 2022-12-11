@@ -29129,6 +29129,7 @@ MonoBehaviour:
   myCollider: {fileID: 1515648782}
   isSkill: 0
   healthBar: {fileID: 1515648785}
+  bar: {fileID: 127249489}
 --- !u!50 &1515648781
 Rigidbody2D:
   serializedVersion: 4

@@ -28,6 +28,7 @@ public class storm_mage : MonoBehaviour
     private float IsFaceRight = 0;
 
     public HealthBar healthBar;
+    public GameObject bar;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,8 @@ public class storm_mage : MonoBehaviour
                     isMove = true;
                     animator.SetBool("IsMove", true);
                     timer = Time.time;
+                    Invoke("test",0.2f);
+                    //bar.SetActive(true);
                 }
 
                 if(!isLight && Time.time - timer > 0.5){
@@ -78,6 +81,8 @@ public class storm_mage : MonoBehaviour
                     isMove = true;
                     animator.SetBool("IsMove", true);
                     timer = Time.time;
+                    Invoke("test",0.2f);
+                    //bar.SetActive(true);
                 }
             }
         }
@@ -91,6 +96,7 @@ public class storm_mage : MonoBehaviour
         if(!isMove && !isSkill && Time.time - timer > 1){
             isSkill = true;
             animator.SetBool("IsSkill", true);
+            bar.SetActive(false);
             timer = Time.time;
         } 
 
@@ -119,6 +125,10 @@ public class storm_mage : MonoBehaviour
                 IsFaceRight = 1;
             }
         }
+    }
+
+    void test() {
+        bar.SetActive(true);
     }
 
     void light(){
