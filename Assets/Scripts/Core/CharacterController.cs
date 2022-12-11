@@ -489,7 +489,7 @@ public class CharacterController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2 ){
             Magic2();
         }
-        if(Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic2 + MagicCoolDown2 ){
+        if(Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3 ){
             Magic3();
         }
         
