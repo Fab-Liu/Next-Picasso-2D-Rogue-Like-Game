@@ -17,6 +17,10 @@ public class beetle : MonoBehaviour
 
     private bool isDead = false;
 
+    private float keyTimer = 0;
+
+    public GameObject blood;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +39,19 @@ public class beetle : MonoBehaviour
     void Update()
     {
         if(isDead){
-            animator.SetBool("IsDie", true);
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            if(Time.time - timer > 0.45)
+                Destroy(this.gameObject);
         }else{
             movement();
+        }
+
+        if(Input.GetKeyDown(KeyCode.J)){
+            keyTimer = Time.time;
+        }
+
+        if(Time.time - keyTimer > 1){
+            keyTimer = 0;
         }
     }
 
@@ -55,6 +69,27 @@ public class beetle : MonoBehaviour
                 transform.localScale = new Vector3(-3,3,1);
                 IsFaceRight = 1;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isDead = true;
+            animator.SetBool("IsDie", true);
+            timer = Time.time;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isDead = true;
+            animator.SetBool("IsDie", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
         }
     }
 }

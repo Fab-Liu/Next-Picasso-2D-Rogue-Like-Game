@@ -17,6 +17,9 @@ public class Shell_monster : MonoBehaviour
 
     private float keyTimer = 0;
 
+    public GameObject blood;
+
+
 
     [Header("Components")]
     [SerializeField] protected Animator animator;
@@ -37,6 +40,10 @@ public class Shell_monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isDie && Time.time - timer > 0.2){
+            Destroy(this.gameObject);
+        }
+        
         if(Time.time - shellTime > Shell_time && !isLook)
         {
             animator.SetBool("IsLook", true);
@@ -50,9 +57,7 @@ public class Shell_monster : MonoBehaviour
             shellTime = Time.time;
         }
 
-        if(isDie && Time.time - timer > 0.2){
-            Destroy(this.gameObject);
-        }
+        
 
         if(Input.GetKeyDown(KeyCode.J)){
             keyTimer = Time.time;
@@ -66,7 +71,7 @@ public class Shell_monster : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if(isLook && keyTimer != 0){
-            Debug.Log("trigger is working(shell)");
+            //Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
             timer = Time.time;
@@ -76,9 +81,10 @@ public class Shell_monster : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(isLook && keyTimer != 0){
-            Debug.Log("trigger is working(shell)");
+            //Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
         }
     }
