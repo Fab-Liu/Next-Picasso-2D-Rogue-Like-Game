@@ -50,7 +50,7 @@ public class Shell_monster : MonoBehaviour
             shellTime = Time.time;
         }
 
-        if(isDie && Time.time - timer > 0.4){
+        if(isDie && Time.time - timer > 0.2){
             Destroy(this.gameObject);
         }
 
@@ -72,6 +72,17 @@ public class Shell_monster : MonoBehaviour
             timer = Time.time;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(isLook && keyTimer != 0){
+            Debug.Log("trigger is working(shell)");
+            isDie = true;
+            animator.SetBool("IsDead", true);
+            timer = Time.time;
+        }
+    }
+
 
     // private void OnCollisionEnter2D(Collision2D collision)
     // {
