@@ -92,6 +92,8 @@ public class CharacterController : MonoBehaviour
     
     [Header("Magic Parameter")]
     public float MagicCoolDown1 = 2.0f;
+    public float MagicCoolDown2 = 1.0f;
+    public float MagicCoolDown3 = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -474,12 +476,23 @@ public class CharacterController : MonoBehaviour
 
     // 技能相关
     private float LastMagic1 = 0;
+    private float LastMagic2 = 0;
+    private float LastMagic3 = 0;
     public GameObject MagicPrefeb1; 
+    public GameObject MagicPrefeb2;
+    public GameObject MagicPrefeb3;
 
     public void ReleaseMagic(){
         if(Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1 ){
             Magic1();
         }
+        if(Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2 ){
+            Magic2();
+        }
+        if(Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3 ){
+            Magic3();
+        }
+        
     }
 
     public void Magic1(){
@@ -489,10 +502,38 @@ public class CharacterController : MonoBehaviour
             MagicController mc = magic1.GetComponent<MagicController>();
             if(mc!=null){
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
-                Debug.Log("魔法发射了");
+                Debug.Log("魔法1发射了");
             }
 
             LastMagic1 = Time.time;
+        }
+    }
+
+    public void Magic2(){
+        if(MagicPrefeb2 != null){
+            GameObject magic2 = Instantiate(MagicPrefeb2, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+
+            MagicController mc = magic2.GetComponent<MagicController>();
+            if(mc!=null){
+                mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                Debug.Log("魔法2发射了");
+            }
+
+            LastMagic2 = Time.time;
+        }
+    }
+
+    public void Magic3(){
+        if(MagicPrefeb3 != null){
+            GameObject magic3 = Instantiate(MagicPrefeb3, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+
+            MagicController mc = magic3.GetComponent<MagicController>();
+            if(mc!=null){
+                mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                Debug.Log("魔法3发射了");
+            }
+
+            LastMagic3 = Time.time;
         }
     }
 
