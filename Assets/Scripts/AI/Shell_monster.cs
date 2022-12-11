@@ -13,6 +13,8 @@ public class Shell_monster : MonoBehaviour
     private bool isLook = false;
 
     public float Shell_time = 5;
+    private float timer = 0;
+
 
     [Header("Components")]
     [SerializeField] protected Animator animator;
@@ -45,5 +47,30 @@ public class Shell_monster : MonoBehaviour
             isLook = false;
             shellTime = Time.time;
         }
+
+        if(isDie && Time.time - timer > 0.2){
+            Destroy(this.gameObject);
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(isLook){
+            Debug.Log("trigger is working(shell)");
+            isDie = true;
+            animator.SetBool("IsDead", true);
+            timer = Time.time;
+        }
+    }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     Debug.Log("collision is working");
+    //     if (collision.gameObject.tag == "Bullet")
+    //     {
+    //         animator.SetBool("IsDeath", true);
+    //         dieTime = Time.time;
+    //     }
+
+    // }
 }
