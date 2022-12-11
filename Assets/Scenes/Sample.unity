@@ -937,7 +937,7 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
-  dashImage: {fileID: 906085151}
+  skillImage: {fileID: 0}
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 0}
 --- !u!114 &118822188
@@ -3348,8 +3348,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.671875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.15625, y: 1.34375}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.125, y: 1.34375}
     newSize: {x: 1.15625, y: 1.34375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -25413,7 +25413,7 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
-  dashImage: {fileID: 906085151}
+  skillImage: {fileID: 906085151}
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 57769559267024369, guid: 9ef506ab23950de4084adc19bad7db02, type: 3}
 --- !u!114 &1184620407
