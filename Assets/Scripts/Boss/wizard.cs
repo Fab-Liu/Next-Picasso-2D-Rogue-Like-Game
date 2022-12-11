@@ -108,6 +108,27 @@ public class wizard : MonoBehaviour
             timer = Time.time;
         }
 
+        if(Input.GetKeyDown(KeyCode.J)){
+            keyTimer = Time.time;
+        }
+
+        if(Time.time - keyTimer > 0.7){
+            keyTimer = 0;
+        }
+
+        if(isHurt && isDead)  rb.velocity = new Vector2(0, rb.velocity.y);
+
+        if(isHurt && Time.time - timer > 0.2){
+            healthBar.damage(1);
+            animator.SetBool("IsHurt", false);
+            isHurt = false;
+        }
+
+        if(isDead && Time.time - timer > 0.9){
+            Destroy(bar);
+            Destroy(this.gameObject);
+        }
+
         if(isMove)
             Movement();
         else
@@ -130,27 +151,6 @@ public class wizard : MonoBehaviour
                 BulletPoint.localScale = new Vector3(1,1,1);
                 IsFaceRight = 1;
             }
-        }
-
-        if(Input.GetKeyDown(KeyCode.J)){
-            keyTimer = Time.time;
-        }
-
-        if(Time.time - keyTimer > 0.7){
-            keyTimer = 0;
-        }
-
-        if(isHurt && isDead)  rb.velocity = new Vector2(0, rb.velocity.y);
-
-        if(isHurt && Time.time - timer > 0.2){
-            healthBar.damage(1);
-            animator.SetBool("IsHurt", false);
-            isHurt = false;
-        }
-
-        if(isDead && Time.time - timer > 0.9){
-            Destroy(bar);
-            Destroy(this.gameObject);
         }
 
         healthBar.turn(transform.position.x,transform.position.y + 2);

@@ -30,6 +30,9 @@ public class warlock : MonoBehaviour
     public HealthBar healthBar;
     public GameObject bar;
 
+    public GameObject blood;
+    private float keyTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,6 +102,33 @@ public class warlock : MonoBehaviour
         else
             rb.velocity = new Vector2(0, rb.velocity.y);
 
+            if(Input.GetKeyDown(KeyCode.J)){
+            keyTimer = Time.time;
+        }
+
+        if(Time.time - keyTimer > 0.7){
+            keyTimer = 0;
+        }
+
+        if(isHurt)  rb.velocity = new Vector2(0, rb.velocity.y);
+
+        if(isHurt && Time.time - timer > 0.2 && !isDie){
+            healthBar.damage(1);
+            animator.SetBool("IsHurt", false);
+            isHurt = false;
+        }
+
+        if(healthBar.currentHealth <= 0 && !isDie){
+            isDie = true;
+            timer = Time.time;
+            animator.SetBool("IsDie", true);
+        }
+
+        if(isDie && Time.time - timer > 0.8){
+            Destroy(bar);
+            Destroy(this.gameObject);
+        }
+
     }
 
     void Movement(){
@@ -129,5 +159,28 @@ public class warlock : MonoBehaviour
         Instantiate(g6, p6.position, p6.rotation);
         Instantiate(g7, p7.position, p7.rotation);
         Instantiate(g8, p8.position, p8.rotation);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(!isSkill && keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isHurt = true;
+            animator.SetBool("IsHurt", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(!isSkill && keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isHurt = true;
+            animator.SetBool("IsHurt", true);
+    
+            Instantiate(blood, new Vector3(this.transform.position.x - 0.5f, this.transform.position.y + 2, this.transform.position.z),this.transform.rotation);
+            timer = Time.time;
+        }
     }
 }
