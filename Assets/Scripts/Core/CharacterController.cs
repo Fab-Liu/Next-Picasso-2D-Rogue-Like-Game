@@ -474,7 +474,9 @@ public class CharacterController : MonoBehaviour
 
     // 技能相关
     private float LastMagic1 = 0;
+    private float LastMagic2 = 0;
     public GameObject MagicPrefeb1; 
+    public GameObject MagicPrefeb2;
 
     public void ReleaseMagic(){
         if(Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1 ){
@@ -489,10 +491,24 @@ public class CharacterController : MonoBehaviour
             MagicController mc = magic1.GetComponent<MagicController>();
             if(mc!=null){
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
-                Debug.Log("魔法发射了");
+                Debug.Log("魔法1发射了");
             }
 
             LastMagic1 = Time.time;
+        }
+    }
+
+    public void Magic2(){
+        if(MagicPrefeb2 != null){
+            GameObject magic1 = Instantiate(MagicPrefeb2, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+
+            MagicController mc = magic1.GetComponent<MagicController>();
+            if(mc!=null){
+                mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                Debug.Log("魔法2发射了");
+            }
+
+            LastMagic2 = Time.time;
         }
     }
 

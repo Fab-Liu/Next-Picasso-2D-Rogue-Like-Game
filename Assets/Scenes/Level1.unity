@@ -34536,7 +34536,7 @@ MonoBehaviour:
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 2425143934359690255, guid: 3fdbfaf7fb73205439b49b19a7b68190, type: 3}
   MagicCoolDown1: 2
-  MagicPrefeb1: {fileID: 7112386965376621851, guid: c78a93cc1609beb499f9b4f150c51b11, type: 3}
+  MagicPrefeb1: {fileID: 913581842794386787, guid: 5229f41dc50d33a43ad4861a67fe2fea, type: 3}
 --- !u!114 &1043870406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38505,7 +38505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 18.959381, y: 25.366821}
+  m_AnchoredPosition: {x: 18.959412, y: 25.366821}
   m_SizeDelta: {x: 52, y: 51.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1953399557
