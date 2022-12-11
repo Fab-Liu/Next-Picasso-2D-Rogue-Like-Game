@@ -2894,7 +2894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.3000002, y: -3.8}
+  m_AnchoredPosition: {x: 14.42, y: 10.86}
   m_SizeDelta: {x: 10, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300458409
@@ -29422,6 +29422,7 @@ MonoBehaviour:
   isSkill: 0
   healthBar: {fileID: 1515648785}
   bar: {fileID: 127249489}
+  blood: {fileID: 7955170164794841538, guid: dd6bc1193bde2498b9e2e877841211c3, type: 3}
 --- !u!50 &1515648781
 Rigidbody2D:
   serializedVersion: 4
@@ -29854,7 +29855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.3000002, y: -3.8}
+  m_AnchoredPosition: {x: 22.57, y: 3.85}
   m_SizeDelta: {x: 10, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694061218
@@ -30963,7 +30964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 103.4, y: 50.6}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936989743

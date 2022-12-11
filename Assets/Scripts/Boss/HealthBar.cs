@@ -32,14 +32,8 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //healthBar.position = new Vector2(healthBar.position.x, healthBar.position.y + 2);
-        //character.transform.rotation = Camera.main.transform.rotation;
         fill = currentHealth / maxHealth;
         healthBar.fillAmount = fill;
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            damage(1);
-        }
     }
 
     public float healthLevel()
