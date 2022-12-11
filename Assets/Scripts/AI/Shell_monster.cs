@@ -63,7 +63,7 @@ public class Shell_monster : MonoBehaviour
             keyTimer = Time.time;
         }
 
-        if(Time.time - keyTimer > 1){
+        if(Time.time - keyTimer > 0.7){
             keyTimer = 0;
         }
     }

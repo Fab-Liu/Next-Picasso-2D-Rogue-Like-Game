@@ -26948,7 +26948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256276490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -12.18, y: -0.36, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27093,6 +27093,7 @@ MonoBehaviour:
   leftpoint: {fileID: 1009094948}
   rightpoint: {fileID: 441331035}
   Speed: 3
+  blood: {fileID: 8526339485171640665, guid: 002728753d43946a5a40c3571a51dccd, type: 3}
 --- !u!1 &1301670228
 GameObject:
   m_ObjectHideFlags: 0
