@@ -36,8 +36,6 @@ public class Demo_GM : MonoBehaviour {
         for (int i = 0; i < UIImage.Length; i++)
         {
             UIImage[i].color = new Color(255, 255, 255);
-
-
         }
 
     }
