@@ -299,10 +299,10 @@ TextureImporter:
         serializedVersion: 2
         x: 14
         y: 386
-        width: 37
+        width: 36
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,8 +322,8 @@ TextureImporter:
         y: 386
         width: 36
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,8 +343,8 @@ TextureImporter:
         y: 386
         width: 36
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,8 +364,8 @@ TextureImporter:
         y: 386
         width: 36
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,8 +385,8 @@ TextureImporter:
         y: 386
         width: 36
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,8 +406,8 @@ TextureImporter:
         y: 386
         width: 36
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,8 +427,8 @@ TextureImporter:
         y: 386
         width: 35
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,8 +448,8 @@ TextureImporter:
         y: 386
         width: 33
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,8 +469,8 @@ TextureImporter:
         y: 322
         width: 33
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,8 +490,8 @@ TextureImporter:
         y: 322
         width: 33
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -511,8 +511,8 @@ TextureImporter:
         y: 322
         width: 33
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,8 +532,8 @@ TextureImporter:
         y: 322
         width: 33
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,8 +553,8 @@ TextureImporter:
         y: 322
         width: 35
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,8 +574,8 @@ TextureImporter:
         y: 322
         width: 36
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -591,12 +591,12 @@ TextureImporter:
       name: StormMage_14
       rect:
         serializedVersion: 2
-        x: 393
+        x: 395
         y: 322
-        width: 42
+        width: 39
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: StormMage_15
       rect:
         serializedVersion: 2
-        x: 456
+        x: 458
         y: 322
-        width: 42
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -633,12 +633,12 @@ TextureImporter:
       name: StormMage_16
       rect:
         serializedVersion: 2
-        x: 9
+        x: 10
         y: 258
-        width: 41
+        width: 40
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -655,11 +655,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 259
+        y: 260
         width: 39
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -675,12 +675,12 @@ TextureImporter:
       name: StormMage_18
       rect:
         serializedVersion: 2
-        x: 137
+        x: 138
         y: 258
-        width: 42
+        width: 40
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: StormMage_19
       rect:
         serializedVersion: 2
-        x: 201
+        x: 202
         y: 258
-        width: 41
+        width: 40
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: StormMage_20
       rect:
         serializedVersion: 2
-        x: 265
+        x: 266
         y: 258
-        width: 41
+        width: 40
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -738,12 +738,12 @@ TextureImporter:
       name: StormMage_21
       rect:
         serializedVersion: 2
-        x: 330
+        x: 331
         y: 258
-        width: 40
+        width: 39
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -760,11 +760,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 396
-        y: 259
+        y: 260
         width: 38
-        height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -780,12 +780,12 @@ TextureImporter:
       name: StormMage_23
       rect:
         serializedVersion: 2
-        x: 458
+        x: 459
         y: 258
-        width: 41
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -801,12 +801,12 @@ TextureImporter:
       name: StormMage_24
       rect:
         serializedVersion: 2
-        x: 16
-        y: 193
-        width: 34
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 17
+        y: 194
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -824,10 +824,10 @@ TextureImporter:
         serializedVersion: 2
         x: 81
         y: 194
-        width: 32
+        width: 31
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -843,12 +843,12 @@ TextureImporter:
       name: StormMage_26
       rect:
         serializedVersion: 2
-        x: 143
+        x: 144
         y: 194
-        width: 32
+        width: 30
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -864,12 +864,12 @@ TextureImporter:
       name: StormMage_27
       rect:
         serializedVersion: 2
-        x: 206
+        x: 208
         y: 194
-        width: 36
+        width: 33
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,8 +889,8 @@ TextureImporter:
         y: 194
         width: 36
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -906,12 +906,12 @@ TextureImporter:
       name: StormMage_29
       rect:
         serializedVersion: 2
-        x: 335
-        y: 193
-        width: 37
-        height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 336
+        y: 194
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -927,12 +927,12 @@ TextureImporter:
       name: StormMage_30
       rect:
         serializedVersion: 2
-        x: 401
+        x: 402
         y: 194
-        width: 35
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -948,12 +948,12 @@ TextureImporter:
       name: StormMage_31
       rect:
         serializedVersion: 2
-        x: 458
-        y: 192
-        width: 38
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 460
+        y: 194
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -969,12 +969,12 @@ TextureImporter:
       name: StormMage_32
       rect:
         serializedVersion: 2
-        x: 11
-        y: 128
-        width: 37
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 12
+        y: 130
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -990,12 +990,12 @@ TextureImporter:
       name: StormMage_33
       rect:
         serializedVersion: 2
-        x: 74
-        y: 128
-        width: 35
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 76
+        y: 130
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1011,12 +1011,12 @@ TextureImporter:
       name: StormMage_34
       rect:
         serializedVersion: 2
-        x: 139
-        y: 128
-        width: 35
-        height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 140
+        y: 130
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1032,12 +1032,12 @@ TextureImporter:
       name: StormMage_35
       rect:
         serializedVersion: 2
-        x: 204
-        y: 128
-        width: 38
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 205
+        y: 130
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1053,12 +1053,12 @@ TextureImporter:
       name: StormMage_36
       rect:
         serializedVersion: 2
-        x: 269
-        y: 127
-        width: 48
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 273
+        y: 130
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1074,12 +1074,12 @@ TextureImporter:
       name: StormMage_37
       rect:
         serializedVersion: 2
-        x: 334
-        y: 128
-        width: 50
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 337
+        y: 130
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1095,12 +1095,12 @@ TextureImporter:
       name: StormMage_38
       rect:
         serializedVersion: 2
-        x: 399
-        y: 129
-        width: 46
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 401
+        y: 130
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1116,12 +1116,12 @@ TextureImporter:
       name: StormMage_39
       rect:
         serializedVersion: 2
-        x: 463
-        y: 129
-        width: 35
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 465
+        y: 130
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1137,12 +1137,12 @@ TextureImporter:
       name: StormMage_40
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 66
-        width: 35
+        width: 33
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1158,12 +1158,12 @@ TextureImporter:
       name: StormMage_41
       rect:
         serializedVersion: 2
-        x: 79
+        x: 80
         y: 66
-        width: 36
+        width: 34
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1179,12 +1179,12 @@ TextureImporter:
       name: StormMage_42
       rect:
         serializedVersion: 2
-        x: 138
+        x: 139
         y: 66
-        width: 43
+        width: 41
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1201,11 +1201,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 204
-        y: 65
+        y: 66
         width: 40
-        height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1222,11 +1222,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 267
-        y: 65
-        width: 42
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 66
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1243,11 +1243,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 328
-        y: 64
-        width: 39
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 66
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1263,12 +1263,12 @@ TextureImporter:
       name: StormMage_46
       rect:
         serializedVersion: 2
-        x: 395
+        x: 394
         y: 66
         width: 36
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1285,11 +1285,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 456
-        y: 65
+        y: 66
         width: 38
-        height: 47
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1306,11 +1306,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 1
-        width: 45
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 2
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1326,12 +1326,12 @@ TextureImporter:
       name: StormMage_49
       rect:
         serializedVersion: 2
-        x: 72
-        y: 5
-        width: 48
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 73
+        y: 7
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1347,12 +1347,12 @@ TextureImporter:
       name: StormMage_50
       rect:
         serializedVersion: 2
-        x: 131
-        y: 3
-        width: 46
-        height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 132
+        y: 2
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

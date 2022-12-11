@@ -78,12 +78,15 @@ public class CharacterController : MonoBehaviour
 
     // Skill
     [Header("Skills")]
-    public Image dashImage;
+    public Image skillImage;
+    public Image skillImage2;
+    public Image skillImage3;
+    public Image skillImage4;
 
     // Weapon
 
     [Header("Weapon Parameter")]
-    
+
     public float BulletCoolDown = 0.5f;
 
     // Start is called before the first frame update
@@ -144,7 +147,7 @@ public class CharacterController : MonoBehaviour
         runSpeed = 650.0f;
         jumpForce = 980.0f;
 
-        dashTime = (float) 0.35;
+        dashTime = (float)0.35;
         dashLast = -100;
         dashSpeed = 1400;
         dashCoolDown = 2;
@@ -260,7 +263,7 @@ public class CharacterController : MonoBehaviour
             {
                 myRigidbody2D.velocity =
                     new Vector2(myRigidbody2D.velocity.x,
-                        jumpForce * (float) 1.2 * Time.deltaTime);
+                        jumpForce * (float)1.2 * Time.deltaTime);
 
                 jumpCount -= 1;
                 jumpPressed = false;
@@ -318,9 +321,26 @@ public class CharacterController : MonoBehaviour
                 isDashing = true;
                 dashTimeLeft = dashTime;
                 dashLast = Time.time;
-                dashImage.fillAmount = 1;
+                skillImage.fillAmount = 1;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            skillImage2.fillAmount = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            skillImage3.fillAmount = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            skillImage4.fillAmount = 1;
+        }
+
+
     }
 
     private void CharacterDuck()
@@ -402,7 +422,10 @@ public class CharacterController : MonoBehaviour
 
     private void CharacterDashCoolDown()
     {
-        dashImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
+        skillImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
+        skillImage2.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
+        skillImage3.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
+        skillImage4.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
     }
 
     //武器相关
