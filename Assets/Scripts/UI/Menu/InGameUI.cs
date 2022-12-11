@@ -27,7 +27,7 @@ public class InGameUI : MonoBehaviour
     }
     void Update()
     {
-        coinText.text = "$" + PlayerInfo.getInstance().money.ToString();
+        coinText.text = PlayerInfo.getInstance().money.ToString();
     }
 
     private void PauseGame()
