@@ -15,6 +15,8 @@ public class Shell_monster : MonoBehaviour
     public float Shell_time = 5;
     private float timer = 0;
 
+    private float keyTimer = 0;
+
 
     [Header("Components")]
     [SerializeField] protected Animator animator;
@@ -48,14 +50,22 @@ public class Shell_monster : MonoBehaviour
             shellTime = Time.time;
         }
 
-        if(isDie && Time.time - timer > 0.2){
+        if(isDie && Time.time - timer > 0.4){
             Destroy(this.gameObject);
+        }
+
+        if(Input.GetKeyDown(KeyCode.J)){
+            keyTimer = Time.time;
+        }
+
+        if(Time.time - keyTimer > 1){
+            keyTimer = 0;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(isLook && Input.GetKeyDown(KeyCode.J)){
+        if(isLook && keyTimer != 0){
             Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
