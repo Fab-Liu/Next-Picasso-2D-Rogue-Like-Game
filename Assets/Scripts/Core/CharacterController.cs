@@ -86,8 +86,12 @@ public class CharacterController : MonoBehaviour
     // Weapon
 
     [Header("Weapon Parameter")]
-
-    public float BulletCoolDown = 0.5f;
+    
+    public float BulletCoolDown = 0.35f;
+    public GameObject bulletPrefab; //发射子弹
+    
+    [Header("Magic Parameter")]
+    public float MagicCoolDown1 = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -112,6 +116,8 @@ public class CharacterController : MonoBehaviour
         // CharacterShoot();
         CharacterDashCoolDown();
         HandleInput();
+        ReleaseMagic();
+        
     }
 
     void FixedUpdate()
@@ -430,8 +436,7 @@ public class CharacterController : MonoBehaviour
 
     //武器相关
     private float LastShoot = 0;
-
-    public GameObject bulletPrefab; //发射子弹
+    
 
     // public AudioClip launchClip; // 发射音效
     public void HandleInput()
@@ -458,11 +463,27 @@ public class CharacterController : MonoBehaviour
             if (bc != null)
             {
                 bc.Move(new Vector2(faceLastPosition, 0), bc.BulletSpeed);
-                Debug.Log("子弹移动了吗1");
+            
             }
 
             LastShoot = Time.time;
             //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
         }
     }
+
+
+    // 技能相关
+    private float LastMagic1 = 0;
+    public GameObject MagicPrefeb; 
+
+    public void ReleaseMagic(){
+        if(Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1 ){
+            Magic1();
+        }
+    }
+
+    public void Magic1(){
+        Debug.Log("魔法1");
+    }
+
 }
