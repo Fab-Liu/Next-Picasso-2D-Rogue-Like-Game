@@ -27,6 +27,8 @@ public class storm_mage : MonoBehaviour
     private float Xleft, Xright;
     private float IsFaceRight = 0;
 
+    public HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +98,9 @@ public class storm_mage : MonoBehaviour
         else
             rb.velocity = new Vector2(0, rb.velocity.y);
 
+        
+        healthBar.turn(transform.position.x,transform.position.y);
+
     }
 
     void Movement(){
@@ -126,5 +131,5 @@ public class storm_mage : MonoBehaviour
         Instantiate(s4, sp4.position, sp4.rotation);
     }
 
-    
+
 }

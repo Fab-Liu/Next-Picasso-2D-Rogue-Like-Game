@@ -18,6 +18,7 @@ public class HealthBar : MonoBehaviour
     public Image healthBar;
     private SpriteRenderer spriteRenderer;
     public float fill;
+    
     // Start is called before the first frame update
     void Start()
     {
