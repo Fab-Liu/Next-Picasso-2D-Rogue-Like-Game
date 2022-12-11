@@ -125,4 +125,6 @@ public class storm_mage : MonoBehaviour
         Instantiate(s3, sp3.position, sp3.rotation);
         Instantiate(s4, sp4.position, sp4.rotation);
     }
+
+    
 }
