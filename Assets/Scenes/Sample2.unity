@@ -1159,14 +1159,7 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
-<<<<<<< Updated upstream
   skillImage: {fileID: 906085151}
-=======
-  skillImage: {fileID: 0}
-  skillImage2: {fileID: 0}
-  skillImage3: {fileID: 0}
-  skillImage4: {fileID: 0}
->>>>>>> Stashed changes
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 0}
 --- !u!114 &118822188

@@ -55,7 +55,7 @@ public class Shell_monster : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(Input.GetKeyDown(KeyCode.z))
+        if(Input.GetKeyDown(KeyCode.Z))
             Debug.Log("keyboard is working");
         Debug.Log("trigger is working(shell)");
         if(isLook && Input.GetKeyDown(KeyCode.J)){
