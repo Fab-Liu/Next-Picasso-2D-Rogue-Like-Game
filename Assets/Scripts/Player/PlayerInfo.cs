@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInfo : MonoBehaviour
+public class PlayerInfo
 {
     private static PlayerInfo instance;
 
@@ -12,15 +12,15 @@ public class PlayerInfo : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        money = 100;
-    }
-    void Start()
-    {
+    // // Start is called before the first frame update
+    // void Awake()
+    // {
+    //     money = 100;
+    // }
+    // void Start()
+    // {
 
-    }
+    // }
 
 
     public static PlayerInfo getInstance()
@@ -30,6 +30,10 @@ public class PlayerInfo : MonoBehaviour
             instance = new PlayerInfo();
         }
         return instance;
+    }
+    public void Reload()
+    {
+        money = 100;
     }
 }
 

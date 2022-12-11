@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class DealthTrigger : MonoBehaviour
 {
     BoxCollider2D dt;
+    AudioSource audioSource;
     void Start()
     {
+        this.transform.parent.gameObject.GetComponent<AudioSource>().Stop();
         dt = GetComponent<BoxCollider2D>();
-
+        audioSource = GameObject.Find("Player (1)").GetComponent<AudioSource>();
+        // audioSource.clip = Resources.Load<AudioClip>("Assets/Resources/Sound/levelSound/Vigorous BGM.mp3");
+        audioSource.Play();
     }
 
     // Update is called once per frame
@@ -19,6 +24,7 @@ public class DealthTrigger : MonoBehaviour
     }
     public void SceneReload()
     {
+        PlayerInfo.getInstance().Reload();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
@@ -28,7 +34,14 @@ public class DealthTrigger : MonoBehaviour
         Debug.Log("Trigger");
         if (collidedObject.gameObject.tag == "Player")
         {
-            SceneReload();
+            Die();
         }
+    }
+    private void Die()
+    {
+        audioSource.Stop();
+        this.transform.parent.gameObject.GetComponent<AudioSource>().Play();
+        // Time.timeScale = 0f;
+        Invoke("SceneReload", 0.3f);
     }
 }

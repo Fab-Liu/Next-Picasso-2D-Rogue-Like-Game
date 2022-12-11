@@ -11,6 +11,9 @@ public class InGameUI : MonoBehaviour
     private Button pauseBtn;
     private GameObject me;
     // Start is called before the first frame update
+    private Text coinText;
+
+
     void Start()
     {
         storeObj = GameObject.Find("Canvas (1)").transform.Find("Store").gameObject;
@@ -20,6 +23,11 @@ public class InGameUI : MonoBehaviour
         pauseBtn = transform.Find("PauseButton").GetComponent<Button>();
         pauseBtn.onClick.AddListener(PauseGame);
         me = GameObject.Find("Canvas (1)").transform.Find("InGameUI").gameObject;
+        coinText = transform.Find("Balance/money").GetComponent<Text>();
+    }
+    void Update()
+    {
+        coinText.text = "$" + PlayerInfo.getInstance().money.ToString();
     }
 
     private void PauseGame()
