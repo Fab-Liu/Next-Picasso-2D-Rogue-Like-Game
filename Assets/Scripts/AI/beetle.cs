@@ -78,6 +78,7 @@ public class beetle : MonoBehaviour
             //Debug.Log("trigger is working(shell)");
             isDead = true;
             animator.SetBool("IsDie", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
         }
     }

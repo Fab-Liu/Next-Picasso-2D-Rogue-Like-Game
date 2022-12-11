@@ -74,6 +74,7 @@ public class Shell_monster : MonoBehaviour
             //Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
         }
     }

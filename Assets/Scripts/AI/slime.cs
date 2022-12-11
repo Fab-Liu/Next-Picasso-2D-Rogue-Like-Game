@@ -12,6 +12,8 @@ public class slime : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
 
+    private float keyTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +27,36 @@ public class slime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDead){
+
+        if(Input.GetKeyDown(KeyCode.J)){
+            keyTimer = Time.time;
+        }
+
+        if(Time.time - keyTimer > 1){
+            keyTimer = 0;
+        }
+
+        if(Time.time - timer > 1 && isDead) 
+            Destroy(this.gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isDead = true;
             animator.SetBool("IsDie", true);
+            timer = Time.time;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(keyTimer != 0){
+            //Debug.Log("trigger is working(shell)");
+            isDead = true;
+            animator.SetBool("IsDie", true);
+            timer = Time.time;
         }
     }
 }
