@@ -680,6 +680,8 @@ MonoBehaviour:
   jumpCount: 0
   jumpPressed: 0
   dashImage: {fileID: 906085151}
+  BulletCoolDown: 0.5
+  bulletPrefab: {fileID: 0}
 --- !u!114 &118822188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,11 +1596,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6e985377cd44b968f3dce6f37b755b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 5
   BulletPerfabs: {fileID: 5180413038454750539, guid: c4cdcc848adf54ae49d47268c76b643d, type: 3}
   BulletPoint: {fileID: 920928618}
+  leftpoint: {fileID: 0}
+  rightpoint: {fileID: 0}
   isSkill: 0
   animator: {fileID: 368679169}
   myCollider: {fileID: 368679168}
+  isAngry: 1
+  isAttack: 0
+  isMove: 0
 --- !u!1 &371721452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,7 +1974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -5.82, z: -10.055331}
+  m_LocalPosition: {x: -3.08, y: -0.26, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2231,7 +2239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816384866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -5.82, z: -10.055331}
+  m_LocalPosition: {x: -3.08, y: -0.26, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2263,7 +2271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820281214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.62, y: -5.78, z: 0}
+  m_LocalPosition: {x: -3.35, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

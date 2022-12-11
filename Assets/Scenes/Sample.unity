@@ -1504,9 +1504,9 @@ GameObject:
   - component: {fileID: 327678088}
   - component: {fileID: 327678087}
   - component: {fileID: 327678089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: square
-  m_TagString: Untagged
+  m_TagString: square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2521,7 +2521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -5.82, z: -10.055331}
+  m_LocalPosition: {x: -5.39, y: -0.13, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2937,7 +2937,8 @@ GameObject:
   - component: {fileID: 771975222}
   - component: {fileID: 771975221}
   - component: {fileID: 771975220}
-  m_Layer: 0
+  - component: {fileID: 771975223}
+  m_Layer: 6
   m_Name: weapon_hammer_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3048,6 +3049,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &771975223
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771975218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.68123114}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.295}
+    oldSize: {x: 3.4461539, y: 3.323077}
+    newSize: {x: 3.4461539, y: 3.323077}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.4461539, y: 3.323077}
+  m_EdgeRadius: 0
 --- !u!1 &778557512
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,7 +3174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816384866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -5.82, z: -10.055331}
+  m_LocalPosition: {x: -5.39, y: -0.13, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25641,6 +25668,7 @@ GameObject:
   - component: {fileID: 1256276493}
   - component: {fileID: 1256276492}
   - component: {fileID: 1256276496}
+  - component: {fileID: 1256276497}
   m_Layer: 6
   m_Name: mosquito
   m_TagString: mosquito
@@ -25696,7 +25724,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -25801,6 +25829,32 @@ MonoBehaviour:
   leftpoint: {fileID: 1009094948}
   rightpoint: {fileID: 441331035}
   Speed: 3
+--- !u!61 &1256276497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256276490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.34, y: 0.26}
+    newSize: {x: 0.34, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.34, y: 0.26}
+  m_EdgeRadius: 0
 --- !u!4 &1257937813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4227573050808650727, guid: 8a51c88345988401f856c525b612df08, type: 3}
@@ -25821,7 +25875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277653518}
   - component: {fileID: 1277653519}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26157,7 +26211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1430982745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -26191,7 +26245,7 @@ GameObject:
   - component: {fileID: 1441013184}
   - component: {fileID: 1441013183}
   - component: {fileID: 1441013182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hammer_side_cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26306,7 +26360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455167386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -26944,9 +26998,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983351105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26959,7 +27013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983351104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.62, y: -5.78, z: 0}
+  m_LocalPosition: {x: -5.66, y: -0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
