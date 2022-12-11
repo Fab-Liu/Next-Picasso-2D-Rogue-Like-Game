@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
     public Image healthBar;
     private SpriteRenderer spriteRenderer;
     public float fill;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +32,7 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //healthBar.position = new Vector2(healthBar.position.x, healthBar.position.y + 2);
         //character.transform.rotation = Camera.main.transform.rotation;
         fill = currentHealth / maxHealth;
         healthBar.fillAmount = fill;
@@ -56,7 +57,7 @@ public class HealthBar : MonoBehaviour
 
     public void turn(float x, float y)
     {
-        healthBar.transform.position = new Vector3(x,y + 1,1);
+        healthBar.transform.position = new Vector3(x,y + 2,1);
     }
 
 }

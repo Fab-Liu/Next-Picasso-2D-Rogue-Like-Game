@@ -2861,7 +2861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.33, y: -4.16}
+  m_AnchoredPosition: {x: 2.3, y: -3.8}
   m_SizeDelta: {x: 10, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &308878610
@@ -29077,7 +29077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515648778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.21, y: -5.8, z: 0}
+  m_LocalPosition: {x: 2.31, y: -5.76, z: 0}
   m_LocalScale: {x: -2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29128,7 +29128,7 @@ MonoBehaviour:
   animator: {fileID: 1515648784}
   myCollider: {fileID: 1515648782}
   isSkill: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1515648785}
 --- !u!50 &1515648781
 Rigidbody2D:
   serializedVersion: 4
@@ -29163,7 +29163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1}
+  m_Offset: {x: 0, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
