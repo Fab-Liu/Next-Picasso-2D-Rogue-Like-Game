@@ -24,7 +24,7 @@ public class DealthTrigger : MonoBehaviour
     }
     public void SceneReload()
     {
-
+        PlayerInfo.getInstance().Reload();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
