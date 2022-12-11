@@ -27,6 +27,9 @@ public class warlock : MonoBehaviour
     private float Xleft, Xright;
     private float IsFaceRight = 0;
 
+    public HealthBar healthBar;
+    public GameObject bar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,7 @@ public class warlock : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
+        healthBar = GetComponent<HealthBar>();
         Xleft = leftpoint.position.x;
         Xright = rightpoint.position.x;
         Destroy(leftpoint.gameObject);
@@ -112,6 +116,8 @@ public class warlock : MonoBehaviour
                 IsFaceRight = 1;
             }
         }
+
+        healthBar.turn(transform.position.x,transform.position.y + 2);
     }
 
     void zombie(){
