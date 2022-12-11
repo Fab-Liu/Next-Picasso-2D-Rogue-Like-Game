@@ -10,7 +10,6 @@ public class CharacterController : MonoBehaviour
 {
     // Components
     [Header("Components")]
-
     [SerializeField]
     protected LayerMask Ground;
 
@@ -29,55 +28,63 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     public AudioSource mySoundSource;
 
-
-
     // Paramaters
     [Header("Paramaters")]
     public float speed = 450.0f;
+
     public float walkSpeed = 450.0f;
+
     public float runSpeed = 800.0f;
+
     public float jumpForce = 850f;
+
     public float dashSpeed = 1500.0f;
 
-
     public float moveVertical;
+
     public float moveHorizontal;
+
     public float faceDirection;
+
     public float faceLastPosition = 1;
 
-
     public float dashLast;
+
     public float dashTime;
 
     public float dashTimeLeft;
+
     public float dashCoolDown;
 
     public float hurt = 0.5f;
-    public float hurtTimeLeft;
 
+    public float hurtTimeLeft;
 
     // States
     [Header("States")]
     public bool isHurt;
+
     public bool isDuck;
+
     public bool isJump;
+
     public bool isGround;
+
     public bool isDashing;
 
-
     public int jumpCount;
-    public bool jumpPressed;
 
+    public bool jumpPressed;
 
     // Skill
     [Header("Skills")]
     public Image dashImage;
 
-    // Weapon 
+    // Weapon
+
     [Header("Weapon Parameter")]
     //public float faceLastPosition = 1;
     public float BulletCoolDown = 0.5f;
-
 
     // Start is called before the first frame update
     void Start()
@@ -100,7 +107,6 @@ public class CharacterController : MonoBehaviour
         CharacterDuckPressed();
 
         // CharacterShoot();
-
         CharacterDashCoolDown();
         HandleInput();
     }
@@ -117,13 +123,17 @@ public class CharacterController : MonoBehaviour
     {
         if (Globe.characterIndex == 0)
         {
-            myAnimator.runtimeAnimatorController = Resources.Load("Animation/CharacterAstro") as RuntimeAnimatorController;
+            myAnimator.runtimeAnimatorController =
+                Resources.Load("Animation/CharacterAstro") as
+                RuntimeAnimatorController;
         }
 
         if (Globe.characterIndex == 1)
         {
             // 切换animator
-            myAnimator.runtimeAnimatorController = Resources.Load("Animation/CharacterNinja") as RuntimeAnimatorController;
+            myAnimator.runtimeAnimatorController =
+                Resources.Load("Animation/CharacterNinja") as
+                RuntimeAnimatorController;
         }
     }
 
@@ -134,15 +144,13 @@ public class CharacterController : MonoBehaviour
         runSpeed = 650.0f;
         jumpForce = 980.0f;
 
-
-        dashTime = (float)0.35;
+        dashTime = (float) 0.35;
         dashLast = -100;
         dashSpeed = 1400;
         dashCoolDown = 2;
 
         faceLastPosition = -1;
     }
-
 
     private void CharacterCheckGround()
     {
@@ -215,7 +223,6 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-
     private void CharacterFlip()
     {
         faceDirection = Input.GetAxisRaw("Horizontal");
@@ -242,7 +249,8 @@ public class CharacterController : MonoBehaviour
             if (isGround)
             {
                 isJump = true;
-                myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x,
+                myRigidbody2D.velocity =
+                    new Vector2(myRigidbody2D.velocity.x,
                         jumpForce * Time.deltaTime);
 
                 jumpCount -= 1;
@@ -252,7 +260,7 @@ public class CharacterController : MonoBehaviour
             {
                 myRigidbody2D.velocity =
                     new Vector2(myRigidbody2D.velocity.x,
-                        jumpForce * (float)1.2 * Time.deltaTime);
+                        jumpForce * (float) 1.2 * Time.deltaTime);
 
                 jumpCount -= 1;
                 jumpPressed = false;
@@ -286,7 +294,11 @@ public class CharacterController : MonoBehaviour
         {
             if (dashTimeLeft > 0)
             {
-                myRigidbody2D.velocity = new Vector2(moveHorizontal * dashSpeed * Time.fixedDeltaTime, 0);
+                myRigidbody2D.velocity =
+                    new Vector2(moveHorizontal *
+                        dashSpeed *
+                        Time.fixedDeltaTime,
+                        0);
                 dashTimeLeft -= Time.deltaTime;
                 ShadowPool.instance.GetFromPool();
             }
@@ -313,7 +325,7 @@ public class CharacterController : MonoBehaviour
 
     private void CharacterDuck()
     {
-        // ctrl for duck 
+        // ctrl for duck
         // if (isDuck)
         // {
         //     // speed = 200.0f;
@@ -324,7 +336,6 @@ public class CharacterController : MonoBehaviour
         //     myAnimator.SetBool("Duck", false);
         // }
     }
-
 
     private void CharacterDuckPressed()
     {
@@ -394,41 +405,41 @@ public class CharacterController : MonoBehaviour
         dashImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
     }
 
-
     //武器相关
-
     private float LastShoot = 0;
 
     public GameObject bulletPrefab; //发射子弹
 
-   // public AudioClip launchClip; // 发射音效
-
+    // public AudioClip launchClip; // 发射音效
     public void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.J) && Time.time >= LastShoot + BulletCoolDown)
+        if (
+            Input.GetKeyDown(KeyCode.J) &&
+            Time.time >= LastShoot + BulletCoolDown
+        )
         {
-            
             Shoot();
         }
     }
 
     public void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, myRigidbody2D.position, Quaternion.identity);
-        BulletController bc = bullet.GetComponent<BulletController>();
-        if (bc != null)
+        if (bulletPrefab != null)
         {
-            // float temp = faceDirection;
-
+            GameObject bullet =
+                Instantiate(bulletPrefab,
+                myRigidbody2D.position,
+                Quaternion.identity);
+            Debug.Log(myRigidbody2D.position);
+            BulletController bc = bullet.GetComponent<BulletController>();
+            if (bc != null)
+            {
                 bc.Move(new Vector2(faceLastPosition, 0), bc.BulletSpeed);
                 Debug.Log("子弹移动了吗1");
-        
+            }
+
+            LastShoot = Time.time;
+            //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
         }
-        
-        LastShoot = Time.time;
-        //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
     }
 }
-
-
-
