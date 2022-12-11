@@ -8,7 +8,7 @@ public class BulletController : MonoBehaviour
 
     [Header("Bullet Speed")]
     public float BulletCoolDown = 0.5f;
-    public float BulletSpeed;
+    public float BulletSpeed = 1000.0f;
     
     // Start is called before the first frame update
 
@@ -26,10 +26,11 @@ public class BulletController : MonoBehaviour
     //子弹的移动
     public void Move(Vector2 moveDirection, float moveForce){
         rbody.AddForce(moveDirection * moveForce);
+        
     }
 
     // 碰撞检测
     void OnCollisionEnter2D(Collision2D other){
-        Destroy(this.gameObject);
+      //Destroy(this.gameObject);
     }
 }

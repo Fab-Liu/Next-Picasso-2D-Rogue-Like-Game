@@ -75,7 +75,7 @@ public class CharacterController : MonoBehaviour
 
     // Weapon 
     [Header("Weapon Parameter")]
-    public float lastFacePosition = 1;
+    public float faceLastPosition = 1;
     public float BulletCoolDown = 0.5f;
 
 
@@ -102,6 +102,7 @@ public class CharacterController : MonoBehaviour
         // CharacterShoot();
 
         CharacterDashCoolDown();
+        HandleInput();
     }
 
     void FixedUpdate()
@@ -402,15 +403,16 @@ public class CharacterController : MonoBehaviour
 
    // public AudioClip launchClip; // 发射音效
 
-    void HandleInput()
+    public void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.J) && Time.time >= LastShoot + BulletCoolDown)
         {
+            
             Shoot();
         }
     }
 
-    void Shoot()
+    public void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, myRigidbody2D.position, Quaternion.identity);
         BulletController bc = bullet.GetComponent<BulletController>();
@@ -418,21 +420,21 @@ public class CharacterController : MonoBehaviour
         {
             // float temp = faceDirection;
 
-
+            
             if (faceDirection != 0)
             {
                 bc.Move(new Vector2(-faceDirection, 0), bc.BulletSpeed);
-
+                Debug.Log("子弹移动了吗1");
             }
             else if (faceDirection == 0)
             {
-                bc.Move(new Vector2(lastFacePosition, 0), bc.BulletSpeed);
-
+                bc.Move(new Vector2(faceLastPosition, 0), bc.BulletSpeed);
+                Debug.Log("子弹移动了吗2");
             }
 
 
         }
-        //Debug.Log("发射了");
+        
         LastShoot = Time.time;
         //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
     }
