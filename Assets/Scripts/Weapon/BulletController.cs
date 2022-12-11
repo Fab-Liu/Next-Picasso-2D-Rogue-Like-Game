@@ -7,8 +7,8 @@ public class BulletController : MonoBehaviour
     public Rigidbody2D rbody;
 
     [Header("Bullet Speed")]
-    public float BulletCoolDown = 0.5f;
-    public float BulletSpeed = 1000.0f;
+    public float BulletCoolDown = 0.3f;
+    public float BulletSpeed = 1200.0f;
     
     // Start is called before the first frame update
 

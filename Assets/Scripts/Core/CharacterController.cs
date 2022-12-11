@@ -83,7 +83,7 @@ public class CharacterController : MonoBehaviour
     // Weapon
 
     [Header("Weapon Parameter")]
-    //public float faceLastPosition = 1;
+    
     public float BulletCoolDown = 0.5f;
 
     // Start is called before the first frame update
@@ -149,7 +149,7 @@ public class CharacterController : MonoBehaviour
         dashSpeed = 1400;
         dashCoolDown = 2;
 
-        faceLastPosition = -1;
+        faceLastPosition = 1;
     }
 
     private void CharacterCheckGround()
