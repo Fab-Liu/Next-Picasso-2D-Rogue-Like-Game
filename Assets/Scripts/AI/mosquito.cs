@@ -57,4 +57,22 @@ public class mosquito : MonoBehaviour
             }
         }
     }
+
+    // 碰到边缘 重新生成背景的物体  这里才是判断是否生成新的游戏物体的前提
+    private void OnTriggerEnter(Collider other) 
+    {
+        Debug.Log("trigger is working");
+        isDead = true;
+        timer = Time.time;
+    }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject.tag == "Bullet")
+    //     {
+    //         animator.SetBool("IsDeath", true);
+    //         dieTime = Time.time;
+    //     }
+
+    // }
 }
