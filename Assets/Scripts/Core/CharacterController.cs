@@ -75,7 +75,7 @@ public class CharacterController : MonoBehaviour
 
     // Weapon 
     [Header("Weapon Parameter")]
-    public float faceLastPosition = 1;
+    //public float faceLastPosition = 1;
     public float BulletCoolDown = 0.5f;
 
 
