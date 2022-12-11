@@ -420,19 +420,9 @@ public class CharacterController : MonoBehaviour
         {
             // float temp = faceDirection;
 
-            
-            if (faceDirection != 0)
-            {
-                bc.Move(new Vector2(-faceDirection, 0), bc.BulletSpeed);
-                Debug.Log("子弹移动了吗1");
-            }
-            else if (faceDirection == 0)
-            {
                 bc.Move(new Vector2(faceLastPosition, 0), bc.BulletSpeed);
-                Debug.Log("子弹移动了吗2");
-            }
-
-
+                Debug.Log("子弹移动了吗1");
+        
         }
         
         LastShoot = Time.time;
