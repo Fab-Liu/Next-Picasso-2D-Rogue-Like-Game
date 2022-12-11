@@ -1159,7 +1159,14 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
+<<<<<<< Updated upstream
   skillImage: {fileID: 906085151}
+=======
+  skillImage: {fileID: 0}
+  skillImage2: {fileID: 0}
+  skillImage3: {fileID: 0}
+  skillImage4: {fileID: 0}
+>>>>>>> Stashed changes
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 0}
 --- !u!114 &118822188
@@ -1294,7 +1301,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.004911661, y: 0.8903156}
