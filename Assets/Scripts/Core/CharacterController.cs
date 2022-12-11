@@ -73,6 +73,11 @@ public class CharacterController : MonoBehaviour
     [Header("Skills")]
     public Image dashImage;
 
+    // Weapon 
+    [Header("Weapon Parameter")]
+    public float lastFacePosition = 1;
+    public float BulletCoolDown = 0.5f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -387,4 +392,51 @@ public class CharacterController : MonoBehaviour
     {
         dashImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
     }
+
+
+    //武器相关
+
+    private float LastShoot = 0;
+
+    public GameObject bulletPrefab; //发射子弹
+
+   // public AudioClip launchClip; // 发射音效
+
+    void HandleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && Time.time >= LastShoot + BulletCoolDown)
+        {
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, myRigidbody2D.position, Quaternion.identity);
+        BulletController bc = bullet.GetComponent<BulletController>();
+        if (bc != null)
+        {
+            // float temp = faceDirection;
+
+
+            if (faceDirection != 0)
+            {
+                bc.Move(new Vector2(-faceDirection, 0), bc.BulletSpeed);
+
+            }
+            else if (faceDirection == 0)
+            {
+                bc.Move(new Vector2(lastFacePosition, 0), bc.BulletSpeed);
+
+            }
+
+
+        }
+        //Debug.Log("发射了");
+        LastShoot = Time.time;
+        //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
+    }
 }
+
+
+
