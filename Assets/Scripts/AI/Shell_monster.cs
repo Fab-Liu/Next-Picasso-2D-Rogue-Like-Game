@@ -55,11 +55,8 @@ public class Shell_monster : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(Input.GetKeyDown(KeyCode.z))
-            Debug.Log("keyboard is working");
-        Debug.Log("trigger is working(shell)");
         if(isLook && Input.GetKeyDown(KeyCode.J)){
-            Debug.Log("inside is working");
+            Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
             timer = Time.time;
