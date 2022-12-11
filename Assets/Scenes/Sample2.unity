@@ -7148,6 +7148,7 @@ MonoBehaviour:
   isMove: 0
   healthBar: {fileID: 1118101310}
   bar: {fileID: 381438514}
+  blood: {fileID: 7955170164794841538, guid: dd6bc1193bde2498b9e2e877841211c3, type: 3}
 --- !u!95 &1118101306
 Animator:
   serializedVersion: 4
