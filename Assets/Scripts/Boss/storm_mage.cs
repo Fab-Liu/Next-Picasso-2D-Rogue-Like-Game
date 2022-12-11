@@ -36,6 +36,7 @@ public class storm_mage : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
+        healthBar = GetComponent<HealthBar>();
         Xleft = leftpoint.position.x;
         Xright = rightpoint.position.x;
         Destroy(leftpoint.gameObject);
