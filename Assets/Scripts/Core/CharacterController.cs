@@ -458,7 +458,7 @@ public class CharacterController : MonoBehaviour
                 Instantiate(bulletPrefab,
                 myRigidbody2D.position + new Vector2(0, 0.9f),
                 Quaternion.identity);
-            Debug.Log(myRigidbody2D.position);
+            
             BulletController bc = bullet.GetComponent<BulletController>();
             if (bc != null)
             {
