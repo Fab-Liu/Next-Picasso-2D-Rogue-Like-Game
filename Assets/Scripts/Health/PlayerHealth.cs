@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    private Character character;
     public int health;  //Init health
     public static int healthCurrent;
     public static int healthMax;
     public float dieTime;
     private Animator anim;
+    private PlayerHealthBar playerHealthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -28,18 +30,18 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-
-        if(health < 0)
+        if (healthCurrent <= 0)
         {
-            health = 0;
+            return;
         }
-        healthCurrent = health;
+        healthCurrent -= damage;
 
-        if (health <= 0)
+        if (healthCurrent <= 0)
         {
+            healthCurrent = 0;
             Invoke("KillPlayer", dieTime);
         }
+        playerHealthBar.UpdateHealth(healthCurrent, healthMax);
     }
 
     void KillPlayer()

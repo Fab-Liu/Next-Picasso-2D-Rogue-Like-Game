@@ -18,6 +18,17 @@ public class PlayerHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        InternalUpdate();
+    }
+
+    public void UpdateHealth(int currentHealth, int maxHealth)  //Update player health
+    {
+        PlayerHealth.healthCurrent = currentHealth;
+        PlayerHealth.healthMax = maxHealth;
+    }
+
+    private void InternalUpdate()
+    {
         healthBar.fillAmount = (float)PlayerHealth.healthCurrent / (float)PlayerHealth.healthMax;
         healthText.text = PlayerHealth.healthCurrent.ToString() + "/" + PlayerHealth.healthMax.ToString();
     }
