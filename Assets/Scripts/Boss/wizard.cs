@@ -110,10 +110,12 @@ public class wizard : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.J)){
             keyTimer = Time.time;
+            myCollider.isTrigger = true;
         }
 
         if(Time.time - keyTimer > 0.7){
             keyTimer = 0;
+            myCollider.isTrigger = false;
         }
 
         if(isHurt && isDead)  rb.velocity = new Vector2(0, rb.velocity.y);
@@ -182,11 +184,40 @@ public class wizard : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(!isSkill && !isAttack && keyTimer != 0){
-            //Debug.Log("trigger is working(shell)");
+            if(!isHurt) healthBar.damage(1);
             isHurt = true;
             animator.SetBool("IsHurt", true);
-    
             Instantiate(blood, new Vector3(this.transform.position.x - 0.5f, this.transform.position.y + 2, this.transform.position.z),this.transform.rotation);
+            timer = Time.time;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Black")
+        {
+            isHurt = true;
+            animator.SetBool("IsHurt", true);
+            healthBar.damage(3);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
+        }
+
+        if (collision.gameObject.tag == "Rock")
+        {
+            isHurt = true;
+            animator.SetBool("IsHurt", true);
+            healthBar.damage(2);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
+        }
+
+        if (collision.gameObject.tag == "Tornado")
+        {
+            isHurt = true;
+            animator.SetBool("IsHurt", true);
+            healthBar.damage(4);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
         }
     }

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] public float initialHealth = 5f;
-    [SerializeField] public float maxHealth = 5f;
+    [SerializeField] public float initialHealth = 20f;
+    [SerializeField] public float maxHealth = 20f;
     public float currentHealth;
 
     [Header("Settings")]
