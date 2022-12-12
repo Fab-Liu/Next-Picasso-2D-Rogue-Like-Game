@@ -9,6 +9,7 @@ public class Diamond : MonoBehaviour
         if(myCollider2d.gameObject.CompareTag("Player") && myCollider2d.GetType().ToString() == "UnityEngine.CircleCollider2D")
         {
             Destroy(gameObject);
+            DiamondUI.currentDiamondNum += 1;
         }
     }
 }
