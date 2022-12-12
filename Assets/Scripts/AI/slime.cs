@@ -30,10 +30,12 @@ public class slime : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.J)){
             keyTimer = Time.time;
+            myCollider.isTrigger = true;
         }
 
         if(Time.time - keyTimer > 0.7){
             keyTimer = 0;
+            myCollider.isTrigger = false;
         }
 
         if(Time.time - timer > 1 && isDead) 
@@ -54,6 +56,16 @@ public class slime : MonoBehaviour
     {
         if(keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
+            isDead = true;
+            animator.SetBool("IsDie", true);
+            timer = Time.time;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
+        {
             isDead = true;
             animator.SetBool("IsDie", true);
             timer = Time.time;

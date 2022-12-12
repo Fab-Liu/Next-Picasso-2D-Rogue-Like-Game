@@ -48,10 +48,12 @@ public class mosquito : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.J)){
             keyTimer = Time.time;
+            myCollider.isTrigger = true;
         }
 
         if(Time.time - keyTimer > 0.7){
             keyTimer = 0;
+            myCollider.isTrigger = false;
         }
     }
 
@@ -94,13 +96,14 @@ public class mosquito : MonoBehaviour
         }
     }
 
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.tag == "Bullet")
-    //     {
-    //         animator.SetBool("IsDeath", true);
-    //         dieTime = Time.time;
-    //     }
-
-    // }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
+        {
+            isDead = true;
+            animator.SetBool("IsDie", true);
+            Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
+        }
+    }
 }
