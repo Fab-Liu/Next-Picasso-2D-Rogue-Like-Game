@@ -11,12 +11,13 @@ public class PlayerHealth : MonoBehaviour
     public float dieTime;
     private Animator anim;
     private PlayerHealthBar playerHealthBar;
+    public GameObject bar;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        playerHealthBar = GetComponentInChildren<PlayerHealthBar>();
+        playerHealthBar = bar.GetComponentInChildren<PlayerHealthBar>();
         healthMax = health;
         healthCurrent = health;
     }
