@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     private PlayerHealthBar playerHealthBar;
     public GameObject bar;
 
+    private blood b;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         playerHealthBar = bar.GetComponentInChildren<PlayerHealthBar>();
         healthMax = health;
         healthCurrent = health;
+        b = GetComponent<blood>();
     }
 
     private void Update()
@@ -38,12 +41,15 @@ public class PlayerHealth : MonoBehaviour
         }
         healthCurrent -= damage;
 
+        b.FlashScreen();
+
         if (healthCurrent <= 0)
         {
             healthCurrent = 0;
             Invoke("KillPlayer", dieTime);
         }
         playerHealthBar.UpdateHealth(healthCurrent, healthMax);
+
     }
 
     void KillPlayer()

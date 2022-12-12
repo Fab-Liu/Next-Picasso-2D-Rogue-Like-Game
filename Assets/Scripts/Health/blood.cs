@@ -7,14 +7,14 @@ public class blood : MonoBehaviour
 {
     public Image img;
     public float time;
-    public Color flashColor;
+    public Color flash;
 
-    private Color defaultColor;
+    private Color default;
 
     // Start is called before the first frame update
     void Start()
     {
-        defaultColor = img.color;
+        default = img.color;
     }
 
     // Update is called once per frame
@@ -25,14 +25,15 @@ public class blood : MonoBehaviour
 
     public void FlashScreen()
     {
+        Debug.Log("Flashing");
         StartCoroutine(Flash());
     }
 
     IEnumerator Flash()
     {
         Debug.Log("flash work");
-        img.color = flashColor;
+        img.color = flash;
         yield return new WaitForSeconds(time);
-        img.color = defaultColor;
+        img.color = default;
     }
 }
