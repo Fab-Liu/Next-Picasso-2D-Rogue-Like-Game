@@ -16,7 +16,9 @@ TagManager:
   - RedFire
   - GreenFlash
   - BigBullet
-  - Bullet
+  - Black
+  - Rock
+  - Tornado
   layers:
   - Default
   - TransparentFX
