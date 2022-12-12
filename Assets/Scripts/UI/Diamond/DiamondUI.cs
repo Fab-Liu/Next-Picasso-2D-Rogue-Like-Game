@@ -19,6 +19,6 @@ public class DiamondUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        diamondNum.text = currentDiamondNum.ToString();
+        diamondNum.text = "× " + currentDiamondNum.ToString();
     }
 }

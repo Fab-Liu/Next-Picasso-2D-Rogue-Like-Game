@@ -7,7 +7,7 @@ public class SkullDoor : MonoBehaviour
 {
     private bool isPlayerInDoor;
     private Animator anim;
-    private float loadTime = 1.75f;
+    private float loadTime = 0.75f;
 
     // Start is called before the first frame update
     void Start()
