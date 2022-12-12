@@ -146,4 +146,11 @@ public class square : MonoBehaviour
             }
         }
     }
+
+    public int AttackPlayer(){
+        if(isAttack)
+            return 2;
+        else
+            return 1;
+    }
 }

@@ -221,5 +221,18 @@ public class wizard : MonoBehaviour
             timer = Time.time;
         }
     }
+
+    public int AttackPlayer(){
+        if(isAngry)
+            if(isAttack)
+                return 6;
+            else
+                return 3;
+        else
+            if(isAttack)
+                return 3;
+            else
+                return 2;
+    }
     
 }

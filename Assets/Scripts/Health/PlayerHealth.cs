@@ -27,10 +27,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))  //For testing
-        {
-            TakeDamage(1);
-        }
+        // if (Input.GetKeyDown(KeyCode.L))  //For testing
+        // {
+        //     TakeDamage(1);
+        // }
     }
 
     public void TakeDamage(int damage)
