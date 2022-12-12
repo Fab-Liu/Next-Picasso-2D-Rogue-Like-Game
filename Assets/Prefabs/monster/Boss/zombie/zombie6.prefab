@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4716401808284293728}
   - component: {fileID: 782890871431374678}
   - component: {fileID: 6968993552658483290}
+  - component: {fileID: 7004815759708077708}
   m_Layer: 0
   m_Name: zombie6
-  m_TagString: Untagged
+  m_TagString: zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +143,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 4716401808284293728}
   Point: {fileID: 4656873924054394397, guid: 4fbf911dfb4244b4dbf04a5b4319d2bc, type: 3}
+--- !u!61 &7004815759708077708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771099169566348143}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4375, y: 0.6875}
+    newSize: {x: 1.4375, y: 0.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4375, y: 0.6875}
+  m_EdgeRadius: 0

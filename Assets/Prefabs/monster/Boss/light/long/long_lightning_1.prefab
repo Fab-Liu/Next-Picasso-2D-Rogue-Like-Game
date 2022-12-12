@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1096019154637362258}
   - component: {fileID: 1096019154637362259}
   - component: {fileID: 1096019154637362252}
+  - component: {fileID: 821482627193189987}
   m_Layer: 0
   m_Name: long_lightning_1
-  m_TagString: Untagged
+  m_TagString: lightning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,3 +170,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 1096019154637362259}
   Point: {fileID: 4042437970849307608, guid: 6427778ae9c4e4c998d2bcda5b16ed75, type: 3}
+--- !u!61 &821482627193189987
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096019154637362253}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.21875, y: 0.21875}
+    newSize: {x: 0.21875, y: 0.21875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.21875, y: 0.21875}
+  m_EdgeRadius: 0

@@ -19,6 +19,12 @@ TagManager:
   - Black
   - Rock
   - Tornado
+  - Bullet
+  - Warlock
+  - StormMage
+  - wizard_bullet
+  - zombie
+  - lightning
   layers:
   - Default
   - TransparentFX

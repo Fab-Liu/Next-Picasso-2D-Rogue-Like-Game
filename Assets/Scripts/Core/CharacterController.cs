@@ -56,7 +56,7 @@ public class CharacterController : MonoBehaviour
 
     public float dashCoolDown;
 
-    public float hurt = 0.5f;
+    public float hurt = 1f;
 
     public float hurtTimeLeft;
 
@@ -95,14 +95,26 @@ public class CharacterController : MonoBehaviour
     public float MagicCoolDown2 = 1.0f;
     public float MagicCoolDown3 = 1.0f;
 
+    [Header("Hammer and hand")]
+    public GameObject hammer;
+    public GameObject hand;
+
+    private PlayerHealth health;
+
+    private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
+
     // Start is called before the first frame update
     void Start()
     {
+        MyInpulse = GetComponent<Cinemachine.CinemachineCollisionImpulseSource>();
+
         myAnimator = GetComponent<Animator>();
         mySoundSource = GetComponent<AudioSource>();
 
         myCollider = GetComponent<Collider2D>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        health = GetComponent<PlayerHealth>();
 
         CharacterInit();
         ParameterInit();
@@ -111,6 +123,9 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //按下右键产生相机抖动，抖动方式依照上面CM vcam1 Raw Signal内配置信息
+    if (Input.GetMouseButtonDown(1))
+        MyInpulse.GenerateImpulse();
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
@@ -423,6 +438,8 @@ public class CharacterController : MonoBehaviour
             {
                 hurtTimeLeft = 0;
                 isHurt = false;
+                hammer.SetActive(true);
+                hand.SetActive(true);
                 myAnimator.SetBool("Hurt", false);
             }
         }
@@ -536,5 +553,129 @@ public class CharacterController : MonoBehaviour
             LastMagic3 = Time.time;
         }
     }
+
+
+
+    // 与monster 交互相关
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("it is working for player");
+        // boss 
+        if (collision.gameObject.tag == "wizard"){
+            hurtAnimation();
+        
+            wizard tmp;
+            tmp = collision.gameObject.GetComponent<wizard>();
+        }
+
+        if (collision.gameObject.tag == "Warlock"){
+            hurtAnimation();
+        
+            warlock tmp;
+            tmp = collision.gameObject.GetComponent<warlock>();
+        }
+
+        if (collision.gameObject.tag == "StormMage"){
+            hurtAnimation();
+ 
+            storm_mage tmp;
+            tmp = collision.gameObject.GetComponent<storm_mage>();
+        }
+
+        // AI
+        if (collision.gameObject.tag == "shell_monster"){
+            hurtAnimation();
+
+            Shell_monster tmp;
+            tmp = collision.gameObject.GetComponent<Shell_monster>();
+        }
+
+        if (collision.gameObject.tag == "square"){
+            hurtAnimation();
+
+            square tmp;
+            tmp = collision.gameObject.GetComponent<square>();
+        }
+
+        if (collision.gameObject.tag == "mosquito"){
+            hurtAnimation();
+
+            mosquito tmp;
+            tmp = collision.gameObject.GetComponent<mosquito>();
+        }
+
+        if (collision.gameObject.tag == "slime"){
+            hurtAnimation();
+
+            slime tmp;
+            tmp = collision.gameObject.GetComponent<slime>();
+        }
+
+        if (collision.gameObject.tag == "beetle"){
+            hurtAnimation();
+
+            beetle tmp;
+            tmp = collision.gameObject.GetComponent<beetle>();
+        }
+
+        //boss的技能
+        if (collision.gameObject.tag == "wizard_bullet"){
+            hurtAnimation();
+        }
+
+        if (collision.gameObject.tag == "lightning"){
+            hurtAnimation();
+        }
+
+        if (collision.gameObject.tag == "zombie"){
+            hurtAnimation();
+        }
+    }
+
+    public void hurtAnimation(){
+        isHurt = true;
+        hammer.SetActive(false);
+        hand.SetActive(false);
+        health.TakeDamage(2);
+        myAnimator.SetBool("Hurt", true);
+        hurtTimeLeft = Time.time;
+    }
+
+    
+
+    // //踩死flying eye
+    //     if (collision.gameObject.tag == "FlyingEye" || collision.gameObject.tag == "Mushroom" || collision.gameObject.tag == "Duck" || collision.gameObject.tag == "Ghost" || collision.gameObject.tag == "Boss")
+    //     {
+    //         if (collision.gameObject.tag == "FlyingEye")
+    //         {
+    //             Enemy_flyingEye flying;
+    //             flying = collision.gameObject.GetComponent<Enemy_flyingEye>();
+    //             health.TakeDamage(flying.AttackPlayer());
+    //         }
+    //         if (collision.gameObject.tag == "Mushroom")
+    //             health.TakeDamage(1);
+    //         if (collision.gameObject.tag == "Duck")
+    //         {
+    //             DuckEmemy duck;
+    //             duck = collision.gameObject.GetComponent<DuckEmemy>();
+    //             health.TakeDamage(duck.AttackPlayer());
+    //         }
+    //         if (collision.gameObject.tag == "Ghost")
+    //         {
+    //             ghost g;
+    //             g = collision.gameObject.GetComponent<ghost>();
+    //             health.TakeDamage(g.AttackPlayer());
+    //         }
+    //         if (collision.gameObject.tag == "Boss")
+    //         {
+    //             boss b;
+    //             b = collision.gameObject.GetComponent<boss>();
+    //             health.TakeDamage(b.AttackPlayer());
+    //         }
+
+    //         IsHurt = true;
+    //         animator.SetBool("Hurt", IsHurt);
+    //         hurtTimer = Time.time;
+    //     }
 
 }
