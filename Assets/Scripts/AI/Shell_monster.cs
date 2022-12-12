@@ -60,16 +60,19 @@ public class Shell_monster : MonoBehaviour
         
 
         if(Input.GetKeyDown(KeyCode.J)){
+            myCollider.isTrigger = true;
             keyTimer = Time.time;
         }
 
         if(Time.time - keyTimer > 0.7){
             keyTimer = 0;
+            myCollider.isTrigger = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D collision) 
     {
+        Debug.Log("it is working(enter");
         if(isLook && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
             isDie = true;
@@ -77,15 +80,32 @@ public class Shell_monster : MonoBehaviour
             Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
         }
+
+        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
+        {
+            Debug.Log("collision is working");
+            isDie = true;
+            animator.SetBool("IsDeath", true);
+            timer = Time.time;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log("it is working");
         if(isLook && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
             Instantiate(blood, this.transform.position, this.transform.rotation);
+            timer = Time.time;
+        }
+
+        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
+        {
+            Debug.Log("collision is working");
+            isDie = true;
+            animator.SetBool("IsDeath", true);
             timer = Time.time;
         }
     }
@@ -94,10 +114,11 @@ public class Shell_monster : MonoBehaviour
     // private void OnCollisionEnter2D(Collision2D collision)
     // {
     //     Debug.Log("collision is working");
-    //     if (collision.gameObject.tag == "Bullet")
+    //     if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
     //     {
+    //         isDie = true;
     //         animator.SetBool("IsDeath", true);
-    //         dieTime = Time.time;
+    //         timer = Time.time;
     //     }
 
     // }
