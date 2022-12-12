@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 774ceee418d6e2248aa1589286c47bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rbody: {fileID: 0}
+  rbody: {fileID: 2689107678968499423}
   MagicCoolDown: 0.3
   MagicSpeed: 1200
 --- !u!61 &6778760077192890402
@@ -133,7 +133,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

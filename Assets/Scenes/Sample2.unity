@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3047060}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -357,7 +357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41926396}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Warlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 47267254}
   - component: {fileID: 47267253}
   - component: {fileID: 47267255}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: beetle
   m_TagString: beetle
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 68265466}
   - component: {fileID: 68265465}
   - component: {fileID: 68265467}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: shell_monster
   m_TagString: shell_monster
   m_Icon: {fileID: 0}
@@ -949,6 +949,10 @@ PrefabInstance:
     - target: {fileID: 3201310289794136127, guid: 996b9989080664014a143e375b64adf5, type: 3}
       propertyPath: m_Name
       value: p2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201310289794136127, guid: 996b9989080664014a143e375b64adf5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 996b9989080664014a143e375b64adf5, type: 3}
@@ -1570,7 +1574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 132585415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Storm_Mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,6 +1652,10 @@ PrefabInstance:
     - target: {fileID: 3940543910166991837, guid: f94b1346b497a4aa487ecb94333c2698, type: 3}
       propertyPath: m_Name
       value: p7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940543910166991837, guid: f94b1346b497a4aa487ecb94333c2698, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94b1346b497a4aa487ecb94333c2698, type: 3}
@@ -2324,7 +2332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210790530}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -2488,6 +2496,10 @@ PrefabInstance:
     - target: {fileID: 5271477883971424847, guid: 41b2ac444301f4018b3d98fb66fe1c68, type: 3}
       propertyPath: m_Name
       value: p3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271477883971424847, guid: 41b2ac444301f4018b3d98fb66fe1c68, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41b2ac444301f4018b3d98fb66fe1c68, type: 3}
@@ -2806,6 +2818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p1
       objectReference: {fileID: 0}
+    - target: {fileID: 2131407852200568297, guid: a8cb72d56cadc4eaaae688651dce3c49, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2131407852200568342, guid: a8cb72d56cadc4eaaae688651dce3c49, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3055,7 +3071,7 @@ GameObject:
   - component: {fileID: 327678088}
   - component: {fileID: 327678087}
   - component: {fileID: 327678089}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: square
   m_TagString: square
   m_Icon: {fileID: 0}
@@ -3363,7 +3379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 367876001}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -3541,6 +3557,10 @@ PrefabInstance:
     - target: {fileID: 5196366853089615094, guid: 3207e6ed560f94397a1b87882e5c64e4, type: 3}
       propertyPath: m_Name
       value: p1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196366853089615094, guid: 3207e6ed560f94397a1b87882e5c64e4, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3207e6ed560f94397a1b87882e5c64e4, type: 3}
@@ -3734,7 +3754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 398561197}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3851,7 +3871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428551141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3885,6 +3905,10 @@ PrefabInstance:
     - target: {fileID: 4227573050808650726, guid: 8a51c88345988401f856c525b612df08, type: 3}
       propertyPath: m_Name
       value: short_p2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227573050808650726, guid: 8a51c88345988401f856c525b612df08, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4227573050808650727, guid: 8a51c88345988401f856c525b612df08, type: 3}
       propertyPath: m_RootOrder
@@ -3946,7 +3970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 441331035}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -4652,6 +4676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p4
       objectReference: {fileID: 0}
+    - target: {fileID: 2517678274862266104, guid: e3f9945fe2e514f55be485915f167e0f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2517678274862266107, guid: e3f9945fe2e514f55be485915f167e0f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4836,6 +4864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p5
       objectReference: {fileID: 0}
+    - target: {fileID: 5576849026960944885, guid: 2babee9363503483480b22373e95528d, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2babee9363503483480b22373e95528d, type: 3}
 --- !u!4 &628988123 stripped
@@ -4858,7 +4890,7 @@ GameObject:
   - component: {fileID: 642590530}
   - component: {fileID: 642590529}
   - component: {fileID: 642590534}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: warlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5754,7 +5786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799511407}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6204,6 +6236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_p3
       objectReference: {fileID: 0}
+    - target: {fileID: 9195451205540598371, guid: 783d9b1eafe2744c8b2d94f469aed415, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9195451205540598396, guid: 783d9b1eafe2744c8b2d94f469aed415, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6341,7 +6377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980756008}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -6372,7 +6408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 984125220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -6487,7 +6523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 996384305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6523,7 +6559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009094948}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -6554,7 +6590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1024180373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6761,7 +6797,7 @@ GameObject:
   - component: {fileID: 1043427679}
   - component: {fileID: 1043427682}
   - component: {fileID: 1043427683}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: slime
   m_TagString: slime
   m_Icon: {fileID: 0}
@@ -7099,7 +7135,7 @@ GameObject:
   - component: {fileID: 1118101306}
   - component: {fileID: 1118101305}
   - component: {fileID: 1118101310}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28223,6 +28259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p8
       objectReference: {fileID: 0}
+    - target: {fileID: 3128829325223649085, guid: b8bafc8fc4dc049fd8a749bf88b7acbe, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8bafc8fc4dc049fd8a749bf88b7acbe, type: 3}
 --- !u!4 &1228477404 stripped
@@ -28323,7 +28363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233236996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -28439,7 +28479,7 @@ GameObject:
   - component: {fileID: 1256276493}
   - component: {fileID: 1256276492}
   - component: {fileID: 1256276496}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: mosquito
   m_TagString: mosquito
   m_Icon: {fileID: 0}
@@ -29054,7 +29094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1430982745}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -29085,7 +29125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455167386}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -29334,6 +29374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p2
       objectReference: {fileID: 0}
+    - target: {fileID: 5915983690156956493, guid: a0a55b15916f64bba8ee78869e2c3c19, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a55b15916f64bba8ee78869e2c3c19, type: 3}
 --- !u!4 &1487876781 stripped
@@ -29356,7 +29400,7 @@ GameObject:
   - component: {fileID: 1515648781}
   - component: {fileID: 1515648780}
   - component: {fileID: 1515648785}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: storm mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30007,6 +30051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_p1
       objectReference: {fileID: 0}
+    - target: {fileID: 6999151231048643715, guid: 1265b23a8ac90411ea19d3a6d4c2ff78, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6999151231048643740, guid: 1265b23a8ac90411ea19d3a6d4c2ff78, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -30067,7 +30115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712939666}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -30433,6 +30481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_p4
       objectReference: {fileID: 0}
+    - target: {fileID: 6621639060379861822, guid: 63252c8674c0646fcb8d1a3d559e36a0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6621639060379861823, guid: 63252c8674c0646fcb8d1a3d559e36a0, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -30493,7 +30545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799488426}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -30922,6 +30974,10 @@ PrefabInstance:
     - target: {fileID: 4042437970849307609, guid: 6427778ae9c4e4c998d2bcda5b16ed75, type: 3}
       propertyPath: m_Name
       value: p3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042437970849307609, guid: 6427778ae9c4e4c998d2bcda5b16ed75, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6427778ae9c4e4c998d2bcda5b16ed75, type: 3}
@@ -31413,6 +31469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p6
       objectReference: {fileID: 0}
+    - target: {fileID: 4656873924054394398, guid: 4fbf911dfb4244b4dbf04a5b4319d2bc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fbf911dfb4244b4dbf04a5b4319d2bc, type: 3}
 --- !u!4 &2032502919 stripped
@@ -31810,6 +31870,10 @@ PrefabInstance:
     - target: {fileID: 4543144102265997205, guid: 4b499a9f16b4b4259be7f4d24455c3a1, type: 3}
       propertyPath: m_Name
       value: p4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543144102265997205, guid: 4b499a9f16b4b4259be7f4d24455c3a1, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b499a9f16b4b4259be7f4d24455c3a1, type: 3}

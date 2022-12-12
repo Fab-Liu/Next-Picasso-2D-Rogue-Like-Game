@@ -40,7 +40,7 @@ public class Shell_monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDie && Time.time - timer > 0.2){
+        if(isDie && Time.time - timer > 0.6){
             Destroy(this.gameObject);
         }
         
@@ -74,52 +74,38 @@ public class Shell_monster : MonoBehaviour
     {
         Debug.Log("it is working(enter");
         if(isLook && keyTimer != 0){
-            //Debug.Log("trigger is working(shell)");
             isDie = true;
             animator.SetBool("IsDead", true);
             Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
-        }
-
-        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
-        {
-            Debug.Log("collision is working");
-            isDie = true;
-            animator.SetBool("IsDeath", true);
             timer = Time.time;
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("it is working");
-        if(isLook && keyTimer != 0){
-            //Debug.Log("trigger is working(shell)");
-            isDie = true;
-            animator.SetBool("IsDead", true);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
-        }
-
-        if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
-        {
-            Debug.Log("collision is working");
-            isDie = true;
-            animator.SetBool("IsDeath", true);
-            timer = Time.time;
+        if(isLook){
+            if(isLook && keyTimer != 0){
+                isDie = true;
+                animator.SetBool("IsDead", true);
+                Instantiate(blood, this.transform.position, this.transform.rotation);
+                timer = Time.time;
+            }
         }
     }
 
 
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     Debug.Log("collision is working");
-    //     if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
-    //     {
-    //         isDie = true;
-    //         animator.SetBool("IsDeath", true);
-    //         timer = Time.time;
-    //     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(isLook){
+            if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
+            {
+                isDie = true;
+                animator.SetBool("IsDead", true);
+                Instantiate(blood, this.transform.position, this.transform.rotation);
+                timer = Time.time;
+            }
+        }
 
-    // }
+    }
+
 }
