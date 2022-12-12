@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
+    public int spikeDamage;
+    private PlayerHealth playerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D myCollider2d)
     {
         
+        if(myCollider2d.CompareTag("Player") && myCollider2d.GetType().ToString() == "UnityEngine.CircleCollider2D")
+        {
+            playerHealth.TakeDamage(spikeDamage);
+        }
     }
 }
