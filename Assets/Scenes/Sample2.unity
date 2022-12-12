@@ -1562,7 +1562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 686611425}
   time: 0.15
-  flashColor: {r: 0.8867924, g: 0.079476655, b: 0.079476655, a: 0.64705884}
+  flash: {r: 0.735849, g: 0.12148449, b: 0.12148449, a: 0.69411767}
 --- !u!1 &127249489
 GameObject:
   m_ObjectHideFlags: 0
