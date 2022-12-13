@@ -6308,8 +6308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbf83d230966494d9e64cbb575c4ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 5
-  maxHealth: 5
+  initialHealth: 20
+  maxHealth: 20
   currentHealth: 0
   destroyObject: 0
   healthBar: {fileID: 1936989744}
