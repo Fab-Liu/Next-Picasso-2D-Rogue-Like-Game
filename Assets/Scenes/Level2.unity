@@ -2003,6 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa10abce41ec8641a35dd70c8c23622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bar: {fileID: 699019462}
 --- !u!222 &157633185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8996,6 +8997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291bb32ca6212c74b8ab101b554ab14d, type: 3}
+--- !u!1 &699019462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 344537705691787423, guid: 291bb32ca6212c74b8ab101b554ab14d, type: 3}
+  m_PrefabInstance: {fileID: 699019461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &699019463 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 562992056633716885, guid: 291bb32ca6212c74b8ab101b554ab14d, type: 3}
