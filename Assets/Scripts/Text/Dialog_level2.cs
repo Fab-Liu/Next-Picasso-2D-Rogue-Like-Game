@@ -17,53 +17,56 @@ public class Dialog_level2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       Text = speech.GetComponentInChildren<TextMeshProUGUI>();
+        Text = speech.GetComponentInChildren<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (index == 1) {
+        if (index == 1)
+        {
             //修改btn文字
-            button.text = "Wow, thank you!";
+            button.text = "You AGAIN ??!!!";
             //修改speech
-            Text.text = "speach 1 ................................................................................";
+            Text.text = "Hey!Here I come!!Surprise!!";
         }
-        
-        if (index == 2) {
+
+        if (index == 2)
+        {
             //修改btn文字
-            button.text = "What can I do with it?";
+            button.text = "What is it?";
             //修改speech
-            Text.text = "speach 2 ................................................................................";
+            Text.text = "This is the last of journey!I am here to give you some tips!";
         }
 
-        if (index == 2) {
-            button.text = "But this hammer sucks.";
-            Text.text = "speach 3 ................................................................................";
+        if (index == 2)
+        {
+            button.text = "Sure!I will take care!";
+            Text.text = "Be careful!!!There are gaps on the group,don't fall from it!";
         }
 
-        if (index == 3) {
-            button.text = "That`s great!";
-            Text.text = "speach 4 ................................................................................";
-        }
 
-        if (index == 3) {
+        if (index == 3)
+        {
             button.text = "I will save the town!";
-            Text.text = "speach 5 ................................................................................";
-            Invoke("desDialog", 2f);
+            Text.text = "So let's continue your journey!Good luck to you!";
+            Invoke("desDialog", 1f);
         }
 
-        if(index == 4){
+        if (index == 4)
+        {
             desDialog();
         }
     }
 
-    public void Next(){
+    public void Next()
+    {
         index++;
         Debug.Log("index = " + index);
     }
 
-    void desDialog(){
+    void desDialog()
+    {
         Debug.Log("here is working~~~");
         Destroy(this.gameObject);
         Time.timeScale = 1f;
