@@ -1626,11 +1626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2432321923568798641, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.71571
+      value: -36.22
       objectReference: {fileID: 0}
     - target: {fileID: 2432321923568798641, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5445819
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 2432321923568798641, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1674,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 1200216874}
     - target: {fileID: 7627821918701657317, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
       propertyPath: boardContent
-      value: 11
+      value: The home of a scarecrow
       objectReference: {fileID: 0}
     - target: {fileID: 7627821918701657317, guid: 2ce68a5a1a2079344be203d3b48af6d6, type: 3}
       propertyPath: dialogboxText
