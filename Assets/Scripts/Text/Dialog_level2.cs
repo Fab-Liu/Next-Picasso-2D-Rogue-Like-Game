@@ -12,7 +12,7 @@ public class Dialog_level2 : MonoBehaviour
     public GameObject speech;
     public GameObject btn;
 
-    private int index = 0;
+    private int index = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +58,7 @@ public class Dialog_level2 : MonoBehaviour
         }
     }
 
-    public void Next2(){
+    public void Next(){
         index++;
         Debug.Log("index = " + index);
     }

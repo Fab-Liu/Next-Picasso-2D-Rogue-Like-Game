@@ -11471,7 +11471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440975818372713365, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4440975818372713366, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49137,7 +49137,6 @@ MonoBehaviour:
   Text: {fileID: 1220587573}
   speech: {fileID: 1220587571}
   btn: {fileID: 930096342}
-  dialog: {fileID: 1731529796}
 --- !u!1001 &1733518868
 PrefabInstance:
   m_ObjectHideFlags: 0
