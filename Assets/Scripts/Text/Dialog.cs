@@ -11,7 +11,6 @@ public class Dialog : MonoBehaviour
     public TextMeshProUGUI Text;
     public GameObject speech;
     public GameObject btn;
-    public GameObject dialog;
 
     private int index = 0;
 
@@ -50,9 +49,13 @@ public class Dialog : MonoBehaviour
         }
 
         if (index == 3) {
-            Destroy(btn);
+            button.text = "I will save the town!";
             Text.text = "Come on boy, the future of our hometown depends on you.";
-            Invoke("des", 2f);
+            Invoke("desDialog", 2f);
+        }
+
+        if(index == 4){
+            desDialog();
         }
     }
 
@@ -61,7 +64,9 @@ public class Dialog : MonoBehaviour
         Debug.Log("index = " + index);
     }
 
-    public void des(){
-        Destroy(dialog);
+    void desDialog(){
+        Debug.Log("here is working~~~");
+        Destroy(this.gameObject);
+        Time.timeScale = 1f;
     }
 }

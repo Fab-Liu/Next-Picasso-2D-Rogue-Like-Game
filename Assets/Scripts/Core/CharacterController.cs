@@ -128,6 +128,7 @@ public class CharacterController : MonoBehaviour
 
         CharacterInit();
         ParameterInit();
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
