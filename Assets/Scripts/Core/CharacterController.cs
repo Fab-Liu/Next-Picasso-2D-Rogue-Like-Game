@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -86,10 +87,10 @@ public class CharacterController : MonoBehaviour
     // Weapon
 
     [Header("Weapon Parameter")]
-    
+
     public float BulletCoolDown = 0.35f;
     public GameObject bulletPrefab; //发射子弹
-    
+
     [Header("Magic Parameter")]
     public float MagicCoolDown1 = 2.0f;
     public float MagicCoolDown2 = 1.0f;
@@ -124,17 +125,20 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         //按下右键产生相机抖动
-        if (Input.GetMouseButtonDown(1))    MyInpulse.GenerateImpulse();
+        if (Input.GetMouseButtonDown(1)) MyInpulse.GenerateImpulse();
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
+        CharacterDiePressed();
 
         // CharacterShoot();
         CharacterDashCoolDown();
         HandleInput();
         ReleaseMagic();
-        
+
     }
+
+
 
     void FixedUpdate()
     {
@@ -180,6 +184,16 @@ public class CharacterController : MonoBehaviour
     private void CharacterCheckGround()
     {
         isGround = Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground);
+    }
+
+    private void CharacterDiePressed()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PlayerInfo.getInstance().Reload();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
+        }
     }
 
     private void CharacterHurtCheck()
@@ -454,7 +468,7 @@ public class CharacterController : MonoBehaviour
 
     //武器相关
     private float LastShoot = 0;
-    
+
 
     // public AudioClip launchClip; // 发射音效
     public void HandleInput()
@@ -476,12 +490,12 @@ public class CharacterController : MonoBehaviour
                 Instantiate(bulletPrefab,
                 myRigidbody2D.position + new Vector2(0, 0.9f),
                 Quaternion.identity);
-            
+
             BulletController bc = bullet.GetComponent<BulletController>();
             if (bc != null)
             {
                 bc.Move(new Vector2(faceLastPosition, 0), bc.BulletSpeed);
-            
+
             }
 
             LastShoot = Time.time;
@@ -494,29 +508,36 @@ public class CharacterController : MonoBehaviour
     private float LastMagic1 = 0;
     private float LastMagic2 = 0;
     private float LastMagic3 = 0;
-    public GameObject MagicPrefeb1; 
+    public GameObject MagicPrefeb1;
     public GameObject MagicPrefeb2;
     public GameObject MagicPrefeb3;
 
-    public void ReleaseMagic(){
-        if(Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1 ){
+    public void ReleaseMagic()
+    {
+        if (Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1)
+        {
             Magic1();
         }
-        if(Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2 ){
+        if (Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2)
+        {
             Magic2();
         }
-        if(Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3 ){
+        if (Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3)
+        {
             Magic3();
         }
-        
+
     }
 
-    public void Magic1(){
-        if(MagicPrefeb1 != null){
-            GameObject magic1 = Instantiate(MagicPrefeb1, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+    public void Magic1()
+    {
+        if (MagicPrefeb1 != null)
+        {
+            GameObject magic1 = Instantiate(MagicPrefeb1, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic1.GetComponent<MagicController>();
-            if(mc!=null){
+            if (mc != null)
+            {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
                 Debug.Log("魔法1发射了");
             }
@@ -525,12 +546,15 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void Magic2(){
-        if(MagicPrefeb2 != null){
-            GameObject magic2 = Instantiate(MagicPrefeb2, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+    public void Magic2()
+    {
+        if (MagicPrefeb2 != null)
+        {
+            GameObject magic2 = Instantiate(MagicPrefeb2, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic2.GetComponent<MagicController>();
-            if(mc!=null){
+            if (mc != null)
+            {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
                 Debug.Log("魔法2发射了");
             }
@@ -539,12 +563,15 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void Magic3(){
-        if(MagicPrefeb3 != null){
-            GameObject magic3 = Instantiate(MagicPrefeb3, myRigidbody2D.position + new Vector2(0,0.9f), Quaternion.identity);
+    public void Magic3()
+    {
+        if (MagicPrefeb3 != null)
+        {
+            GameObject magic3 = Instantiate(MagicPrefeb3, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic3.GetComponent<MagicController>();
-            if(mc!=null){
+            if (mc != null)
+            {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
                 Debug.Log("魔法3发射了");
             }
@@ -560,21 +587,24 @@ public class CharacterController : MonoBehaviour
     {
         Debug.Log("it is working for player");
         // boss 
-        if (collision.gameObject.tag == "wizard"){
+        if (collision.gameObject.tag == "wizard")
+        {
             hurtAnimation();
             wizard tmp;
             tmp = collision.gameObject.GetComponent<wizard>();
             health.TakeDamage(tmp.AttackPlayer());
         }
 
-        if (collision.gameObject.tag == "Warlock"){
+        if (collision.gameObject.tag == "Warlock")
+        {
             hurtAnimation();
             warlock tmp;
             tmp = collision.gameObject.GetComponent<warlock>();
             health.TakeDamage(tmp.AttackPlayer());
         }
 
-        if (collision.gameObject.tag == "StormMage"){
+        if (collision.gameObject.tag == "StormMage")
+        {
             hurtAnimation();
             storm_mage tmp;
             tmp = collision.gameObject.GetComponent<storm_mage>();
@@ -582,12 +612,14 @@ public class CharacterController : MonoBehaviour
         }
 
         // AI
-        if (collision.gameObject.tag == "shell_monster"){
+        if (collision.gameObject.tag == "shell_monster")
+        {
             hurtAnimation();
             health.TakeDamage(1);
         }
 
-        if (collision.gameObject.tag == "square"){
+        if (collision.gameObject.tag == "square")
+        {
             hurtAnimation();
 
             square tmp;
@@ -595,39 +627,46 @@ public class CharacterController : MonoBehaviour
             health.TakeDamage(tmp.AttackPlayer());
         }
 
-        if (collision.gameObject.tag == "mosquito"){
+        if (collision.gameObject.tag == "mosquito")
+        {
             hurtAnimation();
             health.TakeDamage(1);
         }
 
-        if (collision.gameObject.tag == "slime"){
+        if (collision.gameObject.tag == "slime")
+        {
             hurtAnimation();
             health.TakeDamage(1);
         }
 
-        if (collision.gameObject.tag == "beetle"){
+        if (collision.gameObject.tag == "beetle")
+        {
             hurtAnimation();
             health.TakeDamage(1);
         }
 
         //boss的技能
-        if (collision.gameObject.tag == "wizard_bullet"){
+        if (collision.gameObject.tag == "wizard_bullet")
+        {
             hurtAnimation();
             health.TakeDamage(6);
         }
 
-        if (collision.gameObject.tag == "lightning"){
+        if (collision.gameObject.tag == "lightning")
+        {
             hurtAnimation();
             health.TakeDamage(6);
         }
 
-        if (collision.gameObject.tag == "zombie"){
+        if (collision.gameObject.tag == "zombie")
+        {
             hurtAnimation();
             health.TakeDamage(6);
         }
     }
 
-    public void hurtAnimation(){
+    public void hurtAnimation()
+    {
         isHurt = true;
         hammer.SetActive(false);
         hand.SetActive(false);
