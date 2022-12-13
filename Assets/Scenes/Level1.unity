@@ -9573,9 +9573,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.07
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 4440975818372713365, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+=======
+    - target: {fileID: 4440975817738618383, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440975817738618383, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440975818372713366, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440975818372713366, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.94
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4440975819098882831, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9595,11 +9613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440975819129608963, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.35
+      value: 208.98
       objectReference: {fileID: 0}
     - target: {fileID: 4440975819129608963, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.17
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 4440975819129608963, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.z
