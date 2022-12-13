@@ -37,6 +37,7 @@ public class PlayerHealthBar : MonoBehaviour
     public void AddHealth(int extra)
     {
         PlayerHealth.healthMax += extra;
+        PlayerHealth.healthCurrent += extra;
         UpdateHealth(PlayerHealth.healthCurrent, PlayerHealth.healthMax);
     }
 }
