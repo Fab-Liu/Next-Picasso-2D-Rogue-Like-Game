@@ -108,6 +108,19 @@ public class CharacterController : MonoBehaviour
     private bool isShield = false;
     private float shieldTime = 0;
 
+    [Header("Points")]
+    public Transform p1;
+    public Transform p2;
+
+    [Header("Dialogs")]
+    public GameObject dialog1;
+    public GameObject dialog2;
+
+    
+    private float dialogTimer;
+    private bool showD1 = false;
+    private bool showD2 = false;
+
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
 
@@ -145,6 +158,8 @@ public class CharacterController : MonoBehaviour
         CharacterDashCoolDown();
         HandleInput();
         ReleaseMagic();
+
+        CheckDialog();
 
         if (isShield && Time.time - shieldTime > 3)
         {
@@ -722,5 +737,31 @@ public class CharacterController : MonoBehaviour
         myAnimator.SetBool("Hurt", true);
         MyInpulse.GenerateImpulse();
         hurtTimeLeft = Time.time;
+    }
+
+    public void CheckDialog(){
+        if(!showD1){
+            if(this.transform.position.x >= p1.position.x){
+                dialog1.SetActive(true);
+                Invoke("test",2.1f);
+                showD1 = true;
+            }
+        }
+
+        if(!showD2){
+            if(this.transform.position.x >= p2.position.x){
+                dialog2.SetActive(true);
+                Invoke("test_dia",2.1f);
+                showD2 = true;
+            }
+        }
+    }
+
+    void test(){
+        Destroy(dialog1);
+    }
+
+    void test_dia(){
+        Destroy(dialog2);
     }
 }
