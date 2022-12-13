@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class InGameUI : MonoBehaviour
 {
-    private GameObject storeObj;
-    private Button storeBtn;
-    private Button pauseBtn;
-    private GameObject me;
+    public GameObject storeObj;
+    public Button storeBtn;
+    public Button pauseBtn;
+    public GameObject me;
     // Start is called before the first frame update
-    private Text coinText;
+    public Text coinText;
 
 
     void Start()
