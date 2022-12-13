@@ -51715,6 +51715,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514208415}
     m_Modifications:
+    - target: {fileID: 4748770549160642476, guid: b18dcd3ee86986b469e9cfc64055704c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731064917795236289, guid: b18dcd3ee86986b469e9cfc64055704c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8880890979157700241, guid: b18dcd3ee86986b469e9cfc64055704c, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Stall
