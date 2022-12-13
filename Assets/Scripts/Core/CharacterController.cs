@@ -741,7 +741,7 @@ public class CharacterController : MonoBehaviour
 
     public void CheckDialog(){
         if(!showD1){
-            if(this.transform.position.x >= p1.position.x){
+            if(this.transform.position.x >= p1.position.x && this.transform.position.y > p1.position.y - 3 && this.transform.position.y < p1.position.y + 4){
                 dialog1.SetActive(true);
                 Invoke("test",2.1f);
                 showD1 = true;
