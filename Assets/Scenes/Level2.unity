@@ -236,7 +236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13534433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.7, y: 17.1, z: 0}
+  m_LocalPosition: {x: 28.6, y: -256.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1185,6 +1185,8 @@ MonoBehaviour:
   p2: {fileID: 0}
   dialog1: {fileID: 0}
   dialog2: {fileID: 0}
+  music: {fileID: 0}
+  jump: {fileID: 0}
   MagicPrefeb1: {fileID: 0}
   MagicPrefeb2: {fileID: 0}
   MagicPrefeb3: {fileID: 0}
@@ -2422,6 +2424,8 @@ MonoBehaviour:
   p2: {fileID: 824733963}
   dialog1: {fileID: 1636548002}
   dialog2: {fileID: 1166319686}
+  music: {fileID: 0}
+  jump: {fileID: 0}
   MagicPrefeb1: {fileID: 7112386965376621851, guid: c78a93cc1609beb499f9b4f150c51b11, type: 3}
   MagicPrefeb2: {fileID: 913581842794386787, guid: 5229f41dc50d33a43ad4861a67fe2fea, type: 3}
   MagicPrefeb3: {fileID: 2467474928135449474, guid: 0f4daac96ca23c54ebabdeb0c278a46d, type: 3}
@@ -53154,7 +53158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246472683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.800003, y: 2.7000008, z: -10.055331}
+  m_LocalPosition: {x: 39.5, y: -270.9, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59080,7 +59084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862188138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.800003, y: 2.7000008, z: -10.055331}
+  m_LocalPosition: {x: 39.5, y: -270.9, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61567,6 +61571,7 @@ MonoBehaviour:
   pauseBtn: {fileID: 1128705165}
   me: {fileID: 2107175392}
   coinText: {fileID: 154013625}
+  l3: 0
 --- !u!1001 &2108319446
 PrefabInstance:
   m_ObjectHideFlags: 0

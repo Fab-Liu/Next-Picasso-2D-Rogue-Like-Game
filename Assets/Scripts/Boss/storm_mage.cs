@@ -33,6 +33,9 @@ public class storm_mage : MonoBehaviour
     public GameObject blood;
     private float keyTimer = 0;
 
+    public AudioSource music;
+    public AudioClip hurt;
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,10 @@ public class storm_mage : MonoBehaviour
         animator.SetBool("IsHurt", false);
         animator.SetBool("IsMove", false);
         animator.SetBool("IsSkill", false);
+
+        music = gameObject.AddComponent<AudioSource>();
+        music.playOnAwake = false;
+        hurt = Resources.Load<AudioClip>("Sound/monster/hurt_monster_1");
     }
 
     // Update is called once per frame
@@ -179,11 +186,7 @@ public class storm_mage : MonoBehaviour
     {
         if(!isSkill && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
-            isHurt = true;
-            isAngry = true;
-            animator.SetBool("IsHurt", true);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
+            getHurt();
         }
     }
 
@@ -192,11 +195,7 @@ public class storm_mage : MonoBehaviour
         if(!isSkill && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
             if(!isHurt) healthBar.damage(1);
-            isHurt = true;
-            isAngry = true;
-            animator.SetBool("IsHurt", true);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
+            getHurt();
         }
     }
 
@@ -204,33 +203,31 @@ public class storm_mage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Black")
         {
-            isHurt = true;
-            isAngry = true;
-            animator.SetBool("IsHurt", true);
+            getHurt();
             healthBar.damage(3);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
         }
 
         if (collision.gameObject.tag == "Rock")
         {
-            isHurt = true;
-            isAngry = true;
-            animator.SetBool("IsHurt", true);
+            getHurt();
             healthBar.damage(2);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
         }
 
         if (collision.gameObject.tag == "Tornado")
         {
-            isHurt = true;
-            isAngry = true;
-            animator.SetBool("IsHurt", true);
+            getHurt();
             healthBar.damage(4);
-            Instantiate(blood, this.transform.position, this.transform.rotation);
-            timer = Time.time;
         }
+    }
+
+    public void getHurt(){
+        isHurt = true;
+        isAngry = true;
+        animator.SetBool("IsHurt", true);
+        music.clip = hurt;
+        music.Play();
+        Instantiate(blood, this.transform.position, this.transform.rotation);
+        timer = Time.time;
     }
 
     public int AttackPlayer(){
