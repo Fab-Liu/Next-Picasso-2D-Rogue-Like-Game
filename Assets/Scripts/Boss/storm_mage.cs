@@ -19,7 +19,7 @@ public class storm_mage : MonoBehaviour
 
     private bool isLight = false;
     public bool isSkill = false;
-    private bool isAngry = true;
+    private bool isAngry = false;
     private bool isDie = false;
     private bool isHurt = false;
     private bool isMove = false;
@@ -180,6 +180,7 @@ public class storm_mage : MonoBehaviour
         if(!isSkill && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
@@ -192,6 +193,7 @@ public class storm_mage : MonoBehaviour
             //Debug.Log("trigger is working(shell)");
             if(!isHurt) healthBar.damage(1);
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
@@ -203,6 +205,7 @@ public class storm_mage : MonoBehaviour
         if (collision.gameObject.tag == "Black")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(3);
             Instantiate(blood, this.transform.position, this.transform.rotation);
@@ -212,6 +215,7 @@ public class storm_mage : MonoBehaviour
         if (collision.gameObject.tag == "Rock")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(2);
             Instantiate(blood, this.transform.position, this.transform.rotation);
@@ -221,6 +225,7 @@ public class storm_mage : MonoBehaviour
         if (collision.gameObject.tag == "Tornado")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(4);
             Instantiate(blood, this.transform.position, this.transform.rotation);

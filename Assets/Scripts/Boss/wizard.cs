@@ -19,7 +19,7 @@ public class wizard : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
     private bool isShoot = false;
-    public bool isAngry = true;
+    public bool isAngry = false;
     private bool isHurt = false;
     public bool isAttack = false;
     public bool isMove = false;
@@ -175,6 +175,7 @@ public class wizard : MonoBehaviour
         if(!isSkill && !isAttack && keyTimer != 0){
             //Debug.Log("trigger is working(shell)");
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             Instantiate(blood, this.transform.position, this.transform.rotation);
             timer = Time.time;
@@ -186,6 +187,7 @@ public class wizard : MonoBehaviour
         if(!isSkill && !isAttack && keyTimer != 0){
             if(!isHurt) healthBar.damage(1);
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             Instantiate(blood, new Vector3(this.transform.position.x - 0.5f, this.transform.position.y + 2, this.transform.position.z),this.transform.rotation);
             timer = Time.time;
@@ -197,6 +199,7 @@ public class wizard : MonoBehaviour
         if (collision.gameObject.tag == "Black")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(3);
             Instantiate(blood, this.transform.position, this.transform.rotation);
@@ -206,6 +209,7 @@ public class wizard : MonoBehaviour
         if (collision.gameObject.tag == "Rock")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(2);
             Instantiate(blood, this.transform.position, this.transform.rotation);
@@ -215,6 +219,7 @@ public class wizard : MonoBehaviour
         if (collision.gameObject.tag == "Tornado")
         {
             isHurt = true;
+            isAngry = true;
             animator.SetBool("IsHurt", true);
             healthBar.damage(4);
             Instantiate(blood, this.transform.position, this.transform.rotation);
