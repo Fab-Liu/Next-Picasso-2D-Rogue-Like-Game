@@ -124,7 +124,11 @@ public class CharacterController : MonoBehaviour
     // 声音
     //音源AudioSource相当于播放器，而音效AudioClip相当于磁带
     public AudioSource music;
-    public AudioClip jump;//这里我要给主角添加跳跃的音效
+    public AudioClip hurtAudio;//这里我要给主角添加跳跃的音效
+    public AudioClip jump;
+    public AudioClip run;
+    public AudioClip walk;
+
 
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
@@ -153,7 +157,10 @@ public class CharacterController : MonoBehaviour
         ParameterInit();
         Time.timeScale = 0f;
 
-        jump = Resources.Load<AudioClip>("Sound/hurt_audio");
+        hurtAudio = Resources.Load<AudioClip>("Sound/hurt_audio");
+        jump = Resources.Load<AudioClip>("Sound/Jump");
+        walk = Resources.Load<AudioClip>("Sound/Walk");
+        run = Resources.Load<AudioClip>("Sound/Run");
     }
 
     // Update is called once per frame
@@ -411,6 +418,8 @@ public class CharacterController : MonoBehaviour
         {
             if (Time.time >= (dashLast + dashCoolDown))
             {
+                music.clip = run;
+                music.Play();
                 isDashing = true;
                 dashTimeLeft = dashTime;
                 dashLast = Time.time;
@@ -490,6 +499,8 @@ public class CharacterController : MonoBehaviour
         {
             myAnimator.SetBool("JumpUp", true);
             myAnimator.SetBool("JumpDown", false);
+            music.clip = jump;
+            music.Play();
         }
         else if (!isGround && myRigidbody2D.velocity.y < 0)
         {
@@ -747,7 +758,7 @@ public class CharacterController : MonoBehaviour
         hand.SetActive(false);
         //health.TakeDamage(2);
         myAnimator.SetBool("Hurt", true);
-        music.clip = jump;//把音源music的音效设置为jump
+        music.clip = hurtAudio;//把音源music的音效设置为jump
         music.Play();//播放音效
         MyInpulse.GenerateImpulse();
         hurtTimeLeft = Time.time;
