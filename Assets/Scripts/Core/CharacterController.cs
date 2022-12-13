@@ -129,7 +129,9 @@ public class CharacterController : MonoBehaviour
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
+        
         CharacterDiePressed();
+        CharacterRevivePressed();
 
         // CharacterShoot();
         CharacterDashCoolDown();
@@ -186,11 +188,24 @@ public class CharacterController : MonoBehaviour
         isGround = Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground);
     }
 
-    private void CharacterDiePressed()
+    
+
+    private void CharacterRevivePressed()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
+            
             PlayerInfo.getInstance().Reload();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
+        }
+    }
+
+    private void CharacterDiePressed()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            // Destroy PlayerInfo.getInstance() 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Time.timeScale = 1f;
         }
