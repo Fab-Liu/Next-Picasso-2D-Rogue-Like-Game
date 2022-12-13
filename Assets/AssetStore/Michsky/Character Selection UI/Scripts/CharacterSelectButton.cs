@@ -66,8 +66,9 @@ namespace Michsky.UI.Freebie
                 soundSource.PlayOneShot(selectSound);
 
                 // 切换到下一个场景
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Sample");
+                
                 Globe.characterIndex = buttonIndex;
+                Application.LoadLevel("Level1");
                 Debug.Log("Globe.characterIndex = " + Globe.characterIndex);
             }
 
