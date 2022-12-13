@@ -12,11 +12,19 @@ public class InGameUI : MonoBehaviour
     public GameObject me;
     // Start is called before the first frame update
     public Text coinText;
-
+    public bool l3;
 
     void Start()
     {
-        storeObj = GameObject.Find("Canvas (1)").transform.Find("Store").gameObject;
+        if (l3 == true)
+        {
+            storeObj = GameObject.Find("Canvas").transform.Find("Store").gameObject;
+        }
+        else
+        {
+            storeObj = GameObject.Find("Canvas (1)").transform.Find("Store").gameObject;
+        }
+
         storeObj.SetActive(false);
         storeBtn = transform.Find("StoreButton").GetComponent<Button>();
         storeBtn.onClick.AddListener(OpenStore);
