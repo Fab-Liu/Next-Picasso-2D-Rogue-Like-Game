@@ -15,23 +15,19 @@ public class Diamond : MonoBehaviour
         pick = Resources.Load<AudioClip>("Sound/Money");
     }
 
-    void Update()
-	{
-			if (playPick)
-			{
-                Debug.Log("pick up audio is working.");
-                music.clip = pick;
-                music.Play();
-			}
-	}
 
     void OnTriggerEnter2D(Collider2D myCollider2d)
     {        
         if(myCollider2d.gameObject.CompareTag("Player") && myCollider2d.GetType().ToString() == "UnityEngine.CircleCollider2D")
         {
-            playPick = true;
+            audioPick();
             Destroy(gameObject);
             DiamondUI.currentDiamondNum += 1;
         }
+    }
+
+    void audioPick(){
+        music.clip = pick;
+        music.Play();
     }
 }

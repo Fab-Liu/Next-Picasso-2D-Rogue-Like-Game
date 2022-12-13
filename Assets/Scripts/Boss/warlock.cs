@@ -35,6 +35,7 @@ public class warlock : MonoBehaviour
 
     public AudioSource music;
     public AudioClip hurt;
+    public AudioClip skill;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +58,7 @@ public class warlock : MonoBehaviour
         music = gameObject.AddComponent<AudioSource>();
         music.playOnAwake = false;
         hurt = Resources.Load<AudioClip>("Sound/monster/hurt_monster_2");
+        skill = Resources.Load<AudioClip>("Sound/monster/zombie");
     }
 
     // Update is called once per frame
@@ -159,6 +161,8 @@ public class warlock : MonoBehaviour
     }
 
     void zombie(){
+        music.clip = skill;
+        music.Play();
         Instantiate(g1, p1.position, p1.rotation);
         Instantiate(g2, p2.position, p2.rotation);
         Instantiate(g3, p3.position, p3.rotation);

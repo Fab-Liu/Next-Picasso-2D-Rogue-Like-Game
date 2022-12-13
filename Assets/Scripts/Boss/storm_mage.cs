@@ -35,6 +35,7 @@ public class storm_mage : MonoBehaviour
 
     public AudioSource music;
     public AudioClip hurt;
+    public AudioClip storm;
 
 
     // Start is called before the first frame update
@@ -57,6 +58,7 @@ public class storm_mage : MonoBehaviour
         music = gameObject.AddComponent<AudioSource>();
         music.playOnAwake = false;
         hurt = Resources.Load<AudioClip>("Sound/monster/hurt_monster_1");
+        storm = Resources.Load<AudioClip>("Sound/monster/storm");
     }
 
     // Update is called once per frame
@@ -172,6 +174,8 @@ public class storm_mage : MonoBehaviour
     }
 
     void light(){
+        music.clip = storm;
+        music.Play();
         Instantiate(l1, lp1.position, lp1.rotation);
         Instantiate(l2, lp2.position, lp2.rotation);
         Instantiate(l3, lp3.position, lp3.rotation);

@@ -35,6 +35,7 @@ public class wizard : MonoBehaviour
 
     public AudioSource music;
     public AudioClip hurt;
+    public AudioClip skill;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,7 @@ public class wizard : MonoBehaviour
         music = gameObject.AddComponent<AudioSource>();
         music.playOnAwake = false;
         hurt = Resources.Load<AudioClip>("Sound/monster/hurt_monster_3");
+        skill = Resources.Load<AudioClip>("Sound/monster/bullet_magic");
     }
 
     // Update is called once per frame
@@ -168,7 +170,8 @@ public class wizard : MonoBehaviour
     void shoot(){
         float x,y;
         wizard_skill bc = GetComponent<wizard_skill>();
-        Debug.Log("rotation = "+BulletPoint.position);
+        music.clip = skill;
+        music.Play();
         GameObject tmp = Instantiate(BulletPerfabs, BulletPoint.position, transform.rotation);
         if(IsFaceRight == 1)
             tmp.transform.localScale = new Vector3(1,1,1);
