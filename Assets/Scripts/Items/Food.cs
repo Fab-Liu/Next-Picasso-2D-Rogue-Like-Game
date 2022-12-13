@@ -13,6 +13,10 @@ public class Food : MonoBehaviour
             if(PlayerHealth.healthCurrent < PlayerHealth.healthMax)
             {
                 PlayerHealth.healthCurrent += healAmount;
+                if(PlayerHealth.healthCurrent > PlayerHealth.healthMax)
+                {
+                    PlayerHealth.healthCurrent = PlayerHealth.healthMax;
+                }
                 Destroy(gameObject);  //Destroy food object
             }
         }
