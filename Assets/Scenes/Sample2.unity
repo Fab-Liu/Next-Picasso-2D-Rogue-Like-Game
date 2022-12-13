@@ -6111,7 +6111,7 @@ GameObject:
   - component: {fileID: 642590534}
   m_Layer: 10
   m_Name: warlock
-  m_TagString: Untagged
+  m_TagString: Warlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9041,7 +9041,7 @@ GameObject:
   - component: {fileID: 1118101310}
   m_Layer: 10
   m_Name: wizard
-  m_TagString: Untagged
+  m_TagString: wizard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33272,7 +33272,7 @@ GameObject:
   - component: {fileID: 1515648785}
   m_Layer: 10
   m_Name: storm mage
-  m_TagString: Untagged
+  m_TagString: StormMage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
