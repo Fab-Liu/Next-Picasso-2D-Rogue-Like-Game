@@ -128,6 +128,9 @@ public class CharacterController : MonoBehaviour
     public AudioClip jump;
     public AudioClip run;
     public AudioClip walk;
+    public AudioClip m1;
+    public AudioClip m2;
+    public AudioClip m3;
 
 
 
@@ -161,6 +164,9 @@ public class CharacterController : MonoBehaviour
         jump = Resources.Load<AudioClip>("Sound/Jump");
         walk = Resources.Load<AudioClip>("Sound/Walk");
         run = Resources.Load<AudioClip>("Sound/Run");
+        m1 = Resources.Load<AudioClip>("Sound/Magic_wind");
+        m2 = Resources.Load<AudioClip>("Sound/Magic_stone");
+        m3 = Resources.Load<AudioClip>("Sound/Magic_3");
     }
 
     // Update is called once per frame
@@ -614,6 +620,9 @@ public class CharacterController : MonoBehaviour
     {
         if (MagicPrefeb1 != null)
         {
+            music.clip = m1;
+            music.Play();
+
             GameObject magic1 = Instantiate(MagicPrefeb1, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic1.GetComponent<MagicController>();
@@ -632,6 +641,9 @@ public class CharacterController : MonoBehaviour
     {
         if (MagicPrefeb2 != null)
         {
+            music.clip = m2;
+            music.Play();
+
             GameObject magic2 = Instantiate(MagicPrefeb2, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic2.GetComponent<MagicController>();
@@ -650,6 +662,9 @@ public class CharacterController : MonoBehaviour
     {
         if (MagicPrefeb3 != null)
         {
+            music.clip = m3;
+            music.Play();
+
             GameObject magic3 = Instantiate(MagicPrefeb3, myRigidbody2D.position + new Vector2(0, 0.9f), Quaternion.identity);
 
             MagicController mc = magic3.GetComponent<MagicController>();
