@@ -99,8 +99,13 @@ public class CharacterController : MonoBehaviour
     [Header("Hammer and hand")]
     public GameObject hammer;
     public GameObject hand;
+    public GameObject Shield;
 
     private PlayerHealth health;
+
+    private bool isShield  = false;
+    private float shieldTime = 0;
+
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
 
@@ -117,6 +122,8 @@ public class CharacterController : MonoBehaviour
 
         health = GetComponent<PlayerHealth>();
 
+        Shield.SetActive(false);
+
         CharacterInit();
         ParameterInit();
     }
@@ -124,8 +131,6 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //按下右键产生相机抖动
-        //if (Input.GetMouseButtonDown(1)) MyInpulse.GenerateImpulse();
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
@@ -135,6 +140,12 @@ public class CharacterController : MonoBehaviour
         CharacterDashCoolDown();
         HandleInput();
         ReleaseMagic();
+
+        if(isShield && Time.time - shieldTime > 3){
+            Shield.SetActive(false);
+            isShield = false;
+            shieldTime = 0;
+        }
 
     }
 
@@ -480,6 +491,12 @@ public class CharacterController : MonoBehaviour
         {
             Shoot();
         }
+
+        if(Input.GetKeyDown(KeyCode.H)){
+            isShield = true;
+            Shield.SetActive(true);
+            shieldTime = Time.time;
+        }
     }
 
     public void Shoot()
@@ -588,7 +605,7 @@ public class CharacterController : MonoBehaviour
     // 与monster 交互相关
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("it is working for player");
+        if(!isShield){
         // boss 
         if (collision.gameObject.tag == "wizard")
         {
@@ -665,6 +682,7 @@ public class CharacterController : MonoBehaviour
         {
             hurtAnimation();
             health.TakeDamage(6);
+        }
         }
     }
 
