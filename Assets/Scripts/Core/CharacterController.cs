@@ -121,12 +121,22 @@ public class CharacterController : MonoBehaviour
     private bool showD1 = false;
     private bool showD2 = false;
 
+    // 声音
+    //音源AudioSource相当于播放器，而音效AudioClip相当于磁带
+    public AudioSource music;
+    public AudioClip jump;//这里我要给主角添加跳跃的音效
+
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
 
     // Start is called before the first frame update
     void Start()
     {
+        //给对象添加一个AudioSource组件
+        music = gameObject.AddComponent<AudioSource>();
+        //设置不一开始就播放音效
+        music.playOnAwake = false;
+
         MyInpulse = GetComponent<Cinemachine.CinemachineCollisionImpulseSource>();
 
         myAnimator = GetComponent<Animator>();
@@ -142,6 +152,8 @@ public class CharacterController : MonoBehaviour
         CharacterInit();
         ParameterInit();
         Time.timeScale = 0f;
+
+        jump = Resources.Load<AudioClip>("Sound/hurt_audio");
     }
 
     // Update is called once per frame
@@ -735,6 +747,8 @@ public class CharacterController : MonoBehaviour
         hand.SetActive(false);
         //health.TakeDamage(2);
         myAnimator.SetBool("Hurt", true);
+        music.clip = jump;//把音源music的音效设置为jump
+        music.Play();//播放音效
         MyInpulse.GenerateImpulse();
         hurtTimeLeft = Time.time;
     }
