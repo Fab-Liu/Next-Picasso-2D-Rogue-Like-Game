@@ -12,7 +12,7 @@ public class DealthTrigger : MonoBehaviour
     {
         this.transform.parent.gameObject.GetComponent<AudioSource>().Stop();
         dt = GetComponent<BoxCollider2D>();
-        audioSource = GameObject.Find("Player (1)").GetComponent<AudioSource>();
+        audioSource = GameObject.Find("Player").GetComponent<AudioSource>();
         // audioSource.clip = Resources.Load<AudioClip>("Assets/Resources/Sound/levelSound/Vigorous BGM.mp3");
         audioSource.Play();
     }
