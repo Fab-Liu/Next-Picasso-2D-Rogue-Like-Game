@@ -125,7 +125,7 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         //按下右键产生相机抖动
-        if (Input.GetMouseButtonDown(1)) MyInpulse.GenerateImpulse();
+        //if (Input.GetMouseButtonDown(1)) MyInpulse.GenerateImpulse();
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
@@ -539,6 +539,7 @@ public class CharacterController : MonoBehaviour
             if (mc != null)
             {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                MyInpulse.GenerateImpulse();
                 Debug.Log("魔法1发射了");
             }
 
@@ -556,6 +557,7 @@ public class CharacterController : MonoBehaviour
             if (mc != null)
             {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                MyInpulse.GenerateImpulse();
                 Debug.Log("魔法2发射了");
             }
 
@@ -573,6 +575,7 @@ public class CharacterController : MonoBehaviour
             if (mc != null)
             {
                 mc.Move(new Vector2(faceLastPosition, 0), mc.MagicSpeed);
+                MyInpulse.GenerateImpulse();
                 Debug.Log("魔法3发射了");
             }
 
@@ -672,6 +675,7 @@ public class CharacterController : MonoBehaviour
         hand.SetActive(false);
         //health.TakeDamage(2);
         myAnimator.SetBool("Hurt", true);
+        MyInpulse.GenerateImpulse();
         hurtTimeLeft = Time.time;
     }
 }
