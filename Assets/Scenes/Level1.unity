@@ -3990,7 +3990,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Black
+  m_Text: Black(U)
 --- !u!222 &643633430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43117,7 +43117,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tornado
+  m_Text: Tornado(I)
 --- !u!222 &1776601770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43770,7 +43770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rock
+  m_Text: Rock(O)
 --- !u!222 &1812370503
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -45546,7 +45546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dash
+  m_Text: Dash(K)
 --- !u!222 &1990248895
 CanvasRenderer:
   m_ObjectHideFlags: 0
