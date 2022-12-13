@@ -79,9 +79,9 @@ public class CharacterController : MonoBehaviour
     // Skill
     [Header("Skills")]
     public Image skillImage;
-    // public Image skillImage2;
-    // public Image skillImage3;
-    // public Image skillImage4;
+    public Image skillImage2;
+    public Image skillImage3;
+    public Image skillImage4;
 
     // Weapon
 
@@ -347,20 +347,20 @@ public class CharacterController : MonoBehaviour
             }
         }
 
-        // if (Input.GetKeyDown(KeyCode.U))
-        // {
-        //     skillImage2.fillAmount = 1;
-        // }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            skillImage2.fillAmount = 1;
+        }
 
-        // if (Input.GetKeyDown(KeyCode.I))
-        // {
-        //     skillImage3.fillAmount = 1;
-        // }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            skillImage3.fillAmount = 1;
+        }
 
-        // if (Input.GetKeyDown(KeyCode.O))
-        // {
-        //     skillImage4.fillAmount = 1;
-        // }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            skillImage4.fillAmount = 1;
+        }
 
 
     }
@@ -447,9 +447,9 @@ public class CharacterController : MonoBehaviour
     private void CharacterDashCoolDown()
     {
         skillImage.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
-        // skillImage2.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
-        // skillImage3.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
-        // skillImage4.fillAmount -= 1.0f / dashCoolDown * Time.deltaTime;
+        skillImage2.fillAmount -= 1.0f / MagicCoolDown1 * Time.deltaTime;
+        skillImage3.fillAmount -= 1.0f / MagicCoolDown2 * Time.deltaTime;
+        skillImage4.fillAmount -= 1.0f / MagicCoolDown3 * Time.deltaTime;
     }
 
     //武器相关
