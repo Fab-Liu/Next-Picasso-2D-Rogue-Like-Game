@@ -32,4 +32,11 @@ public class PlayerHealthBar : MonoBehaviour
         healthBar.fillAmount = (float)PlayerHealth.healthCurrent / (float)PlayerHealth.healthMax;
         healthText.text = PlayerHealth.healthCurrent.ToString() + "/" + PlayerHealth.healthMax.ToString();
     }
+
+    //Buy extra health
+    public void AddHealth(int extra)
+    {
+        PlayerHealth.healthMax += extra;
+        UpdateHealth(PlayerHealth.healthCurrent, PlayerHealth.healthMax);
+    }
 }

@@ -19,12 +19,14 @@ public class Store : MonoBehaviour
     private GameObject InGameUI;
     private Text balance;
     private AudioSource audioSource;
+    
+    //Buy extra health
+    public GameObject bar;
+    private PlayerHealthBar playerHealthBar;
 
     private void Awake()
     {
         playerInfo = PlayerInfo.getInstance();
-
-
     }
     void Start()
     {
@@ -43,6 +45,8 @@ public class Store : MonoBehaviour
         balance.text = "Balance:" + playerInfo.money.ToString();
         audioSource = GetComponent<AudioSource>();
 
+        //Buy extra health
+        playerHealthBar = bar.GetComponentInChildren<PlayerHealthBar>();
     }
     void Update()
     {
@@ -74,6 +78,10 @@ public class Store : MonoBehaviour
             return;
         }
         DeduceMoney(itemPrice1);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(10);
+
         setInfoAndDisplay("Buy Scuccessfully");
 
 
@@ -94,6 +102,10 @@ public class Store : MonoBehaviour
             return;
         }
         DeduceMoney(itemPrice2);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(10);
+
         setInfoAndDisplay("Buy Scuccessfully");
     }
     private void Close()
