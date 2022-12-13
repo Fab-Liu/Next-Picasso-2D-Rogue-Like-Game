@@ -954,6 +954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364232262}
+  - component: {fileID: 1364232263}
   m_Layer: 5
   m_Name: SelectLevels
   m_TagString: Untagged
@@ -986,6 +987,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1364232263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364232261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c49df688309e14ab2538a9ba5fab2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level1Button: {fileID: 1788006618}
+  Level2Button: {fileID: 542538792}
+  Level3Button: {fileID: 1828881189}
 --- !u!1 &1788006615
 GameObject:
   m_ObjectHideFlags: 0
