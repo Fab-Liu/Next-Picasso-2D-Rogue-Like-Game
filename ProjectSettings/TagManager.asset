@@ -25,6 +25,10 @@ TagManager:
   - wizard_bullet
   - zombie
   - lightning
+  - Ladder
+  - Effects
+  - Platform
+  - shield
   layers:
   - Default
   - TransparentFX
