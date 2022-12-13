@@ -83,6 +83,7 @@ public class CharacterController : MonoBehaviour
     public Image skillImage2;
     public Image skillImage3;
     public Image skillImage4;
+    public Image skillImage5;
 
     // Weapon
 
@@ -95,6 +96,7 @@ public class CharacterController : MonoBehaviour
     public float MagicCoolDown1 = 2.0f;
     public float MagicCoolDown2 = 1.0f;
     public float MagicCoolDown3 = 1.0f;
+    public float MagicCoolDown4 = 5.0f;
 
     [Header("Hammer and hand")]
     public GameObject hammer;
@@ -103,7 +105,7 @@ public class CharacterController : MonoBehaviour
 
     private PlayerHealth health;
 
-    private bool isShield  = false;
+    private bool isShield = false;
     private float shieldTime = 0;
 
 
@@ -134,7 +136,7 @@ public class CharacterController : MonoBehaviour
         CharacterJumpPressed();
         CharacterDashPressed();
         CharacterDuckPressed();
-        
+
         CharacterDiePressed();
         CharacterRevivePressed();
 
@@ -143,7 +145,8 @@ public class CharacterController : MonoBehaviour
         HandleInput();
         ReleaseMagic();
 
-        if(isShield && Time.time - shieldTime > 3){
+        if (isShield && Time.time - shieldTime > 3)
+        {
             Shield.SetActive(false);
             isShield = false;
             shieldTime = 0;
@@ -199,13 +202,13 @@ public class CharacterController : MonoBehaviour
         isGround = Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Ground);
     }
 
-    
+
 
     private void CharacterRevivePressed()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            
+
             PlayerInfo.getInstance().Reload();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Time.timeScale = 1f;
@@ -402,6 +405,11 @@ public class CharacterController : MonoBehaviour
             skillImage4.fillAmount = 1;
         }
 
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            skillImage5.fillAmount = 1;
+        }
+
 
     }
 
@@ -490,6 +498,7 @@ public class CharacterController : MonoBehaviour
         skillImage2.fillAmount -= 1.0f / MagicCoolDown1 * Time.deltaTime;
         skillImage3.fillAmount -= 1.0f / MagicCoolDown2 * Time.deltaTime;
         skillImage4.fillAmount -= 1.0f / MagicCoolDown3 * Time.deltaTime;
+        skillImage5.fillAmount -= 1.0f / MagicCoolDown4 * Time.deltaTime;
     }
 
     //武器相关
@@ -507,7 +516,8 @@ public class CharacterController : MonoBehaviour
             Shoot();
         }
 
-        if(Input.GetKeyDown(KeyCode.H)){
+        if (Input.GetKeyDown(KeyCode.H) )
+        {
             isShield = true;
             Shield.SetActive(true);
             shieldTime = Time.time;
@@ -620,84 +630,85 @@ public class CharacterController : MonoBehaviour
     // 与monster 交互相关
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(!isShield){
-        // boss 
-        if (collision.gameObject.tag == "wizard")
+        if (!isShield)
         {
-            hurtAnimation();
-            wizard tmp;
-            tmp = collision.gameObject.GetComponent<wizard>();
-            health.TakeDamage(tmp.AttackPlayer());
-        }
+            // boss 
+            if (collision.gameObject.tag == "wizard")
+            {
+                hurtAnimation();
+                wizard tmp;
+                tmp = collision.gameObject.GetComponent<wizard>();
+                health.TakeDamage(tmp.AttackPlayer());
+            }
 
-        if (collision.gameObject.tag == "Warlock")
-        {
-            hurtAnimation();
-            warlock tmp;
-            tmp = collision.gameObject.GetComponent<warlock>();
-            health.TakeDamage(tmp.AttackPlayer());
-        }
+            if (collision.gameObject.tag == "Warlock")
+            {
+                hurtAnimation();
+                warlock tmp;
+                tmp = collision.gameObject.GetComponent<warlock>();
+                health.TakeDamage(tmp.AttackPlayer());
+            }
 
-        if (collision.gameObject.tag == "StormMage")
-        {
-            hurtAnimation();
-            storm_mage tmp;
-            tmp = collision.gameObject.GetComponent<storm_mage>();
-            health.TakeDamage(tmp.AttackPlayer());
-        }
+            if (collision.gameObject.tag == "StormMage")
+            {
+                hurtAnimation();
+                storm_mage tmp;
+                tmp = collision.gameObject.GetComponent<storm_mage>();
+                health.TakeDamage(tmp.AttackPlayer());
+            }
 
-        // AI
-        if (collision.gameObject.tag == "shell_monster")
-        {
-            hurtAnimation();
-            health.TakeDamage(1);
-        }
+            // AI
+            if (collision.gameObject.tag == "shell_monster")
+            {
+                hurtAnimation();
+                health.TakeDamage(1);
+            }
 
-        if (collision.gameObject.tag == "square")
-        {
-            hurtAnimation();
+            if (collision.gameObject.tag == "square")
+            {
+                hurtAnimation();
 
-            square tmp;
-            tmp = collision.gameObject.GetComponent<square>();
-            health.TakeDamage(tmp.AttackPlayer());
-        }
+                square tmp;
+                tmp = collision.gameObject.GetComponent<square>();
+                health.TakeDamage(tmp.AttackPlayer());
+            }
 
-        if (collision.gameObject.tag == "mosquito")
-        {
-            hurtAnimation();
-            health.TakeDamage(1);
-        }
+            if (collision.gameObject.tag == "mosquito")
+            {
+                hurtAnimation();
+                health.TakeDamage(1);
+            }
 
-        if (collision.gameObject.tag == "slime")
-        {
-            hurtAnimation();
-            health.TakeDamage(1);
-        }
+            if (collision.gameObject.tag == "slime")
+            {
+                hurtAnimation();
+                health.TakeDamage(1);
+            }
 
-        if (collision.gameObject.tag == "beetle")
-        {
-            hurtAnimation();
-            health.TakeDamage(1);
-        }
+            if (collision.gameObject.tag == "beetle")
+            {
+                hurtAnimation();
+                health.TakeDamage(1);
+            }
 
-        //boss的技能
-        if (collision.gameObject.tag == "wizard_bullet")
-        {
-            hurtAnimation();
-            health.TakeDamage(6);
-        }
+            //boss的技能
+            if (collision.gameObject.tag == "wizard_bullet")
+            {
+                hurtAnimation();
+                health.TakeDamage(6);
+            }
 
-        if (collision.gameObject.tag == "lightning")
-        {
-            hurtAnimation();
-            health.TakeDamage(6);
-        }
+            if (collision.gameObject.tag == "lightning")
+            {
+                hurtAnimation();
+                health.TakeDamage(6);
+            }
 
-        if (collision.gameObject.tag == "zombie")
-        {
-            hurtAnimation();
-            health.TakeDamage(6);
-        }
+            if (collision.gameObject.tag == "zombie")
+            {
+                hurtAnimation();
+                health.TakeDamage(6);
+            }
         }
     }
 
