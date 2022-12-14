@@ -9,22 +9,16 @@ public class MenuButton : MonoBehaviour
 {
     public Button PlayButton;
     public AudioMixer audioMixer;
-    public Slider slider;
-    public GameObject obj;
-    public float value;
 
     // Start is called before the first frame update
     void Start()
     {
         PlayButton.onClick.AddListener(userSelect);
-        slider = obj.GetComponent<Slider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        value = slider.value;
-        SetVolume(value);
 
     }
 
@@ -54,7 +48,7 @@ public class MenuButton : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        // Debug.Log(volume);
+        Debug.Log(volume);
         audioMixer.SetFloat("Volume", volume);
     }
 }
