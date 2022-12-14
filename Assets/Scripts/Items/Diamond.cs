@@ -28,7 +28,7 @@ public class Diamond : MonoBehaviour
     }
     void audioPick()
     {
-        // music.clip = pick;
+        music.clip = pick;
         music.Play();
     }
 }
