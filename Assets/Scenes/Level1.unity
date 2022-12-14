@@ -572,6 +572,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread
@@ -3726,6 +3730,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (3)
@@ -3916,6 +3924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (2)
@@ -12392,6 +12404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -45979,6 +45995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -48784,6 +48804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (1)
@@ -49982,6 +50006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -50558,6 +50586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 34

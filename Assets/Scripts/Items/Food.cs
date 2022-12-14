@@ -6,8 +6,8 @@ public class Food : MonoBehaviour
 {
     [SerializeField] private int healAmount;
 
-    public AudioSource music;
-    private AudioClip pick;
+    private AudioSource music;
+    public AudioClip pick;
 
     void Start()
     {
