@@ -31,7 +31,7 @@ public class InGameUI : MonoBehaviour
         pauseBtn = transform.Find("PauseButton").GetComponent<Button>();
         pauseBtn.onClick.AddListener(PauseGame);
         me = GameObject.Find("Canvas (1)").transform.Find("InGameUI").gameObject;
-        coinText = transform.Find("Balance/money").GetComponent<Text>();
+        // coinText = transform.Find("Balance/money").GetComponent<Text>();
     }
     void Update()
     {

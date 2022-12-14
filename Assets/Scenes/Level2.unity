@@ -1186,7 +1186,13 @@ MonoBehaviour:
   dialog1: {fileID: 0}
   dialog2: {fileID: 0}
   music: {fileID: 0}
+  hurtAudio: {fileID: 0}
   jump: {fileID: 0}
+  run: {fileID: 0}
+  walk: {fileID: 0}
+  m1: {fileID: 0}
+  m2: {fileID: 0}
+  m3: {fileID: 0}
   MagicPrefeb1: {fileID: 0}
   MagicPrefeb2: {fileID: 0}
   MagicPrefeb3: {fileID: 0}
@@ -2261,7 +2267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170911384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.9, y: -14.4, z: -0.0553308}
+  m_LocalPosition: {x: -65.3, y: 260.01, z: -0.0553308}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2425,7 +2431,13 @@ MonoBehaviour:
   dialog1: {fileID: 1636548002}
   dialog2: {fileID: 1166319686}
   music: {fileID: 0}
+  hurtAudio: {fileID: 0}
   jump: {fileID: 0}
+  run: {fileID: 0}
+  walk: {fileID: 0}
+  m1: {fileID: 0}
+  m2: {fileID: 0}
+  m3: {fileID: 0}
   MagicPrefeb1: {fileID: 7112386965376621851, guid: c78a93cc1609beb499f9b4f150c51b11, type: 3}
   MagicPrefeb2: {fileID: 913581842794386787, guid: 5229f41dc50d33a43ad4861a67fe2fea, type: 3}
   MagicPrefeb3: {fileID: 2467474928135449474, guid: 0f4daac96ca23c54ebabdeb0c278a46d, type: 3}
@@ -3407,6 +3419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -3552,6 +3568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -4331,6 +4351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -7097,6 +7121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fa7845500ad94da5afeac3aa2f71197, type: 3}
+--- !u!1 &580639645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3557001628287500003, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+  m_PrefabInstance: {fileID: 2046017662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &583430831
 GameObject:
   m_ObjectHideFlags: 0
@@ -7249,6 +7278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -7514,6 +7547,7 @@ GameObject:
   - component: {fileID: 590438593}
   - component: {fileID: 590438592}
   - component: {fileID: 590438591}
+  - component: {fileID: 590438595}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -7611,6 +7645,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &590438595
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590438590}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6bb2c57a91abc484abcf6d0d8e47eee0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &595523868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9578,6 +9708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -11608,6 +11742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -51718,6 +51856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -52009,6 +52151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -52251,6 +52397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -53158,7 +53308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246472683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.5, y: -270.9, z: -10.055331}
+  m_LocalPosition: {x: -36.700005, y: 3.5100098, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54658,6 +54808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -55164,6 +55318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1433758691}
+  - component: {fileID: 1433758692}
   m_Layer: 0
   m_Name: LevelComponent
   m_TagString: Untagged
@@ -55286,6 +55441,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1433758692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433758690}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1434950890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57041,6 +57292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -57092,6 +57347,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
   m_PrefabInstance: {fileID: 1609994596}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1609994598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3557001628287500003, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+  m_PrefabInstance: {fileID: 1609994596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1609994599
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609994598}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 12
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1616296035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7937981109879120312, guid: e4fd7beb485db469fa6c68d5049bfaea, type: 3}
@@ -59084,7 +59440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862188138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.5, y: -270.9, z: -10.055331}
+  m_LocalPosition: {x: -36.700005, y: 3.5100098, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59183,6 +59539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -59833,6 +60193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -61077,6 +61441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -61128,6 +61496,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
   m_PrefabInstance: {fileID: 2046017662}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &2046017669
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580639645}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2054657240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61273,6 +61737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -62109,6 +62577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -62176,6 +62648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 65
