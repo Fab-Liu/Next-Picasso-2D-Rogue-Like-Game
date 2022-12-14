@@ -2745,11 +2745,11 @@ MonoBehaviour:
   isDashing: 0
   jumpCount: 0
   jumpPressed: 0
-  skillImage: {fileID: 0}
-  skillImage2: {fileID: 0}
-  skillImage3: {fileID: 0}
-  skillImage4: {fileID: 0}
-  skillImage5: {fileID: 0}
+  skillImage: {fileID: 921494848}
+  skillImage2: {fileID: 98816565}
+  skillImage3: {fileID: 50783453}
+  skillImage4: {fileID: 2133877571}
+  skillImage5: {fileID: 714160355}
   BulletCoolDown: 0.5
   bulletPrefab: {fileID: 0}
   MagicCoolDown1: 2
@@ -10105,7 +10105,7 @@ RectTransform:
   m_GameObject: {fileID: 714160353}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1750034, y: 1.1624936, z: 1}
+  m_LocalScale: {x: 1.1750036, y: 1.1624937, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1548029465}
