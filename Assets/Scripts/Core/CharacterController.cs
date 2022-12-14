@@ -132,7 +132,7 @@ public class CharacterController : MonoBehaviour
     public AudioClip m2;
     public AudioClip m3;
 
-
+    public magic_inc p;
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
 
@@ -151,6 +151,7 @@ public class CharacterController : MonoBehaviour
 
         myCollider = GetComponent<Collider2D>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
+        p = GetComponent<magic_inc>();
 
         health = GetComponent<PlayerHealth>();
 
@@ -563,9 +564,11 @@ public class CharacterController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.H) )
         {
-            isShield = true;
-            Shield.SetActive(true);
-            shieldTime = Time.time;
+            if(p.minusInc()){
+                isShield = true;
+                Shield.SetActive(true);
+                shieldTime = Time.time;
+            }
         }
     }
 
@@ -601,17 +604,26 @@ public class CharacterController : MonoBehaviour
 
     public void ReleaseMagic()
     {
+        //InGameUI p = new InGameUI();
+        //magic_inc p = new magic_inc(); 
         if (Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1)
         {
-            Magic1();
+            if(p.minusM1()){ 
+                Debug.Log("pass here");   
+                Magic1();
+            }
         }
         if (Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2)
         {
-            Magic2();
+            if(p.minusM2()){
+                Magic2(); 
+            }   
         }
         if (Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3)
         {
-            Magic3();
+            if(p.minusM3()){
+                Magic3();
+            }    
         }
 
     }

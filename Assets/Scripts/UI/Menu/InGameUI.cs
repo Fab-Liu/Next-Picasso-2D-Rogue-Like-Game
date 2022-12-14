@@ -14,8 +14,13 @@ public class InGameUI : MonoBehaviour
     public Text coinText;
     public bool l3;
 
+    public InGameUI(){
+
+    }
+
     void Start()
     {
+
         if (l3 == true)
         {
             storeObj = GameObject.Find("Canvas").transform.Find("Store").gameObject;
@@ -26,7 +31,7 @@ public class InGameUI : MonoBehaviour
         }
 
         storeObj.SetActive(false);
-        storeBtn = transform.Find("StoreButton").GetComponent<Button>();
+        storeBtn = transform.Find("StoreButton").GetComponent<Button>();//here
         storeBtn.onClick.AddListener(OpenStore);
         pauseBtn = transform.Find("PauseButton").GetComponent<Button>();
         pauseBtn.onClick.AddListener(PauseGame);
@@ -35,7 +40,7 @@ public class InGameUI : MonoBehaviour
     }
     void Update()
     {
-        coinText.text = PlayerInfo.getInstance().money.ToString();
+        coinText.text = PlayerInfo.getInstance().money.ToString();//null
     }
 
     private void PauseGame()

@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInfo
 {
     private static PlayerInfo instance;
 
     public int money = 100;
-    private PlayerInfo()
+
+    public PlayerInfo()
     {
 
     }
@@ -31,9 +34,12 @@ public class PlayerInfo
         }
         return instance;
     }
+
     public void Reload()
     {
         money = 100;
     }
+
+    
 }
 
