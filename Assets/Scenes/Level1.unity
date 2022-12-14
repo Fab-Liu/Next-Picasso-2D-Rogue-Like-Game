@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -568,6 +572,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread
@@ -657,7 +665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79588862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.11, y: -110.12, z: -10.055331}
+  m_LocalPosition: {x: -64.490005, y: -105.32, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1449,6 +1457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: magic1
       objectReference: {fileID: 0}
+    - target: {fileID: 4008982348779387595, guid: 77b1286448e094fd8bb3513380980af6, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b1286448e094fd8bb3513380980af6, type: 3}
 --- !u!4 &155752291 stripped
@@ -1617,6 +1629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -1785,6 +1801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: inc (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 999162220728422543, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
 --- !u!4 &207200930 stripped
@@ -3252,6 +3272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -3841,6 +3865,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (3)
@@ -3863,6 +3891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -4027,6 +4059,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (2)
@@ -4223,7 +4259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354429204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.7, y: 6.7, z: 0}
+  m_LocalPosition: {x: -201.3, y: 11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4442,6 +4478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: inc
       objectReference: {fileID: 0}
+    - target: {fileID: 999162220728422543, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
 --- !u!4 &360637011 stripped
@@ -4735,6 +4775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5789,7 +5833,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6355,7 +6399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520877220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.11, y: -110.12, z: -10.055331}
+  m_LocalPosition: {x: -64.490005, y: -105.32, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7085,6 +7129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: magic2
       objectReference: {fileID: 0}
+    - target: {fileID: 5298127763987740526, guid: 0c11b055626294d9982e1a86cf3f2fb9, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c11b055626294d9982e1a86cf3f2fb9, type: 3}
 --- !u!4 &577503112 stripped
@@ -7765,6 +7813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -8047,6 +8099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -9285,6 +9341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -11300,6 +11360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -12544,6 +12608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -12606,6 +12674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -12906,6 +12978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -44361,6 +44437,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 938912022}
     m_Modifications:
+    - target: {fileID: 3137948767085442000, guid: 779ac58f289c74eaea0c9f301e0e6bb3, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3137948767085442003, guid: 779ac58f289c74eaea0c9f301e0e6bb3, type: 3}
       propertyPath: m_Name
       value: magic3
@@ -46098,6 +46178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -46222,6 +46306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -46680,6 +46768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -46826,6 +46918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -47147,6 +47243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -48223,6 +48323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -48849,6 +48953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -49469,6 +49577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1704170696037544431, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 6153308388849106256, guid: 1864fdab7bb463340b9a0e721456e12d, type: 3}
       propertyPath: m_Name
       value: Bread (1)
@@ -50060,6 +50172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -50738,6 +50854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -51315,6 +51435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4850174401567434114, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 4850174401567434115, guid: 28d44ac8b6a8a024aabf8142d604111b, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -57986,6 +58110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -58729,6 +58857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3557001628287500009, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3557001628287500012, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -58959,6 +59091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: inc
       objectReference: {fileID: 0}
+    - target: {fileID: 999162220728422543, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69e87d96f73be404fb7bba57477c8731, type: 3}
 --- !u!1001 &3137948767962194194
@@ -58968,6 +59104,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 938912022}
     m_Modifications:
+    - target: {fileID: 3137948767085442000, guid: 779ac58f289c74eaea0c9f301e0e6bb3, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     - target: {fileID: 3137948767085442003, guid: 779ac58f289c74eaea0c9f301e0e6bb3, type: 3}
       propertyPath: m_Name
       value: magic3
@@ -59073,6 +59213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: magic1
       objectReference: {fileID: 0}
+    - target: {fileID: 4008982348779387595, guid: 77b1286448e094fd8bb3513380980af6, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b1286448e094fd8bb3513380980af6, type: 3}
 --- !u!1001 &5298127763289026602
@@ -59130,6 +59274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: magic2
       objectReference: {fileID: 0}
+    - target: {fileID: 5298127763987740526, guid: 0c11b055626294d9982e1a86cf3f2fb9, type: 3}
+      propertyPath: pick
+      value: 
+      objectReference: {fileID: 8300000, guid: 33f158b5dc67baf45a879a81e9e61295, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c11b055626294d9982e1a86cf3f2fb9, type: 3}
 --- !u!1001 &7635674028076984220
