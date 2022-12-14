@@ -138,6 +138,7 @@ public class wizard : MonoBehaviour
         if(isDead && Time.time - timer > 0.9){
             Destroy(bar);
             Destroy(this.gameObject);
+            Application.LoadLevel("Level2");
         }
 
         if(isMove)
