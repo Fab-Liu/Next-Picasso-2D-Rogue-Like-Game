@@ -29,6 +29,10 @@ TagManager:
   - Effects
   - Platform
   - shield
+  - m1
+  - m2
+  - m3
+  - inc
   layers:
   - Default
   - TransparentFX

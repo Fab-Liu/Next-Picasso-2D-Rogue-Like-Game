@@ -696,6 +696,7 @@ public class CharacterController : MonoBehaviour
     // 与monster 交互相关
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (!isShield)
         {
             // boss 
