@@ -50,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
         if (healthCurrent <= 0)
         {
             healthCurrent = 0;
+            DieMenu.DieMenuShow();
             Invoke("KillPlayer", dieTime);
         }
         playerHealthBar.UpdateHealth(healthCurrent, healthMax);
