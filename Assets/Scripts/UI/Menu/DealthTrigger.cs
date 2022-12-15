@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Diemenu;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -42,6 +43,9 @@ public class DealthTrigger : MonoBehaviour
         audioSource.Stop();
         this.transform.parent.gameObject.GetComponent<AudioSource>().Play();
         // Time.timeScale = 0f;
-        Invoke("SceneReload", 0.3f);
+        // Invoke("SceneReload", 0.3f);
+
+        DieMenu.DieMenuShow();
+
     }
 }
