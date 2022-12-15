@@ -101,6 +101,7 @@ public class Demo_GM : MonoBehaviour {
 
             Demo_GM.Gm.UIImage[4].color = myColor;
         }
+
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             Color myColor = new Color32(255, 255, 255, 255);
@@ -109,8 +110,6 @@ public class Demo_GM : MonoBehaviour {
         }
 
    
-
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
 
@@ -133,7 +132,7 @@ public class Demo_GM : MonoBehaviour {
 
     
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.J))
         {
 
             Color myColor = new Color32(180, 180, 180, 255);
@@ -143,7 +142,7 @@ public class Demo_GM : MonoBehaviour {
 
 
     
-        if (Input.GetKeyUp(KeyCode.Alpha1))
+        if (Input.GetKeyUp(KeyCode.J))
         {
 
             Color myColor = new Color32(255, 255, 255, 255);
