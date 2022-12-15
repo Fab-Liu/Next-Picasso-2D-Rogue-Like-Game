@@ -250,23 +250,23 @@ public class CharacterController : MonoBehaviour
 
     private void CharacterRevivePressed()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
+        // if (Input.GetKeyDown(KeyCode.P))
+        // {
 
-            PlayerInfo.getInstance().Reload();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1f;
-        }
+        //     PlayerInfo.getInstance().Reload();
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //     Time.timeScale = 1f;
+        // }
     }
 
     private void CharacterDiePressed()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            // Destroy PlayerInfo.getInstance() 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1f;
-        }
+        // if (Input.GetKeyDown(KeyCode.L))
+        // {
+        //     // Destroy PlayerInfo.getInstance() 
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //     Time.timeScale = 1f;
+        // }
     }
 
     private void CharacterHurtCheck()

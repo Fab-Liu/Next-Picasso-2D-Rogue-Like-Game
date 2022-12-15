@@ -22,7 +22,7 @@ public class TreasureChest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O))  //Press 'O' to open chest
+        if(Input.GetKeyDown(KeyCode.Q))  //Press 'Q' to open chest
         {
             if(!status && collision)
             {
@@ -56,7 +56,7 @@ public class TreasureChest : MonoBehaviour
     
     void GenTreasure()
     {
-        Instantiate(treasure, transform.position, Quaternion.identity);
+        Instantiate(treasure, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         isGen = true;
     }
 }
