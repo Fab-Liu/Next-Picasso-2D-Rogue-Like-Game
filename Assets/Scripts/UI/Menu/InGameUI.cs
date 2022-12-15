@@ -21,14 +21,14 @@ public class InGameUI : MonoBehaviour
     void Start()
     {
 
-        if (l3 == true)
-        {
-            storeObj = GameObject.Find("Canvas").transform.Find("Store").gameObject;
-        }
-        else
-        {
-            storeObj = GameObject.Find("Canvas (1)").transform.Find("Store").gameObject;
-        }
+        // if (l3 == true)
+        // {
+        //     storeObj = GameObject.Find("Canvas").transform.Find("Store").gameObject;
+        // }
+        // else
+        // {
+        //     storeObj = GameObject.Find("Canvas (1)").transform.Find("Store").gameObject;
+        // }
 
         storeObj.SetActive(false);
         storeBtn = transform.Find("StoreButton").GetComponent<Button>();//here
