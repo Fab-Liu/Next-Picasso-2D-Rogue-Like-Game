@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 1415430364}
   - component: {fileID: 1415430363}
   - component: {fileID: 1415430362}
+  - component: {fileID: 1415430366}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -776,6 +777,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415430360}
   m_CullTransparentMesh: 1
+--- !u!114 &1415430366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415430360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdef91c95cc4dbf4288d2d0121202ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitButton: {fileID: 1415430363}
+  NextButton: {fileID: 1052852182}
 --- !u!1 &1557662661
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2144333514}
   - component: {fileID: 2144333515}
+  - component: {fileID: 2144333516}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -939,14 +955,14 @@ RectTransform:
   m_GameObject: {fileID: 2144333513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000801, y: 1.0000801, z: 1.0000801}
+  m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1212645302}
   - {fileID: 1415430361}
   - {fileID: 1052852180}
   m_Father: {fileID: 8472499247301125464}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -974,6 +990,20 @@ Canvas:
   m_SortingLayerID: -671759489
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &2144333516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144333513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdef91c95cc4dbf4288d2d0121202ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitButton: {fileID: 1415430363}
+  NextButton: {fileID: 1052852182}
 --- !u!1 &1246016413115142
 GameObject:
   m_ObjectHideFlags: 0
@@ -24971,7 +25001,7 @@ RectTransform:
   - {fileID: 4702038115082816}
   - {fileID: 721305945}
   m_Father: {fileID: 8472499247301125464}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30215,10 +30245,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8472499248086161863}
-  - {fileID: 8472499248096233225}
-  - {fileID: 8472499248605477586}
   - {fileID: 469907508338159681}
   - {fileID: 2144333514}
+  - {fileID: 8472499248096233225}
+  - {fileID: 8472499248605477586}
   m_Father: {fileID: 8755038485009714054}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30428,7 +30458,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8472499247301125464}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8472499248096233226
 MonoBehaviour:
@@ -30525,7 +30555,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8472499247301125464}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
