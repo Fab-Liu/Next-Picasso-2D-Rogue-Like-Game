@@ -56,7 +56,7 @@ public class TreasureChest : MonoBehaviour
     
     void GenTreasure()
     {
-        Instantiate(treasure, transform.position, Quaternion.identity);
+        Instantiate(treasure, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         isGen = true;
     }
 }

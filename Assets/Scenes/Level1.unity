@@ -9800,6 +9800,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809124916}
   m_CullTransparentMesh: 1
+--- !u!1001 &815238594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1126556333}
+    m_Modifications:
+    - target: {fileID: 1558680777373722019, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: treasure
+      value: 
+      objectReference: {fileID: 3557001628287500003, guid: a1ef29d415f49f148b7daddfa7b6a497, type: 3}
+    - target: {fileID: 8470486084254093218, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_Name
+      value: Golden Chest 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6602278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6379895
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.33469906
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+--- !u!4 &815238595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8470486084254093219, guid: fbe44fd98e9ef4040af42882a4f19900, type: 3}
+  m_PrefabInstance: {fileID: 815238594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &818145051
 GameObject:
   m_ObjectHideFlags: 0
@@ -44012,6 +44078,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1126556332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126556333}
+  m_Layer: 0
+  m_Name: Treasure Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126556333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126556332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.538147, y: -2.661611, z: -0.33469906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 815238595}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1127984763
 GameObject:
   m_ObjectHideFlags: 0
