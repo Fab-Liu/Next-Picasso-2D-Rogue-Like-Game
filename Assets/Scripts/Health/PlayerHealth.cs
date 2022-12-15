@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Diemenu;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -37,6 +38,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (healthCurrent <= 0)
         {
+
+            DieMenu.DieMenuShow();
+
             return;
         }
         healthCurrent -= damage;
