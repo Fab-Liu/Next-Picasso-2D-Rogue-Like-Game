@@ -81,3 +81,6 @@ TagManager:
   - name: Item
     uniqueID: 3623207807
     locked: 0
+  - name: Star
+    uniqueID: 3475858695
+    locked: 0
