@@ -6512,7 +6512,7 @@ AudioSource:
   m_GameObject: {fileID: 8472499247301125468}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c63e4efa114184ada87e00462804d71d, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -6653,7 +6653,7 @@ AudioSource:
   m_GameObject: {fileID: 4782824577734362668}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e21eebfc68c1e4d7d8ea99befe04dca0, type: 2}
   m_audioClip: {fileID: 8300000, guid: a4116743782366445bb6c09020c34759, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.77
@@ -7106,6 +7106,7 @@ GameObject:
   - component: {fileID: 8472499247301125470}
   - component: {fileID: 8472499247301125469}
   - component: {fileID: 1404050036436361455}
+  - component: {fileID: 8472499247301125472}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -7174,6 +7175,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &8472499247301125472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472499247301125468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113fcbf1c6be93a4b9057cf8c0d8d756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayButton: {fileID: 8472499248885723528}
+  audioMixer: {fileID: 24100000, guid: e21eebfc68c1e4d7d8ea99befe04dca0, type: 2}
 --- !u!1 &8472499247357338385
 GameObject:
   m_ObjectHideFlags: 0
@@ -8598,17 +8613,17 @@ MonoBehaviour:
   m_FillRect: {fileID: 8472499248124318799}
   m_HandleRect: {fileID: 8472499247794152196}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: 0.846
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8755038486143032392}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 5
+      - m_Target: {fileID: 8472499247301125472}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9238,6 +9253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayButton: {fileID: 8472499248885723528}
+  audioMixer: {fileID: 0}
 --- !u!4 &8755038485009714054
 Transform:
   m_ObjectHideFlags: 0
@@ -9280,7 +9296,7 @@ AudioSource:
   m_GameObject: {fileID: 8755038485039293833}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e21eebfc68c1e4d7d8ea99befe04dca0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 18fb2a67bf7a2b74097acdbb8b81b640, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.822

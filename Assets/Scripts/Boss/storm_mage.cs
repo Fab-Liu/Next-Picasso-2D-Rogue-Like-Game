@@ -145,6 +145,7 @@ public class storm_mage : MonoBehaviour
         if(isDie && Time.time - timer > 0.4){
             Destroy(bar);
             Destroy(this.gameObject);
+            Application.LoadLevel("tqq_test_2");
         }
 
         

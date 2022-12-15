@@ -137,6 +137,7 @@ public class warlock : MonoBehaviour
         if(isDie && Time.time - timer > 0.8){
             Destroy(bar);
             Destroy(this.gameObject);
+            Application.LoadLevel("Level3");
         }
 
     }
