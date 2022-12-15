@@ -8,7 +8,7 @@ public class PlayerInfo
 {
     private static PlayerInfo instance;
 
-    public int money = 100;
+    public int money = 0;
 
     public PlayerInfo()
     {
@@ -37,9 +37,9 @@ public class PlayerInfo
 
     public void Reload()
     {
-        money = 100;
+        money = 0;
     }
 
-    
+
 }
 
