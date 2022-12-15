@@ -42,13 +42,13 @@ public class starFxController : MonoBehaviour {
 	}
 
 	public void Reset () {
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < ea; i++) {
 			starFX [i].SetActive (false);
 		}
 		currentDelay = delay;
 		currentEa = 0;
 		isEnd = false;
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < ea; i++) {
 			starFX [i].SetActive (false);
 		}
 	}
