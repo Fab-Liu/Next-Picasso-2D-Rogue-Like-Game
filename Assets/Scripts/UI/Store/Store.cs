@@ -110,6 +110,7 @@ public class Store : MonoBehaviour
     }
     private void Close()
     {
+        GameObject.Find("Canvas (1)").transform.Find("bg_stop").gameObject.SetActive(false);
         gameObject.SetActive(false);
         InGameUI.SetActive(true);
     }
