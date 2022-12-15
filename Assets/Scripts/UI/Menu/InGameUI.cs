@@ -14,7 +14,8 @@ public class InGameUI : MonoBehaviour
     public Text coinText;
     public bool l3;
 
-    public InGameUI(){
+    public InGameUI()
+    {
 
     }
 
@@ -50,6 +51,7 @@ public class InGameUI : MonoBehaviour
 
     public void OpenStore()
     {
+        GameObject.Find("Canvas (1)").transform.Find("bg_stop").gameObject.SetActive(true);
         storeObj.SetActive(true);
         me.SetActive(false);
 

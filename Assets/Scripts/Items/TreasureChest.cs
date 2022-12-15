@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TreasureChest : MonoBehaviour
 {
+    private GameObject dialogBox;
     private Animator anim;  //'Open' and 'Close'
     private bool collision;  //Character is within the range of chest
     private bool status;  //Open (true) or close (false)
@@ -14,6 +15,7 @@ public class TreasureChest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dialogBox = GameObject.Find("Canvas (1)").transform.Find("BoxDialog").gameObject;
         anim = GetComponent<Animator>();
         status = false;
         isGen = false;
@@ -22,13 +24,13 @@ public class TreasureChest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))  //Press 'Q' to open chest
+        if (Input.GetKeyDown(KeyCode.Q))  //Press 'Q' to open chest
         {
-            if(!status && collision)
+            if (!status && collision)
             {
                 anim.SetTrigger("Open");
                 status = true;
-                if(!isGen)
+                if (!isGen)
                 {
                     Invoke("GenTreasure", genTime);
                 }
@@ -41,6 +43,7 @@ public class TreasureChest : MonoBehaviour
         if (myCollider.gameObject.CompareTag("Player") && myCollider.GetType().ToString() == "UnityEngine.CircleCollider2D")
         {
             collision = true;
+            dialogBox.SetActive(true);
         }
     }
 
@@ -51,9 +54,10 @@ public class TreasureChest : MonoBehaviour
             collision = false;
             anim.SetTrigger("Close");
             status = false;
+            dialogBox.SetActive(false);
         }
     }
-    
+
     void GenTreasure()
     {
         Instantiate(treasure, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);

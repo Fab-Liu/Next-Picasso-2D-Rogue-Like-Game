@@ -19,7 +19,7 @@ public class Store : MonoBehaviour
     private GameObject InGameUI;
     private Text balance;
     private AudioSource audioSource;
-    
+
     //Buy extra health
     public GameObject bar;
     private PlayerHealthBar playerHealthBar;
@@ -80,7 +80,7 @@ public class Store : MonoBehaviour
         DeduceMoney(itemPrice1);
 
         //Add extra health-customizable
-        playerHealthBar.AddHealth(10);
+        playerHealthBar.AddHealth(2);
 
         setInfoAndDisplay("Buy Scuccessfully");
 
@@ -104,12 +104,13 @@ public class Store : MonoBehaviour
         DeduceMoney(itemPrice2);
 
         //Add extra health-customizable
-        playerHealthBar.AddHealth(10);
+        playerHealthBar.AddHealth(5);
 
         setInfoAndDisplay("Buy Scuccessfully");
     }
     private void Close()
     {
+        GameObject.Find("Canvas (1)").transform.Find("bg_stop").gameObject.SetActive(false);
         gameObject.SetActive(false);
         InGameUI.SetActive(true);
     }
