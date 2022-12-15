@@ -30,5 +30,6 @@ public class Diamond : MonoBehaviour
     {
         music.clip = pick;
         music.Play();
+        PlayerInfo.getInstance().money += 10;
     }
 }

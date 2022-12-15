@@ -395,6 +395,8 @@ public class CharacterController : MonoBehaviour
         if ((Input.GetButtonDown("Jump")) && jumpCount > 0)
         {
             jumpPressed = true;
+            music.clip = jump;
+            music.Play();
         }
     }
 
@@ -506,8 +508,7 @@ public class CharacterController : MonoBehaviour
         {
             myAnimator.SetBool("JumpUp", true);
             myAnimator.SetBool("JumpDown", false);
-            music.clip = jump;
-            music.Play();
+  
         }
         else if (!isGround && myRigidbody2D.velocity.y < 0)
         {
