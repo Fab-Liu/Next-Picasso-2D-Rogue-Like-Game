@@ -39,21 +39,21 @@ public class Dialog_level2 : MonoBehaviour
             Text.text = "This is the last of journey!I am here to give you some tips!";
         }
 
-        if (index == 2)
+        if (index == 3)
         {
             button.text = "Sure!I will take care!";
             Text.text = "Be careful!!!There are gaps on the group,don't fall from it!";
         }
 
 
-        if (index == 3)
+        if (index == 4)
         {
             button.text = "I will save the town!";
             Text.text = "So let's continue your journey!Good luck to you!";
             Invoke("desDialog", 1f);
         }
 
-        if (index == 4)
+        if (index == 5)
         {
             desDialog();
         }

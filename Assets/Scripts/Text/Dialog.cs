@@ -38,23 +38,23 @@ public class Dialog : MonoBehaviour
             // But don't worry too much, I believe that with your strength, you can kill them with one blow.
         }
 
-        if (index == 2) {
+        if (index == 3) {
             button.text = "But this hammer sucks.";
             Text.text = "You don't need worry too much, I believe you can kill with one blow.";
         }
 
-        if (index == 3) {
+        if (index == 4) {
             button.text = "That`s great!";
             Text.text = "Oh my boy, watch out, there are magic learning points on the way. You can get the magic you need there.";
         }
 
-        if (index == 3) {
+        if (index == 5) {
             button.text = "I will save the town!";
             Text.text = "Come on boy, the future of our hometown depends on you.";
             Invoke("desDialog", 2f);
         }
 
-        if(index == 4){
+        if(index == 6){
             desDialog();
         }
     }
