@@ -27,33 +27,33 @@ public class Dialog_level3 : MonoBehaviour
             //修改btn文字
             button.text = "Wow, thank you!";
             //修改speech
-            Text.text = "speach 1 ................................................................................";
+            Text.text = "You have come a long way, hero, but your journey is not over yet.";
         }
         
         if (index == 2) {
             //修改btn文字
             button.text = "What can I do with it?";
             //修改speech
-            Text.text = "speach 2 ................................................................................";
+            Text.text = "The big boss you are about to face is powerful and dangerous, but I have faith in your abilities. Remember everything I have taught you.";
         }
 
-        if (index == 2) {
+        if (index == 3) {
             button.text = "But this hammer sucks.";
-            Text.text = "speach 3 ................................................................................";
+            Text.text = "You can do this!";
         }
 
-        if (index == 3) {
+        if (index == 4) {
             button.text = "That`s great!";
-            Text.text = "speach 4 ................................................................................";
+            Text.text = "The big boss may seem unbeatable, but every enemy has a weakness. Look for an opening in its defense and strike with all your might.";
         }
 
-        if (index == 3) {
+        if (index == 5) {
             button.text = "I will save the town!";
-            Text.text = "speach 5 ................................................................................";
+            Text.text = "And don't forget to use your special abilities wisely, they could be the key to victory.";
             Invoke("desDialog", 2f);
         }
 
-        if(index == 4){
+        if(index == 6){
             desDialog();
         }
     }
