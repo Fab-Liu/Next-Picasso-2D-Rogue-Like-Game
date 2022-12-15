@@ -116,7 +116,7 @@ public class CharacterController : MonoBehaviour
     public GameObject dialog1;
     public GameObject dialog2;
 
-    
+
     private float dialogTimer;
     private bool showD1 = false;
     private bool showD2 = false;
@@ -143,6 +143,8 @@ public class CharacterController : MonoBehaviour
         music = gameObject.AddComponent<AudioSource>();
         //设置不一开始就播放音效
         music.playOnAwake = false;
+        //设置音量大小
+        music.volume = 0.2f;
 
         MyInpulse = GetComponent<Cinemachine.CinemachineCollisionImpulseSource>();
 
@@ -508,7 +510,7 @@ public class CharacterController : MonoBehaviour
         {
             myAnimator.SetBool("JumpUp", true);
             myAnimator.SetBool("JumpDown", false);
-  
+
         }
         else if (!isGround && myRigidbody2D.velocity.y < 0)
         {
@@ -563,9 +565,10 @@ public class CharacterController : MonoBehaviour
             Shoot();
         }
 
-        if (Input.GetKeyDown(KeyCode.H) )
+        if (Input.GetKeyDown(KeyCode.H))
         {
-            if(p.minusInc()){
+            if (p.minusInc())
+            {
                 isShield = true;
                 Shield.SetActive(true);
                 shieldTime = Time.time;
@@ -609,22 +612,25 @@ public class CharacterController : MonoBehaviour
         //magic_inc p = new magic_inc(); 
         if (Input.GetKeyDown(KeyCode.U) && Time.time >= LastMagic1 + MagicCoolDown1)
         {
-            if(p.minusM1()){ 
-                Debug.Log("pass here");   
+            if (p.minusM1())
+            {
+                Debug.Log("pass here");
                 Magic1();
             }
         }
         if (Input.GetKeyDown(KeyCode.I) && Time.time >= LastMagic2 + MagicCoolDown2)
         {
-            if(p.minusM2()){
-                Magic2(); 
-            }   
+            if (p.minusM2())
+            {
+                Magic2();
+            }
         }
         if (Input.GetKeyDown(KeyCode.O) && Time.time >= LastMagic3 + MagicCoolDown3)
         {
-            if(p.minusM3()){
+            if (p.minusM3())
+            {
                 Magic3();
-            }    
+            }
         }
 
     }
@@ -793,29 +799,36 @@ public class CharacterController : MonoBehaviour
         hurtTimeLeft = Time.time;
     }
 
-    public void CheckDialog(){
-        if(!showD1){
-            if(this.transform.position.x >= p1.position.x && this.transform.position.y > p1.position.y - 3 && this.transform.position.y < p1.position.y + 4){
+    public void CheckDialog()
+    {
+        if (!showD1)
+        {
+            if (this.transform.position.x >= p1.position.x && this.transform.position.y > p1.position.y - 3 && this.transform.position.y < p1.position.y + 4)
+            {
                 dialog1.SetActive(true);
-                Invoke("test",2.1f);
+                Invoke("test", 2.1f);
                 showD1 = true;
             }
         }
 
-        if(!showD2){
-            if(this.transform.position.x >= p2.position.x){
+        if (!showD2)
+        {
+            if (this.transform.position.x >= p2.position.x)
+            {
                 dialog2.SetActive(true);
-                Invoke("test_dia",2.1f);
+                Invoke("test_dia", 2.1f);
                 showD2 = true;
             }
         }
     }
 
-    void test(){
+    void test()
+    {
         Destroy(dialog1);
     }
 
-    void test_dia(){
+    void test_dia()
+    {
         Destroy(dialog2);
     }
 }
