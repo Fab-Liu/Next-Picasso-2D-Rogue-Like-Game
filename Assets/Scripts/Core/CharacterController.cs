@@ -139,6 +139,9 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(800, 600, false);
+        Screen.fullScreen = true;
+
         //给对象添加一个AudioSource组件
         music = gameObject.AddComponent<AudioSource>();
         //设置不一开始就播放音效
