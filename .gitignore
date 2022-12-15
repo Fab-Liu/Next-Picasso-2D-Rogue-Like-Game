@@ -17,11 +17,11 @@ Assets/AssetStoreTools*
 # ExportedObj/
 # .consulo/
 Logs/
-# *.csproj
+*.csproj
 # *.unityproj
-# *.sln
+*.sln
 # *.suo
-# *.tmp
+*.tmp
 # *.user
 # *.userprefs
 # *.pidb
