@@ -19,7 +19,7 @@ public class storm_mage : MonoBehaviour
 
     private bool isLight = false;
     public bool isSkill = false;
-    private bool isAngry = false;
+    public bool isAngry = false;
     private bool isDie = false;
     private bool isHurt = false;
     private bool isMove = false;
