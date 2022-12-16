@@ -21,9 +21,6 @@ public class beetle : MonoBehaviour
 
     public GameObject blood;
 
-    public GameObject box;
-    public GameObject b_box;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +55,7 @@ public class beetle : MonoBehaviour
             keyTimer = 0;
             myCollider.isTrigger = false;
         }
+
     }
 
     void movement(){
@@ -101,7 +99,6 @@ public class beetle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
             if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
             {
                 isDead = true;
@@ -109,12 +106,6 @@ public class beetle : MonoBehaviour
                 Instantiate(blood, this.transform.position, this.transform.rotation);
                 timer = Time.time;
             }
-        
-
     }
 
-    public void show(){
-        box.SetActive(true);
-        b_box.SetActive(true);
-    }
 }
