@@ -64,10 +64,6 @@ public class Store : MonoBehaviour
     }
     private void setCell1()
     {
-        // cell1.transform.Find("CellTitle").GetComponent<Text>().text = "Cell1";
-        // cell1.transform.Find("Size").GetComponent<Text>().text = "Samll";
-        // cell1.transform.Find("Description").GetComponent<Text>().text = "Cell1 Description";
-        // cell1.transform.Find("Price").GetComponent<Text>().text = "100";
         cell1.transform.Find("Buy").GetComponent<Button>().onClick.AddListener(BuyCell1);
     }
     private void BuyCell1()
@@ -83,8 +79,6 @@ public class Store : MonoBehaviour
         playerHealthBar.AddHealth(2);
 
         setInfoAndDisplay("Buy Scuccessfully");
-
-
     }
     private void setCell2()
     {
