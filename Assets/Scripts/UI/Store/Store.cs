@@ -12,6 +12,10 @@ public class Store : MonoBehaviour
     private int itemPrice2 = 20;
     private GameObject cell1;
     private GameObject cell2;
+    private GameObject cell3;
+    private GameObject cell4;
+    private GameObject cell5;
+    private GameObject cell6;
     private Button close;
     private PlayerInfo playerInfo;
     private GameObject info;
@@ -34,6 +38,10 @@ public class Store : MonoBehaviour
         playerInfo = PlayerInfo.getInstance();
         cell1 = transform.Find("StoreCell(1)").gameObject;
         cell2 = transform.Find("StoreCell(2)").gameObject;
+        cell3 = transform.Find("StoreCell(3)").gameObject;
+        cell4 = transform.Find("StoreCell(4)").gameObject;
+        cell5 = transform.Find("StoreCell(5)").gameObject;
+        cell6 = transform.Find("StoreCell(6)").gameObject;
         setCell1();
         setCell2();
         close = transform.Find("Close").GetComponent<Button>();
@@ -121,6 +129,80 @@ public class Store : MonoBehaviour
         await Task.Delay(1000);
         info.SetActive(false);
     }
+    private void setCell3()
+    {
+        cell3.transform.Find("Buy").GetComponent<Button>().onClick.AddListener(BuyCell3);
+    }
+    private void setCell4()
+    {
+        cell4.transform.Find("Buy").GetComponent<Button>().onClick.AddListener(BuyCell4);
+    }
+    private void setCell5()
+    {
+        cell5.transform.Find("Buy").GetComponent<Button>().onClick.AddListener(BuyCell5);
+    }
+    private void setCell6()
+    {
+        cell6.transform.Find("Buy").GetComponent<Button>().onClick.AddListener(BuyCell6);
+    }
+
+    private void BuyCell3()
+    {
+        if (playerInfo.money < itemPrice2)
+        {
+            setInfoAndDisplay("Not Enough Money");
+            return;
+        }
+        DeduceMoney(itemPrice2);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(5);
+
+        setInfoAndDisplay("Buy Scuccessfully");
+    }
+    private void BuyCell4()
+    {
+        if (playerInfo.money < itemPrice2)
+        {
+            setInfoAndDisplay("Not Enough Money");
+            return;
+        }
+        DeduceMoney(itemPrice2);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(5);
+
+        setInfoAndDisplay("Buy Scuccessfully");
+    }
+    private void BuyCell5()
+    {
+        if (playerInfo.money < itemPrice2)
+        {
+            setInfoAndDisplay("Not Enough Money");
+            return;
+        }
+        DeduceMoney(itemPrice2);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(5);
+
+        setInfoAndDisplay("Buy Scuccessfully");
+    }
+    private void BuyCell6()
+    {
+        if (playerInfo.money < itemPrice2)
+        {
+            setInfoAndDisplay("Not Enough Money");
+            return;
+        }
+        DeduceMoney(itemPrice2);
+
+        //Add extra health-customizable
+        playerHealthBar.AddHealth(5);
+
+        setInfoAndDisplay("Buy Scuccessfully");
+    }
+
 
 
 
