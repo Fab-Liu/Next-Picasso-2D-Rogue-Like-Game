@@ -6,11 +6,15 @@ public class Spike : MonoBehaviour
 {
     public int spikeDamage;
     private PlayerHealth playerHealth;
+    private CharacterController characterController;
 
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+
+        characterController = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
+    
     }
 
     void OnTriggerEnter2D(Collider2D myCollider2d)
@@ -18,7 +22,11 @@ public class Spike : MonoBehaviour
         
         if(myCollider2d.CompareTag("Player") && myCollider2d.GetType().ToString() == "UnityEngine.CircleCollider2D")
         {
-            playerHealth.TakeDamage(spikeDamage);
+            if(!characterController.isShield){
+                characterController.hurtAnimation();
+                playerHealth.TakeDamage(spikeDamage);
+            }
+            
         }
     }
 }

@@ -105,7 +105,7 @@ public class CharacterController : MonoBehaviour
 
     private PlayerHealth health;
 
-    private bool isShield = false;
+    public bool isShield = false;
     private float shieldTime = 0;
 
     [Header("Points")]

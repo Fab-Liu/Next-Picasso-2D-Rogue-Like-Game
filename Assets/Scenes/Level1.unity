@@ -2213,6 +2213,7 @@ MonoBehaviour:
   hammer: {fileID: 115548778}
   hand: {fileID: 1176723534}
   Shield: {fileID: 616828368}
+  isShield: 0
   p1: {fileID: 961410127}
   p2: {fileID: 687601374}
   dialog1: {fileID: 1733688447}
