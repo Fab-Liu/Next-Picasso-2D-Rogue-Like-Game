@@ -44,6 +44,11 @@ public class Store : MonoBehaviour
         cell6 = transform.Find("StoreCell(6)").gameObject;
         setCell1();
         setCell2();
+        setCell3();
+        setCell4();
+        setCell5();
+        setCell6();
+
         close = transform.Find("Close").GetComponent<Button>();
         close.onClick.AddListener(Close);
         info = transform.Find("Info").gameObject;
@@ -155,8 +160,7 @@ public class Store : MonoBehaviour
         }
         DeduceMoney(itemPrice2);
 
-        //Add extra health-customizable
-        playerHealthBar.AddHealth(5);
+        magic_inc.m1++;
 
         setInfoAndDisplay("Buy Scuccessfully");
     }
@@ -169,8 +173,7 @@ public class Store : MonoBehaviour
         }
         DeduceMoney(itemPrice2);
 
-        //Add extra health-customizable
-        playerHealthBar.AddHealth(5);
+        magic_inc.m2++;
 
         setInfoAndDisplay("Buy Scuccessfully");
     }
@@ -183,8 +186,7 @@ public class Store : MonoBehaviour
         }
         DeduceMoney(itemPrice2);
 
-        //Add extra health-customizable
-        playerHealthBar.AddHealth(5);
+        magic_inc.m3++;
 
         setInfoAndDisplay("Buy Scuccessfully");
     }
@@ -197,8 +199,7 @@ public class Store : MonoBehaviour
         }
         DeduceMoney(itemPrice2);
 
-        //Add extra health-customizable
-        playerHealthBar.AddHealth(5);
+        magic_inc.inc++;
 
         setInfoAndDisplay("Buy Scuccessfully");
     }

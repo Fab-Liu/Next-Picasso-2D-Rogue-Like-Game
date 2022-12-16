@@ -8,22 +8,12 @@ public class PlayerInfo
 {
     private static PlayerInfo instance;
 
-    public int money = 0;
+    public int money = 20;
 
     public PlayerInfo()
     {
 
     }
-
-    // // Start is called before the first frame update
-    // void Awake()
-    // {
-    //     money = 100;
-    // }
-    // void Start()
-    // {
-
-    // }
 
 
     public static PlayerInfo getInstance()
@@ -37,7 +27,7 @@ public class PlayerInfo
 
     public void Reload()
     {
-        money = 0;
+        money = 20;
     }
 
 
