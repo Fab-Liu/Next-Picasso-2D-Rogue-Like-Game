@@ -45264,6 +45264,7 @@ GameObject:
   - component: {fileID: 1176723538}
   - component: {fileID: 1176723537}
   - component: {fileID: 1176723536}
+  - component: {fileID: 1176723539}
   m_Layer: 0
   m_Name: hammer_side_cover
   m_TagString: Untagged
@@ -45370,6 +45371,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1176723539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176723534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b503b834b43d28438d9b86468b8cada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnimator: {fileID: 0}
 --- !u!1001 &1176999523
 PrefabInstance:
   m_ObjectHideFlags: 0
