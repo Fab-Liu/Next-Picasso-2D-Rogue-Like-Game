@@ -9,6 +9,7 @@ public class Food : MonoBehaviour
     private AudioSource music;
     public AudioClip pick;
 
+
     void Start()
     {
         music = GameObject.Find("LevelComponent").GetComponent<AudioSource>();
@@ -17,6 +18,7 @@ public class Food : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D myCollider2d)
     {
+
         if (myCollider2d.gameObject.CompareTag("Player") && myCollider2d.GetType().ToString() == "UnityEngine.CircleCollider2D")
         {
             if (PlayerHealth.healthCurrent < PlayerHealth.healthMax)

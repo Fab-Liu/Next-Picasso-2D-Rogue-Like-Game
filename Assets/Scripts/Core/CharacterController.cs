@@ -116,13 +116,13 @@ public class CharacterController : MonoBehaviour
     public GameObject dialog1;
     public GameObject dialog2;
 
-
     private float dialogTimer;
     private bool showD1 = false;
     private bool showD2 = false;
 
     // 声音
     //音源AudioSource相当于播放器，而音效AudioClip相当于磁带
+    [Header("audio")]
     public AudioSource music;
     public AudioClip hurtAudio;//这里我要给主角添加跳跃的音效
     public AudioClip jump;
@@ -133,6 +133,40 @@ public class CharacterController : MonoBehaviour
     public AudioClip m3;
 
     public magic_inc p;
+
+    [Header("tips(object)")]
+    public GameObject diamond;
+    public GameObject black;
+    public GameObject tona;
+    public GameObject inc;
+    public GameObject stone;
+    public GameObject bread;
+    public GameObject apple;
+
+    [Header("tips(points)")]
+    public Transform p_diamond;
+    public Transform p_black;
+    public Transform p_tona;
+    public Transform p_inc;
+    public Transform p_stone;
+    public Transform p_bread;
+    public Transform p_apple;
+
+    private bool isD = false;
+    private bool isBlack = false;
+    private bool isTona = false;
+    private bool isInc = false;
+    private bool isStone = false;
+    private bool isBread = false;
+    private bool isApple = false;
+
+    private float dia_timer = 0;
+    private float black_timer = 0;
+    private float tona_timer = 0;
+    private float inc_timer = 0;
+    private float stone_timer = 0;
+    private float bread_timer = 0;
+    private float apple_timer = 0;
 
     private Cinemachine.CinemachineCollisionImpulseSource MyInpulse;
 
@@ -191,6 +225,8 @@ public class CharacterController : MonoBehaviour
         ReleaseMagic();
 
         CheckDialog();
+
+        CheckTips();
 
         if (isShield && Time.time - shieldTime > 3)
         {
@@ -841,5 +877,98 @@ public class CharacterController : MonoBehaviour
     void test_dia()
     {
         Destroy(dialog2);
+    }
+
+    private void CheckTips(){
+        // diamonds
+        if(this.transform.position.x >= p_diamond.position.x && this.transform.position.x <= p_diamond.position.x + 2 && this.transform.position.y >= p_diamond.position.y && this.transform.position.y <= p_diamond.position.y + 5){
+            diamond.SetActive(true);
+            isD = true;
+            dia_timer = Time.time;
+        }
+
+        if(isD && Time.time - dia_timer >= 2){
+            diamond.SetActive(false);
+            isD = false;
+            dia_timer = 0;
+        }
+
+        // black
+        if(this.transform.position.x >= p_black.position.x && this.transform.position.x <= p_black.position.x + 2 && this.transform.position.y >= p_black.position.y && this.transform.position.y <= p_black.position.y + 5){
+            black.SetActive(true);
+            isBlack = true;
+            black_timer = Time.time;
+        }
+
+        if(isBlack && Time.time - black_timer >= 2){
+            black.SetActive(false);
+            isBlack = false;
+            black_timer = 0;
+        }
+
+        // apple
+        if(this.transform.position.x >= p_apple.position.x && this.transform.position.x <= p_apple.position.x + 2 && this.transform.position.y >= p_apple.position.y && this.transform.position.y <= p_apple.position.y + 5){
+            apple.SetActive(true);
+            isApple = true;
+            apple_timer = Time.time;
+        }
+
+        if(isApple && Time.time - apple_timer >= 2){
+            apple.SetActive(false);
+            isApple = false;
+            apple_timer = 0;
+        }
+
+        // bread
+        if(this.transform.position.x >= p_bread.position.x && this.transform.position.x <= p_bread.position.x + 2 && this.transform.position.y >= p_bread.position.y && this.transform.position.y <= p_bread.position.y + 5){
+            bread.SetActive(true);
+            isBread = true;
+            bread_timer = Time.time;
+        }
+
+        if(isBread && Time.time - bread_timer >= 2){
+            bread.SetActive(false);
+            isBread = false;
+            bread_timer = 0;
+        }
+
+        // inc
+        if(this.transform.position.x >= p_inc.position.x && this.transform.position.x <= p_inc.position.x + 2 && this.transform.position.y >= p_inc.position.y && this.transform.position.y <= p_inc.position.y + 5){
+            inc.SetActive(true);
+            isInc = true;
+            inc_timer = Time.time;
+        }
+
+        if(isInc && Time.time - inc_timer >= 2){
+            inc.SetActive(false);
+            isInc = false;
+            inc_timer = 0;
+        }
+
+        // stone
+        if(this.transform.position.x >= p_stone.position.x && this.transform.position.x <= p_stone.position.x + 2 && this.transform.position.y >= p_stone.position.y && this.transform.position.y <= p_stone.position.y + 5){
+            stone.SetActive(true);
+            isStone = true;
+            stone_timer = Time.time;
+        }
+
+        if(isStone && Time.time - stone_timer >= 2){
+            stone.SetActive(false);
+            isStone = false;
+            stone_timer = 0;
+        }
+
+        // tona
+        if(this.transform.position.x >= p_tona.position.x && this.transform.position.x <= p_tona.position.x + 2 && this.transform.position.y >= p_tona.position.y && this.transform.position.y <= p_tona.position.y + 5){
+            tona.SetActive(true);
+            isTona = true;
+            tona_timer = Time.time;
+        }
+
+        if(isTona && Time.time - tona_timer >= 2){
+            tona.SetActive(false);
+            isTona = false;
+            tona_timer = 0;
+        }
     }
 }

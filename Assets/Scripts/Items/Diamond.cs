@@ -23,7 +23,9 @@ public class Diamond : MonoBehaviour
             audioPick();
 
             DiamondUI.currentDiamondNum += 1;
-            Destroy(gameObject);
+
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
     }
     void audioPick()

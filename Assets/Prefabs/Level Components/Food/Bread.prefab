@@ -207,3 +207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healAmount: 3
   pick: {fileID: 0}
+  box: {fileID: 8989157865428379677, guid: 102959844bc114eb6af8ae16d547839f, type: 3}
+  other1: {fileID: 3562669719667377226, guid: 192b697aaae95467183dd007abd04f29, type: 3}
+  other2: {fileID: 6543192687759864418, guid: 911e79f3f059047ba99db7e5bccd4a5c, type: 3}

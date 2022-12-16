@@ -55,6 +55,7 @@ public class beetle : MonoBehaviour
             keyTimer = 0;
             myCollider.isTrigger = false;
         }
+
     }
 
     void movement(){
@@ -98,7 +99,6 @@ public class beetle : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
             if (collision.gameObject.tag == "Black" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Tornado")
             {
                 isDead = true;
@@ -106,7 +106,6 @@ public class beetle : MonoBehaviour
                 Instantiate(blood, this.transform.position, this.transform.rotation);
                 timer = Time.time;
             }
-        
-
     }
+
 }
