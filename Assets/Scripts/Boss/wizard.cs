@@ -37,6 +37,9 @@ public class wizard : MonoBehaviour
     public AudioClip hurt;
     public AudioClip skill;
 
+    public GameObject bossTips;
+    private float tipsTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -145,6 +148,10 @@ public class wizard : MonoBehaviour
             Movement();
         else
             rb.velocity = new Vector2(0, rb.velocity.y);
+
+        if(isAngry && Time.time - tipsTimer > 3){
+            bossTips.transform.position = new Vector3(bossTips.transform.position.x + 16, bossTips.transform.position.y, bossTips.transform.position.z);
+        }
     }
 
     void Movement(){
@@ -219,7 +226,11 @@ public class wizard : MonoBehaviour
 
     public void getHurt(){
         isHurt = true;
-        isAngry = true;
+        if(!isAngry){
+            bossTips.SetActive(true);
+            isAngry = true;
+            tipsTimer = Time.time;
+        }
         animator.SetBool("IsHurt", true);
         music.clip = hurt;
         music.Play();

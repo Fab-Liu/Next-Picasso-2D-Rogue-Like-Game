@@ -37,6 +37,8 @@ public class storm_mage : MonoBehaviour
     public AudioClip hurt;
     public AudioClip storm;
 
+    public GameObject bossTips;
+    private float tipsTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -148,6 +150,10 @@ public class storm_mage : MonoBehaviour
             Application.LoadLevel("L3_work");
         }
 
+        if(isAngry && Time.time - tipsTimer > 3){
+            bossTips.transform.position = new Vector3(bossTips.transform.position.x + 16, bossTips.transform.position.y, bossTips.transform.position.z);
+        }
+
         
         healthBar.turn(transform.position.x,transform.position.y);
 
@@ -227,7 +233,11 @@ public class storm_mage : MonoBehaviour
 
     public void getHurt(){
         isHurt = true;
-        isAngry = true;
+        if(!isAngry){
+            bossTips.SetActive(true);
+            isAngry = true;
+            tipsTimer = Time.time;
+        }
         animator.SetBool("IsHurt", true);
         music.clip = hurt;
         music.Play();
