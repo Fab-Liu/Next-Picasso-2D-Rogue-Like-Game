@@ -6144,9 +6144,13 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
+      propertyPath: buttonIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: previewIcon
       value: 
-      objectReference: {fileID: 21300000, guid: cb2b2874433a73f41adc5cf39f6d7788, type: 3}
+      objectReference: {fileID: 21300000, guid: 9d59bc72e8a7a12428ece8df5ced36d0, type: 3}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: characterBio
       value: Omen hunts in the shadows. He renders enemies blind, teleports, across
@@ -6164,7 +6168,7 @@ PrefabInstance:
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: characterIcon
       value: 
-      objectReference: {fileID: 21300000, guid: cb2b2874433a73f41adc5cf39f6d7788, type: 3}
+      objectReference: {fileID: 21300000, guid: 9d59bc72e8a7a12428ece8df5ced36d0, type: 3}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: characterInfo
       value: Character Info Here. You can add multiple lines and this box will resize
@@ -6216,7 +6220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701598, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_Pivot.x
@@ -6236,7 +6240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_AnchorMin.x
@@ -6244,7 +6248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6284,11 +6288,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -170
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701599, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6302,6 +6306,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6339321818443117001, guid: db429a0172a62464883a13005da79ca7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d59bc72e8a7a12428ece8df5ced36d0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db429a0172a62464883a13005da79ca7, type: 3}
 --- !u!1 &1637734881

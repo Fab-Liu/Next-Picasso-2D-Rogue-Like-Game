@@ -227,6 +227,14 @@ public class CharacterController : MonoBehaviour
                 Resources.Load("Animation/CharacterNinja") as
                 RuntimeAnimatorController;
         }
+
+        if (Globe.characterIndex == 2)
+        {
+            // 切换animator
+            myAnimator.runtimeAnimatorController =
+                Resources.Load("Animation/CharacterSanta") as
+                RuntimeAnimatorController;
+        }
     }
 
     private void ParameterInit()
