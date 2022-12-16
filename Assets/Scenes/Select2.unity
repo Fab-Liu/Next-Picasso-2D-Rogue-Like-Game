@@ -1681,10 +1681,10 @@ RectTransform:
   m_Father: {fileID: 340613814}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 25, y: -61.08}
-  m_SizeDelta: {x: 450, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &535195080
 MonoBehaviour:
@@ -2348,6 +2348,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
+      propertyPath: buttonIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339321817677701586, guid: db429a0172a62464883a13005da79ca7, type: 3}
       propertyPath: previewIcon
       value: 
       objectReference: {fileID: 21300000, guid: f5da92caabb09bf4aa6fc5e9912f4eaf, type: 3}
@@ -2788,7 +2792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectFirstLine: Select a
   selectSecondLine: Character
-  selectCharaterIcon: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  selectCharaterIcon: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 3}
   characterWindow: {fileID: 506730741}
   characterImage: {fileID: 1637734882}
   characterNameText: {fileID: 1930971989}
@@ -4177,10 +4181,10 @@ RectTransform:
   m_Father: {fileID: 350009767}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 25, y: -61.08}
-  m_SizeDelta: {x: 450, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1246074497
 MonoBehaviour:
@@ -5189,9 +5193,9 @@ RectTransform:
   m_Father: {fileID: 819505702}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6, y: 20}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1930971989

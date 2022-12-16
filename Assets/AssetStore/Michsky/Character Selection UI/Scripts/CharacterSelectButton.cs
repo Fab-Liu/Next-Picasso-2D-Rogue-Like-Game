@@ -65,12 +65,13 @@ namespace Michsky.UI.Freebie
             {
                 soundSource.PlayOneShot(selectSound);
 
-                // 切换到下一个场景
-                
+                Debug.Log("Character Selected"+buttonIndex);
                 Globe.characterIndex = buttonIndex;
                 Application.LoadLevel("Level1");
-                Debug.Log("Globe.characterIndex = " + Globe.characterIndex);
+
+
             }
+
 
         }
 
@@ -112,9 +113,6 @@ namespace Michsky.UI.Freebie
                 characterManager.currentObjectAnimator = objectAnimator;
                 characterManager.UpdateInfo();
             }
-
-
-
         }
     }
 }
