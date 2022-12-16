@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class HammerAttack : MonoBehaviour
 {
+    // public Animator myAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
+        // myAnimator = GetComponent<Animator>();
+        // if (Globe.characterIndex == 1)
+        // {
+        //     // myAnimator.runtimeAnimatorController = Resources.Load("Animator/hammer_side_cover_ninja") as RuntimeAnimatorController;
+        // }
 
     }
 
