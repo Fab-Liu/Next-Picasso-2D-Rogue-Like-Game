@@ -12,10 +12,10 @@ public class magic_inc : MonoBehaviour
     public TextMeshProUGUI txt_m3;
     public TextMeshProUGUI txt_inc;
 
-    public static int m1 = 1;
-    public static int m2 = 1;
-    public static int m3 = 1;
-    public static int inc = 1;
+    public static int m1 = 0;
+    public static int m2 = 0;
+    public static int m3 = 0;
+    public static int inc = 0;
 
     public magic_inc(){
 
