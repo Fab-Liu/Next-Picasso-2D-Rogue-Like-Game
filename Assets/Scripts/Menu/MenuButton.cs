@@ -25,7 +25,7 @@ public class MenuButton : MonoBehaviour
     public void userSelect()
     {
         // Load the select scene
-        Application.LoadLevel("Select2");
+        Application.LoadLevel("Select3");
     }
 
     public void loadToLevel1()
