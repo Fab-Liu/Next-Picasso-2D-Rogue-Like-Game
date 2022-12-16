@@ -13607,6 +13607,10 @@ PrefabInstance:
       propertyPath: isAngry
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440975818372713367, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
+      propertyPath: bossTips
+      value: 
+      objectReference: {fileID: 1598980423}
     - target: {fileID: 4440975818725246913, guid: a322ff8b2fe014b0795c376de93d8728, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.25
@@ -51055,14 +51059,13 @@ GameObject:
   - component: {fileID: 1598980424}
   - component: {fileID: 1598980427}
   - component: {fileID: 1598980426}
-  - component: {fileID: 1598980425}
   m_Layer: 5
   m_Name: bossTips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1598980424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51072,7 +51075,7 @@ RectTransform:
   m_GameObject: {fileID: 1598980423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1683509982}
@@ -51081,25 +51084,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -12, y: 278}
+  m_AnchoredPosition: {x: 0, y: 66}
   m_SizeDelta: {x: 592.70496, y: 131.685}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1598980425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598980423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cf5499c265a742d19576caafbc37b86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  Text: {fileID: 1683509983}
-  speech: {fileID: 1683509981}
-  btn: {fileID: 0}
 --- !u!114 &1598980426
 MonoBehaviour:
   m_ObjectHideFlags: 0
