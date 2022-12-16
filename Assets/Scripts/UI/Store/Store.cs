@@ -10,6 +10,10 @@ public class Store : MonoBehaviour
 {
     private int itemPrice1 = 10;
     private int itemPrice2 = 20;
+    private int itemPrice3 = 20;
+    private int itemPrice4 = 30;
+    private int itemPrice5 = 30;
+    private int itemPrice6 = 40;
     private GameObject cell1;
     private GameObject cell2;
     private GameObject cell3;
@@ -153,7 +157,7 @@ public class Store : MonoBehaviour
 
     private void BuyCell3()
     {
-        if (playerInfo.money < itemPrice2)
+        if (playerInfo.money < itemPrice3)
         {
             setInfoAndDisplay("Not Enough Money");
             return;
@@ -166,7 +170,7 @@ public class Store : MonoBehaviour
     }
     private void BuyCell4()
     {
-        if (playerInfo.money < itemPrice2)
+        if (playerInfo.money < itemPrice4)
         {
             setInfoAndDisplay("Not Enough Money");
             return;
@@ -179,7 +183,7 @@ public class Store : MonoBehaviour
     }
     private void BuyCell5()
     {
-        if (playerInfo.money < itemPrice2)
+        if (playerInfo.money < itemPrice5)
         {
             setInfoAndDisplay("Not Enough Money");
             return;
@@ -192,7 +196,7 @@ public class Store : MonoBehaviour
     }
     private void BuyCell6()
     {
-        if (playerInfo.money < itemPrice2)
+        if (playerInfo.money < itemPrice6)
         {
             setInfoAndDisplay("Not Enough Money");
             return;
