@@ -21,6 +21,9 @@ public class beetle : MonoBehaviour
 
     public GameObject blood;
 
+    public GameObject box;
+    public GameObject b_box;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -108,5 +111,10 @@ public class beetle : MonoBehaviour
             }
         
 
+    }
+
+    public void show(){
+        box.SetActive(true);
+        b_box.SetActive(true);
     }
 }
