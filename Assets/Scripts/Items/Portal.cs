@@ -30,6 +30,8 @@ public class Portal : MonoBehaviour
         if (myCollider2d.gameObject.CompareTag("Player"))
         {
             inPortal = true;
+            GameObject portalDialog = GameObject.Find("Canvas (1)").transform.Find("PortalDialog").gameObject;
+            portalDialog.SetActive(true);
         }
     }
 
@@ -38,6 +40,8 @@ public class Portal : MonoBehaviour
         if (myCollider2d.gameObject.CompareTag("Player"))
         {
             inPortal = false;
+            GameObject portalDialog = GameObject.Find("Canvas (1)").transform.Find("PortalDialog").gameObject;
+            portalDialog.SetActive(false);
         }
     }
 }
