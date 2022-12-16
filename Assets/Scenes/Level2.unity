@@ -11223,14 +11223,13 @@ GameObject:
   - component: {fileID: 657109195}
   - component: {fileID: 657109198}
   - component: {fileID: 657109197}
-  - component: {fileID: 657109196}
   m_Layer: 5
   m_Name: bossTips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &657109195
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11240,7 +11239,7 @@ RectTransform:
   m_GameObject: {fileID: 657109194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1999999, y: 1.1999999, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1508508226}
@@ -11249,25 +11248,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -12, y: 278}
+  m_AnchoredPosition: {x: 0, y: 66}
   m_SizeDelta: {x: 592.70496, y: 131.685}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &657109196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657109194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cf5499c265a742d19576caafbc37b86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  Text: {fileID: 1508508227}
-  speech: {fileID: 1508508225}
-  btn: {fileID: 0}
 --- !u!114 &657109197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65398,6 +65381,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.64
       objectReference: {fileID: 0}
+    - target: {fileID: 6064090922532166761, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
+      propertyPath: bossTips
+      value: 
+      objectReference: {fileID: 657109194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
 --- !u!1 &1748619055
