@@ -180,6 +180,7 @@ public class CharacterController : MonoBehaviour
         music = gameObject.AddComponent<AudioSource>();
         //设置不一开始就播放音效
         music.playOnAwake = false;
+        music.loop = false;
         //设置音量大小
         music.volume = 0.2f;
 
@@ -604,13 +605,13 @@ public class CharacterController : MonoBehaviour
     // public AudioClip launchClip; // 发射音效
     public void HandleInput()
     {
-        if (
-            Input.GetKeyDown(KeyCode.J) &&
-            Time.time >= LastShoot + BulletCoolDown
-        )
-        {
-            Shoot();
-        }
+        // if (
+        //     Input.GetKeyDown(KeyCode.J) &&
+        //     Time.time >= LastShoot + BulletCoolDown
+        // )
+        // {
+        //     Shoot();
+        // }
 
         if (Input.GetKeyDown(KeyCode.H))
         {
@@ -640,7 +641,7 @@ public class CharacterController : MonoBehaviour
             }
 
             LastShoot = Time.time;
-            //AudioManager.instance.AudioPlay(launchClip); //播放攻击音效
+
         }
     }
 
@@ -879,93 +880,108 @@ public class CharacterController : MonoBehaviour
         Destroy(dialog2);
     }
 
-    private void CheckTips(){
+    private void CheckTips()
+    {
         // diamonds
-        if(this.transform.position.x >= p_diamond.position.x && this.transform.position.x <= p_diamond.position.x + 2 && this.transform.position.y >= p_diamond.position.y && this.transform.position.y <= p_diamond.position.y + 5){
+        if (this.transform.position.x >= p_diamond.position.x && this.transform.position.x <= p_diamond.position.x + 2 && this.transform.position.y >= p_diamond.position.y && this.transform.position.y <= p_diamond.position.y + 5)
+        {
             diamond.SetActive(true);
             isD = true;
             dia_timer = Time.time;
         }
 
-        if(isD && Time.time - dia_timer >= 2){
+        if (isD && Time.time - dia_timer >= 2)
+        {
             diamond.SetActive(false);
             isD = false;
             dia_timer = 0;
         }
 
         // black
-        if(this.transform.position.x >= p_black.position.x && this.transform.position.x <= p_black.position.x + 2 && this.transform.position.y >= p_black.position.y && this.transform.position.y <= p_black.position.y + 5){
+        if (this.transform.position.x >= p_black.position.x && this.transform.position.x <= p_black.position.x + 2 && this.transform.position.y >= p_black.position.y && this.transform.position.y <= p_black.position.y + 5)
+        {
             black.SetActive(true);
             isBlack = true;
             black_timer = Time.time;
         }
 
-        if(isBlack && Time.time - black_timer >= 2){
+        if (isBlack && Time.time - black_timer >= 2)
+        {
             black.SetActive(false);
             isBlack = false;
             black_timer = 0;
         }
 
         // apple
-        if(this.transform.position.x >= p_apple.position.x && this.transform.position.x <= p_apple.position.x + 2 && this.transform.position.y >= p_apple.position.y && this.transform.position.y <= p_apple.position.y + 5){
+        if (this.transform.position.x >= p_apple.position.x && this.transform.position.x <= p_apple.position.x + 2 && this.transform.position.y >= p_apple.position.y && this.transform.position.y <= p_apple.position.y + 5)
+        {
             apple.SetActive(true);
             isApple = true;
             apple_timer = Time.time;
         }
 
-        if(isApple && Time.time - apple_timer >= 2){
+        if (isApple && Time.time - apple_timer >= 2)
+        {
             apple.SetActive(false);
             isApple = false;
             apple_timer = 0;
         }
 
         // bread
-        if(this.transform.position.x >= p_bread.position.x && this.transform.position.x <= p_bread.position.x + 2 && this.transform.position.y >= p_bread.position.y && this.transform.position.y <= p_bread.position.y + 5){
+        if (this.transform.position.x >= p_bread.position.x && this.transform.position.x <= p_bread.position.x + 2 && this.transform.position.y >= p_bread.position.y && this.transform.position.y <= p_bread.position.y + 5)
+        {
             bread.SetActive(true);
             isBread = true;
             bread_timer = Time.time;
         }
 
-        if(isBread && Time.time - bread_timer >= 2){
+        if (isBread && Time.time - bread_timer >= 2)
+        {
             bread.SetActive(false);
             isBread = false;
             bread_timer = 0;
         }
 
         // inc
-        if(this.transform.position.x >= p_inc.position.x && this.transform.position.x <= p_inc.position.x + 2 && this.transform.position.y >= p_inc.position.y && this.transform.position.y <= p_inc.position.y + 5){
+        if (this.transform.position.x >= p_inc.position.x && this.transform.position.x <= p_inc.position.x + 2 && this.transform.position.y >= p_inc.position.y && this.transform.position.y <= p_inc.position.y + 5)
+        {
             inc.SetActive(true);
             isInc = true;
             inc_timer = Time.time;
         }
 
-        if(isInc && Time.time - inc_timer >= 2){
+        if (isInc && Time.time - inc_timer >= 2)
+        {
             inc.SetActive(false);
             isInc = false;
             inc_timer = 0;
         }
 
         // stone
-        if(this.transform.position.x >= p_stone.position.x && this.transform.position.x <= p_stone.position.x + 2 && this.transform.position.y >= p_stone.position.y && this.transform.position.y <= p_stone.position.y + 5){
+        if (this.transform.position.x >= p_stone.position.x && this.transform.position.x <= p_stone.position.x + 2 && this.transform.position.y >= p_stone.position.y && this.transform.position.y <= p_stone.position.y + 5)
+        {
             stone.SetActive(true);
             isStone = true;
             stone_timer = Time.time;
         }
 
-        if(isStone && Time.time - stone_timer >= 2){
+        if (isStone && Time.time - stone_timer >= 2)
+        {
             stone.SetActive(false);
             isStone = false;
             stone_timer = 0;
         }
 
         // tona
-        if(this.transform.position.x >= p_tona.position.x && this.transform.position.x <= p_tona.position.x + 2 && this.transform.position.y >= p_tona.position.y && this.transform.position.y <= p_tona.position.y + 5){
+        if (this.transform.position.x >= p_tona.position.x && this.transform.position.x <= p_tona.position.x + 2 && this.transform.position.y >= p_tona.position.y && this.transform.position.y <= p_tona.position.y + 5)
+        {
             tona.SetActive(true);
             isTona = true;
             tona_timer = Time.time;
         }
 
-        if(isTona && Time.time - tona_timer >= 2){
+        if (isTona && Time.time - tona_timer >= 2)
+        {
             tona.SetActive(false);
             isTona = false;
             tona_timer = 0;
