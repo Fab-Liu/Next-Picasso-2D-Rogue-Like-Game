@@ -378,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13534433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.6, y: -256.5, z: 0}
+  m_LocalPosition: {x: 26.9, y: -257.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11425,6 +11425,7 @@ GameObject:
   - component: {fileID: 619459950}
   - component: {fileID: 619459951}
   - component: {fileID: 619459952}
+  - component: {fileID: 619459953}
   m_Layer: 0
   m_Name: Cabin_3
   m_TagString: Untagged
@@ -11509,8 +11510,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -11525,6 +11526,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.61, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &619459953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619459949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338ac0c6b6748d34bb255b310e555d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &623660990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59041,7 +59054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246472683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.380005, y: 0.29000854, z: -10.055331}
+  m_LocalPosition: {x: -43.08, y: -0.70999146, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69299,7 +69312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862188138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.380005, y: 0.29000854, z: -10.055331}
+  m_LocalPosition: {x: -43.08, y: -0.70999146, z: -10.055331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
