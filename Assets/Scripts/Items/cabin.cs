@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class cabin : MonoBehaviour
 {
+    public bool level3;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +24,17 @@ public class cabin : MonoBehaviour
         {
             pass();
         }
+
     }
     void pass()
     {
-        SceneManager.LoadScene("L2_work");
+        if (!level3)
+        {
+            SceneManager.LoadScene("L2_work");
+        }
+        else
+        {
+            SceneManager.LoadScene("L3_work");
+        }
     }
 }
