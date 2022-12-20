@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class finalMenu : MonoBehaviour
 {
+    public AudioSource audioSource;
+
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+        // play victory music
+        AudioClip victory = Resources.Load<AudioClip>("Sound/victory");
+        audioSource.clip = victory;
+        audioSource.Play();
+
+    }
+
+    private void Update() {
+        
+    }
 
     public void QuitGame()
     {
