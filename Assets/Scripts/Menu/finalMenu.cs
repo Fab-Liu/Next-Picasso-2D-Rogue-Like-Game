@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class finalMenu : MonoBehaviour
 {
+
     public void QuitGame()
     {
             Debug.Log("Quit");
